@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<channels>
+    
+	<item>
+	<title>[COLOR blue]*****[/COLOR]   [COLOR cyan]CABLEDIRECTO TV DIRECTO EN TU CASA !!![/COLOR]  [COLOR blue]*****[/COLOR]</title>
+	<link>--live</link>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>http://www.dingleberrypi.com/wp-content/uploads/2012/10/xbmc.jpeg</fanart>
+    </items>
+	
+	superceleron files  http://bit.ly/SCLibrtmp
+	
+	http://dexteriptv.com/live/dex.xml
+	
+	http://dexteriptv.com/live/tv/liv%25dex.php
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR cyan]UKTV NOW[/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink></externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>http://www.widewallpapershd.info/file/228/600x338/16:9/united-kingdom-flag_1816141766.jpg</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	
+	Settings:
+cachmember 419430400
+buffermode 1
+readbuffer 4.0
+	
+	http://goo.gl/ff3Rzk  
+	
+	http://cor.to/eliplexofi.tv
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR oldlace][B][I] LISTA DE ADRIAN [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink>http://www.adryanlist.info</externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>http://kodi.tv/wp-content/uploads/banner-sbs-11-600x336.png</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR oldlace][B][I] LISTA CATOAL [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink>https://raw.githubusercontent.com/Carlesto/Listas/master/carindex</externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>http://globial.com/globialtalksbusiness/wp-content/uploads/2012/01/peru.jpg</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR blue][B][I] TOTAL PLAY 2[/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink>http://adrian.kodistream.info/adryan/totalp.xml</externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>http://globial.com/globialtalksbusiness/wp-content/uploads/2012/01/peru.jpg</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	
+	
+	https://dl.dropboxusercontent.com/u/380436718/NanoPalcotv.m3u MAIN LIST
+	
+	https://dl.dropboxusercontent.com/u/380436718/NuevosPluses.m3u  DIGITAL PLUS
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR blue][B][I]PELICULAS V.O.D [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#073;&#080;&#084;&#086;&#046;&#120;&#109;&#108;</externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzK_qMjRC8MPVRXSFHFyISp9P12dHotnQupZlZ6HM7iECgx-8</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR oldlace][B][I] DOCUMENTALES MANUEL [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink>https://github.com/alevelezz/Lista/wiki</externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzK_qMjRC8MPVRXSFHFyISp9P12dHotnQupZlZ6HM7iECgx-8</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR oldlace][B][I] MUSIC MANUEL [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink>http://pastebin.com/raw/U1CwNwPL</externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzK_qMjRC8MPVRXSFHFyISp9P12dHotnQupZlZ6HM7iECgx-8</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+		<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR oldlace][B][I] DEPORTES MANUEL [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink>http://pastebin.com/raw/9Byrwd7f</externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzK_qMjRC8MPVRXSFHFyISp9P12dHotnQupZlZ6HM7iECgx-8</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR oldlace][B][I] LISTA STALLION [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink>http://pastebin.com/raw.php?i=bCtX50xV</externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>http://kodi.tv/wp-content/uploads/banner-sbs-11-600x336.png</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR grey][B][I] LISTA IPTV EXABYTE [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink>http://exabytetv.info/lista1.m3u</externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>http://kodi.tv/wp-content/uploads/banner-sbs-11-600x336.png</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	http://wownet.ro/iptv/
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR oldlace][B][I]WEBCAMS WORLDWIDE CABLEDIRECTO  [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink>https://raw.githubusercontent.com/Carlesto/Listas/master/webcam.xml</externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart></fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR grey][B][I] LISTA SHADOW CREW[/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink></externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>http://ak8.picdn.net/shutterstock/videos/1821584/preview/stock-footage-mexican-flag-hd-looped.jpg</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR red]CANALES DE PRUEBAS NO ACTIVOS[/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink>http://googledrive.com/host/0B9n-LKy7Abk-U3RRNUdoX1lmLTg</externallink>
+    <thumbnail>http://static.freepik.com/foto-gratis/pantalla-del-televisor-sin-senal-de-prueba-ilustracion-vectorial_53-14440.jpg</thumbnail>
+    <fanart>http://spf.fotolog.com/photo/15/3/111/pataslocas_jksbs/1272594366174_f.jpg</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+
+	
+	
+	
+	
+	
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR cyan]LISTA KING HD[/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink></externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>http://www.widewallpapershd.info/file/228/600x338/16:9/united-kingdom-flag_1816141766.jpg</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR cyan]LISTAS EXTRAS[/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<link>http://Ignoreme</link>
+	<externallink>http://adrian.kodistream.info/adryan/lists.xml</externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>http://www.managementparadise.com/dev/uploads_user/472000/471362/image/FIFA%20World%20Cup%202014/PORTUGAL.jpg</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR cyan]MAXWELLP LISTA DOCUMENTALES[/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink></externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>http://1hdwallpapers.com/wallpapers/dominicana.jpg</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	http://pastebin.com/u/MaxwellP
+	
+	<channel>
+	 <name>[COLOR yellow]*****[/COLOR]   [COLOR cyan]UNITED KINGDOM TV[/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+	<externallink></externallink>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    <fanart>http://www.widewallpapershd.info/file/228/600x338/16:9/united-kingdom-flag_1816141766.jpg</fanart>
+    <items>
+	 </items>
+    </channel>
+	
+	
+	
+	
+	
+
+    <channel>
+    <name>[COLOR yellow]-----[/COLOR][COLOR cyan][COLOR magenta]V.O.D[/COLOR]  TV OF THE TUBE WORLD[/COLOR][COLOR yellow]-----[/COLOR]    [COLOR orange]INGLES Y ESPAÑOL[/COLOR]</name>
+    <thumbnail>http://television.png</thumbnail>
+    <fanart>http://3.bp.blogspot.com/-5oopmGwQxQI/T42VDms89BI/AAAAAAAADso/ph45cee6HEc/s1600/hometheater2.jpg</fanart>
+    
+	<subchannel>
+        <name>[COLOR yellow]*****[/COLOR]   [COLOR cyan]MUSICA COLOMBIANA[/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+        <thumbnail>http://television.png</thumbnail>
+        <fanart>http://www.cbc.ca/saskweekend/MovieMedley.jpg</fanart>
+            <subitems>
+			
+			<subitem>
+                <title>[COLOR yellow]PASTOR LOPEZ ( EXITOS)[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=Eu8yeS34EdQ</link>
+                <thumbnail>http://i.imgur.com/N1aJZ.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]PASTOR LOPEZ ( EXITOS)[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=Eu8yeS34EdQ</link>
+                <thumbnail>http://i.imgur.com/N1aJZ.jpg</thumbnail>
+                </subitem>
+                
+                
+              <subitem>
+                <title>[COLOR yellow]ALFREDO GUTIERREZ  (EXITOS)[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=DsRKTKoHqls</link>
+                <thumbnail>http://www.lareina.com.co/artista/alfredo_gutierrez/thumb-artista-alfredo-gutierrez.jpg</thumbnail>
+                </subitem>
+                
+                <subitem>
+                <title>[COLOR yellow]LISANDRO MEZA (EXITOS)[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=BKePo_3WU5o</link>
+                <thumbnail>http://direct.rhapsody.com/imageserver/v2/albums/Alb.154545046/images/170x170.jpg</thumbnail>
+                </subitem>
+                
+                <subitem>
+                <title>[COLOR yellow]TROPICAL RUMBERO[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=zUJGp5JiWOk</link>
+                <thumbnail>https://lh5.ggpht.com/4v8L_4-GAcekhnbEE6qM6hUdcw7IsnxRQiFOTo4DRTp0-NRgz_pu3Q9JsxGa7v0QbN903iXDSA</thumbnail>
+                </subitem>
+                
+              
+                
+                <subitem>
+                <title>[COLOR yellow]ALCI ACOSTA  (EXITOS)[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=l9Qawv3-DH0</link>
+                <thumbnail>http://www.pegasusrecordsinc.com/images/products/preview/alci-acosta-exitos.jpg</thumbnail>
+                </subitem>
+                
+                <subitem>
+                <title>[COLOR yellow]Leonardo Favio (en concierto)[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=-8Odo0hJeXA</link>
+                <thumbnail>http://o.scdn.co/300/6fcee998649d7a1a74f71d4f4510fbf7b939bf81</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]Leo Dan la historia[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=KUppKt39CFY</link>
+                <thumbnail>http://www.musicamp4.org/Musica-de-Leo-Dan.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]Richie Ray & Bobby Cruz 25 Aniversario[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=GkDt7grlWkA</link>
+                <thumbnail>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFb5TEanXrPSpH9EDxNcZSKZyj5gOixu4yZZnXmuHq-il-jAFM</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow][/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=</link>
+                <thumbnail>http://thumb.png</thumbnail>
+                </subitem>
+			
+                
+				
+				<subitem>
+                <title>[COLOR yellow]*****[/COLOR]   [COLOR cyan][/COLOR]  [COLOR yellow]*****[/COLOR]</title>
+                <link></link>
+                <thumbnail></thumbnail>
+				<fanart></fanart>
+				</subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]*****[/COLOR]   [COLOR cyan][/COLOR]  [COLOR yellow]*****[/COLOR]</title>
+                <link></link>
+                <thumbnail></thumbnail>
+				<fanart></fanart>
+				</subitem>
+				
+				<subchannel>
+        <name>[COLOR yellow]*****[COLOR blue] CONCERT NIGHTS[COLOR magenta]........[/COLOR][COLOR cyan]CONCERTS LIVE![/COLOR][/COLOR][COLOR yellow]*****[/COLOR]</name>
+        <thumbnail>http://radiou.com/wp-content/uploads/2012/09/ConcertsEventsMain620.jpg</thumbnail>
+        <fanart>http://img.wonderhowto.com/img/16/57/63504829604361/0/trick-hearing-your-friends-better-loud-clubs-concerts-and-having-them-hear-you.1280x600.jpg</fanart>
+            <subitems>
+			
+			<subitem>
+                <title>[COLOR yellow]Depeche Mode - BEST OF LIVE IN CONCERT 1988 - 2009[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=LIPxBSOPRL4</link>
+                <thumbnail>http://www.raspberryheels.com/blog/wp-content/uploads/2013/07/raspberry-heels-depeche-mode-6-malinowe-obcasy-1.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]Guns N' Roses - Live In Tokyo 1992 Full Concert HQ HD - DVD 1/2[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=Dtlxw9m8KCs</link>
+                <thumbnail>http://www.globalonslaught.com/images/user/9541guns-n-roses2.jpg</thumbnail>
+                </subitem>
+			
+			<subitem>
+                <title>[COLOR yellow]Guns N' Roses - Live In Tokyo 1992 Full Concert HQ HD - DVD 2/2 [/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=OQlmL4-I2WY</link>
+                <thumbnail>https://c1.staticflickr.com/9/8289/7776145598_1dd1fcc9cb_z.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]Led Zeppelin 2012 [/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=eHaqS3Ccc78</link>
+                <thumbnail>http://www.musiclipse.com/wp-content/uploads/2014/04/Led_Zeppelin_How_The_West_Was_Won_Wallpaper.jpg</thumbnail>
+                </subitem>
+			
+			<subitem>
+                <title>[COLOR yellow]Pet Shop Boys - Pandemonium Tour [/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=SSKVYP3jSLs</link>
+                <thumbnail>http://3.bp.blogspot.com/-hgIbUjkjv_4/T6CnWwD-HXI/AAAAAAAAAm4/VGDP7p9faYI/s1600/3702520372_fc192365c9.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]Red Hot Chili Peppers - Live at Rio de Janeiro 2013[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=rGkjDkw2pOo</link>
+                <thumbnail>http://logonoid.com/images/red-hot-chili-peppers-logo.png</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]Def Leppard Viva Hysteria 2013[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=zZKkJBnhqBw</link>
+                <thumbnail>http://www.metal-metropolis.com/Def_Leppard/def_leppard_logopic_new.jpg</thumbnail>
+                </subitem>
+			
+			
+                <subitem>
+                <title>[COLOR yellow]Sensation White - Celebrate Life With House at Amsterdam Arena[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=2EAI4RmA0VQ</link>
+                <thumbnail>http://thissongissick.com/blog/wp-content/uploads/2012/06/Sensation-White-Innerspace.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]Sensation White 2011 Netherlands HD [/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=z-NnLhkoSSA</link>
+                <thumbnail>http://www.festivaladvisor.com/wp-content/uploads/2013/04/sensation1.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]2CELLOS - LIVE at Arena Pula 2013[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=Sk5zxA9UP2Q</link>
+                <thumbnail>http://www.2cellos.com/sites/twocellos/files/imagecache/600x314/emvideo-youtube-Sk5zxA9UP2Q_0.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]Amy Winehouse I Told You I Was Trouble Full Live From Shepherd's Bush Empire London 2007[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=qgIQjWQFVoI</link>
+                <thumbnail>http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/4/29/1304085806334/Amy-Winehouse-played-the--007.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]Nirvana Unplugged[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=TykpudHg69k</link>
+                <thumbnail>http://cdn.stereogum.com/files/2013/12/Nirvana-Unplugged.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]Metallica - Live @ Rock am Ring 2014[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=BnuexIUVptE</link>
+                <thumbnail>http://rockisdead.gr/wp-content/uploads/2014/06/metallica-rock-am-ring-2014.jpg</thumbnail>
+                </subitem>
+              
+	
+               <subitem>
+                <title>[COLOR yellow]U2 - Live at Glastonbury- England 2011[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=JqjIb6FhU_k</link>
+                <thumbnail>http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/6/30/1309450976215/U2s-Bono-reaches-out-to-t-031.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]ROCK PLAYLIST[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_all&amp;playlist=PLCFB57BA937CC3DB0</link>
+                <thumbnail>http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/6/30/1309450976215/U2s-Bono-reaches-out-to-t-031.jpg</thumbnail>
+                </subitem>
+				
+				
+				
+				<subchannel>
+        <name>[COLOR yellow]*****[/COLOR][COLOR blue] PELICULAS LATINAS [/COLOR][COLOR yellow]*****[/COLOR]</name>
+        <thumbnail>http://television.png</thumbnail>
+        <fanart>http://fanart.jpg</fanart>
+            <subitems>
+                <subitem>
+                <title>[COLOR yellow]La Vendedora de Rosas[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=bcjSccUy0m4</link>
+                <thumbnail>http://www.proimagenescolombia.com/photos/78552_6_imagen__.jpg</thumbnail>
+                </subitem>
+
+                <subitem>
+                <title>[COLOR yellow]El Cartel de los Sapos Pelicula Colombiana[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=FZE6ita5M18</link>
+                <thumbnail>http://amqueretaro.com/wp-content/uploads/2013/01/sapos.jpg</thumbnail>
+                </subitem>
+                
+                <subitem>
+                <title>[COLOR yellow]Satanás[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=VG2w7HxaQ2Y</link>
+                <thumbnail>http://www.proimagenescolombia.com/photos/78552_95_imagen__.jpg</thumbnail>
+                </subitem>
+                
+                <subitem>
+                <title>[COLOR yellow]Maria Llena Eres De Gracia[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=p1u_I6xeFbI</link>
+                <thumbnail>http://pics.filmaffinity.com/Maria_llena_eres_de_gracia-276212336-large.jpg</thumbnail>
+                </subitem>
+                
+                <subitem>
+                <title>[COLOR yellow]Sumas Y Restas[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=Hd-oAgX4owY</link>
+                <thumbnail>http://ecx.images-amazon.com/images/I/91LfRwKJPQS._AA1500_.jpg</thumbnail>
+                </subitem>
+                
+                <subitem>
+                <title>[COLOR yellow]La Pena Maxima[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=I0X4rK1CF2k</link>
+                <thumbnail>http://pekin.cervantes.es/FichasCultura/Imagenes/12588.JPG</thumbnail>
+                </subitem>
+                
+                <subitem>
+                <title>[COLOR yellow]La Estrategia Del Caracol[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=pqi9o-9xQYY</link>
+                <thumbnail>http://www.ecbloguer.com/prensaescuela/wp-content/uploads/2013/10/cartel-la-estrategia-del-caracol1.jpg</thumbnail>
+                </subitem>
+                
+                <subitem>
+                <title>[COLOR yellow]Soñar No Cuesta Nada[/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=4MdqBk4jYtA&list=PLNtprOeuEP15ZvoI6iBiGAihxjPusm9AB</link>
+                <thumbnail>http://www.mantarayatravel.com/blog/wp-content/uploads/2011/12/so%C3%B1ar-no-cuesta-nada.jpg</thumbnail>
+                </subitem>
+                
+                <subitem>
+                <title>[COLOR yellow][/COLOR]</title>
+                <link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=</link>
+                <thumbnail>http://thumb.png</thumbnail>
+                </subitem>
+				
+				
+				
+				<channel>
+    <name>[COLOR yellow]-----[/COLOR][COLOR cyan][COLOR magenta][/COLOR]RADIO DE COLOMBIA[/COLOR][COLOR yellow]-----[/COLOR]    [COLOR orange][/COLOR]</name>
+    <thumbnail>http://television.png</thumbnail>
+    <fanart>http://4.bp.blogspot.com/-w0oLM6cfRCU/Tx-DuaMp51I/AAAAAAAABW0/LrgzWhnbtCI/s1600/Collage%252C+Emisoras+FM.png</fanart>
+    
+	<subchannel>
+        <name>[COLOR yellow]*****[/COLOR]   [COLOR cyan]EMISORAS DE COLOMBIA[/COLOR]  [COLOR yellow]*****[/COLOR]</name>
+        <thumbnail>http://television.png</thumbnail>
+        <fanart>https://c2.staticflickr.com/6/5170/5347828887_d989263694_z.jpg</fanart>
+            <subitems>
+			
+			<subitem>
+                <title>[COLOR yellow]ESTRELLA ESTEREO  104.3[/COLOR]</title>
+                <link>http://68.233.236.92:8006/</link>
+                <thumbnail>http://estrellacolombia.com/sites/default/files/estrellaestereo_0.jpg</thumbnail>
+                </subitem>
+			
+			<subitem>
+                <title>[COLOR yellow]LA X ELECTRONICA 103.9[/COLOR]</title>
+                <link>http://66.240.202.106:8074/</link>
+                <thumbnail>http://4.bp.blogspot.com/_iIDPFLxP09g/TIeeaZexWYI/AAAAAAAAAC0/v-fwK-WG15Q/s1600/2.JPG</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]LATINA ESTEREO 100.9[/COLOR]</title>
+                <link>http://real1.streaming-co.com:8050/</link>
+                <thumbnail>http://www.latinastereo.com/Portals/_default/Skins/LatinaStereo1.0/imagenes/Interna/Logo.gif</thumbnail>
+                </subitem>
+			
+			<subitem>
+                <title>[COLOR yellow]AMOR ESTEREO MEDELLIN 94.4[/COLOR]</title>
+                <link>http://live2.rcnmundo.com/amorstmedellin.mp3</link>
+                <thumbnail>http://3.bp.blogspot.com/_YsgOkAVMc0A/TKsh-zG-32I/AAAAAAAAChA/6saZUWWM258/s1600/amorstereo.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]OLIMPICA STEREO[/COLOR]</title>
+                <link>http://i60.letio.com/9128.aac?type=.flv?type=.flv</link>
+                <thumbnail>http://www.mundonets.com/images/olimpica-stereo.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]ANTENA STEREO 107.4[/COLOR]</title>
+                <link>http://real1.streaming-co.com:8156/</link>
+                <thumbnail>http://www.cosasycosas.com/emisoras/imagenes/municipios%20antioquia/chigorodo%20antena%20stereo.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]CARACOL RADIO[/COLOR]</title>
+                <link>http://1061.live.streamtheworld.com/CARACOL_RADIO_SC?TGT=TuneIn&DIST=TuneIn</link>
+                <thumbnail>https://web.certicamara.com/media/113666/caracolradio.png</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]EMISORA CLARIDAD (BOLEROS)[/COLOR]</title>
+                <link>http://66.240.202.106:9040/</link>
+                <thumbnail>http://images.viaway.com/5474267_180.png</thumbnail>
+                </subitem>
+				
+			<subitem>
+                <title>[COLOR yellow]LA FM (MEDELLIN) 106.3[/COLOR]</title>
+                <link>http://live4.rcnmundo.com/lafmmedellin.mp3</link>
+                <thumbnail>http://www.lafm.com.co/sites/default/files/imagenes/logo_la_fm_medellin_arevalo_1350322878.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]LA VOZ DE LA RAZA 1200[/COLOR]</title>
+                <link>http://23.91.25.110:8085/raza</link>
+                <thumbnail>http://lavozdelaraza.com/radiolivemain.gif</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]RADIO CRISTAL 89.9[/COLOR]</title>
+                <link>http://live2.rcnmundo.com/radiocristal.mp3</link>
+                <thumbnail>http://www.discotecacharlesdegaulle.com/uploads/eventos/16.png</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]RADIO 123VALLENATO [/COLOR]</title>
+                <link>http://radiolatina.info:7087/</link>
+                <thumbnail>http://ondasonidera.com/Radio/logos-radios/123-vallenato.jpg?v=0</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]RADIO ONDAS DE LA MONTAÑA 1350[/COLOR]</title>
+                <link>http://199.217.118.14:8141/stream</link>
+                <thumbnail>https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/c0.139.851.315/p851x315/10382279_707624762612624_5130583492794097530_o.jpg</thumbnail>
+                </subitem>
+				
+				
+				
+				<subitem>
+                <title>[COLOR yellow]RADIO PAISA[/COLOR]</title>
+                <link>http://live3.rcnmundo.com/radiopaisa.mp3</link>
+                <thumbnail>http://i.img.co/radio/42/90/29042_290.png</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]BESAME [/COLOR]</title>
+                <link>http://1061.live.streamtheworld.com/BESAME_NACIONAL_SC</link>
+                <thumbnail>http://3.bp.blogspot.com/-gafSBJWrrW0/UGFIwv8RPOI/AAAAAAAAAlA/RNsOeak1MeU/s200/B%25C3%25A9same%2BFM%2Bpor%2BRadio%2BVjrigo%2540lex%2BProductions.png</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]LA MEGA[/COLOR]</title>
+                <link>http://live3.rcnmundo.com/lamegamedellin.mp3</link>
+                <thumbnail>http://www.mundonets.com/images/la-mega.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]RCN RADIO[/COLOR]</title>
+                <link>http://live2.rcnmundo.com/rcnlaradiomedellin.mp3</link>
+                <thumbnail>http://upload.wikimedia.org/wikipedia/commons/6/69/RCN_la_Radio_logo_4.png</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]LA Z[/COLOR]</title>
+                <link>http://66.240.202.106:8070/;</link>
+                <thumbnail>http://www.terra.com.co/templates/lazteprende/img/la-z.png</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]RUMBA CHOKE[/COLOR]</title>
+                <link>http://live2.rcnmundo.com/rumbachoke.mp3</link>
+                <thumbnail>http://www.rcnmundo.com/movil/img/p12189.gif</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]RUMBA STEREO[/COLOR]</title>
+                <link>http://live1.rcnmundo.com/rumbamedellin.mp3</link>
+                <thumbnail>http://www.nevolutioncolombia.com/panel/admin/img_sub/20100910102240rumba%20bogota%20logo.jpg</thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]CAPITULO 9[/COLOR]</title>
+                <link></link>
+                <thumbnail></thumbnail>
+                </subitem>
+				
+				<subitem>
+                <title>[COLOR yellow]CAPITULO 9[/COLOR]</title>
+                <link></link>
+                <thumbnail></thumbnail>
+                </subitem>
+				
+				
+				
+				
+				https://dl.dropboxusercontent.com/u/37645340/Radio%20Uk.xml
+				
+				<channel>
+	<name>[COLOR yellow]-----[/COLOR][COLOR blue][COLOR magenta][/COLOR]RADIO DEL REINO UNIDO[/COLOR][COLOR yellow]-----[/COLOR]    [COLOR orange][/COLOR]</name>
+    <externallink></externallink>
+	<thumbnail>http://television.png</thumbnail>
+    <fanart>http://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/445/offlinehbpl.hbpl.co.uk/news/OWM/britainlovesradio-20141106020506655.jpg</fanart>
+				
+				<channel>
+    <name>[COLOR yellow]-----[/COLOR][COLOR blue][COLOR magenta][/COLOR]RADIO DEL REINO UNIDO[/COLOR][COLOR yellow]-----[/COLOR]    [COLOR orange]LISTA DE MATT[/COLOR]</name>
+    <externallink>http://pastebin.com/raw.php?i=2SxT4CNQ</externallink>
+	<thumbnail>http://television.png</thumbnail>
+    <fanart>http://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/445/offlinehbpl.hbpl.co.uk/news/OWM/britainlovesradio-20141106020506655.jpg</fanart>
+				
+				
+				
+				http://pastebin.com/raw.php?i=2SxT4CNQ UK RADIO MATT
+				
+				<channel>
+    <name>[COLOR yellow]-----[/COLOR][COLOR blue][COLOR magenta][/COLOR]LIVE PIRATE AND ONLINE RADIO[/COLOR][COLOR yellow]-----[/COLOR]    [COLOR orange][/COLOR]</name>
+    <externallink>http://pastebin.com/raw.php?i=rQsnaYiE</externallink>
+	<thumbnail>http://television.png</thumbnail>
+    <fanart>http://vybesradiouk.net/wp-content/uploads/2013/10/dj-hd-2469.jpeg</fanart>
+				
+				
+				
+				
+            </subitems>	
+        </channel>
+    </subchannel>
+	
+	
+	
+    </items>	
+    </channel>
+
+</channels>	
