@@ -1,0 +1,460 @@
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+
+
+ <item>
+    <title>           [COLOR oldlace][B][I]              LO MEJOR DEL SONIDO MUNDIAL[/B][/I][/COLOR]</title>
+    <link>--live</link>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    </item>
+	
+<item>
+<title>[COLOR blue]MI MUSICA HD[/COLOR]    [COLOR magenta][/COLOR]</title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/MMHD/tu1_manifest.m3u8</link>
+<thumbnail>http://img.new.livestream.com/events/00000000001877c7/3b925174-21e2-4abe-8622-6847ebefa65e_48889.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR blue]TIGO MUSIC[/COLOR]    [COLOR magenta][/COLOR]</title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/MESH/tu1_manifest.m3u8</link>
+<thumbnail>http://www.millicom.com/media/2100669/tigo-music-640-new.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR blue]CANTINAZO[/COLOR]    [COLOR magenta][/COLOR]</title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/CANT/tu1_manifest.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/378800000082380333/0cdcf2642b0477806ce6f4d1e0a21d4c.jpeg</thumbnail>
+</item>
+	
+	
+<item>
+<title>[COLOR yellow]TELE VITROLA[/COLOR]    [COLOR magenta][/COLOR]</title>
+<link>rtmp://186.155.200.118:1935/live/ playpath=Televitrola swfUrl=http://p.jwpcdn.com/6/12/jwplayer.flash.swf live=1 pageUrl=http://www.televitrola.com/ timeout=15</link>
+<thumbnail>http://1.bp.blogspot.com/-xEYKQa1N4KA/UrC6D812RbI/AAAAAAAAEUI/dbI1c70XQ1I/s320/televitrola.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]TV POLANCO MUSICA[/COLOR]     [COLOR magenta][/COLOR]</title>
+<link>rtmp://186.155.200.118:1935/live/ playpath=ColombiasuMusica swfUrl=http://p.jwpcdn.com/6/12/jwplayer.flash.swf live=1 pageUrl=http://www.colombiasumusica.com/ timeout=15</link>
+<thumbnail>http://polanco.tv/images/LOGODEPOLANCO.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]DISCO TK MUSICA[/COLOR]    [COLOR magenta][/COLOR] </title>
+<link>rtmp://186.155.200.118:1935/live/ playpath=discotktv swfUrl=http://p.jwpcdn.com/6/12/jwplayer.flash.swf live=1 pageUrl=http://www.discotktv.com/iframe/index.html timeout=15</link>
+<thumbnail>http://djestebancr.com/images/content/logo_discotk.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]TELE MUSICA[/COLOR]   [COLOR magenta][/COLOR] </title>
+<link>rtmp://186.155.200.118:1935/live/ playpath=telemusica swfUrl=http://p.jwpcdn.com/6/12/jwplayer.flash.swf live=1 pageUrl=http://www.telemusicahit.com/ timeout=15</link>
+<thumbnail>http://4.bp.blogspot.com/-P6p7967q0RM/U5k_TMCDSfI/AAAAAAAADqY/iWxoySn9wHk/s200/TELEMUSICA.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]MELODIAS CANAL[/COLOR]   [COLOR magenta][/COLOR]</title>
+<link>rtmp://186.155.200.118:1935/live/ playpath=MelodyChannel swfUrl=http://p.jwpcdn.com/6/12/jwplayer.flash.swf live=1 pageUrl=http://www.melodychanneltv.com/ timeout=15</link>
+<thumbnail>http://1.bp.blogspot.com/-l35pYHy9ss4/T1nPlMEdFKI/AAAAAAAAA3Q/pdj0Ggq7d3A/s1600/Melody+Aflam+channel+Live+EG+Line.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]VH1 CLASSIC[/COLOR]  [COLOR magenta][/COLOR]</title>
+<link></link>
+<thumbnail>http://gradajoven.es/logo/logo/all/ARENAVISION%203.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]VH1 CLASSIC[/COLOR]  [COLOR magenta][/COLOR]</title>
+<link></link>
+<thumbnail>http://gradajoven.es/logo/logo/all/ARENAVISION%203.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR blue]ONE TV/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://server5.stweb.tv/radioone/live/playlist.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]Music:VEVO 1 HD/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/06/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 10/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/04/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 12/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/04/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 13/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/05/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 15/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/05/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 16/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/06/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 17 /[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/06/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 18/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/06/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 2 HD/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/06/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 3 HD/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/06/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 4/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/02/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 5/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/02/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 6 /[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/02/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 7/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/03/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 8/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/03/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]Music:VEVO 9/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/03/prog_index.m3u8</link>
+<thumbnail>https://i.ytimg.com/vi/yzOF4YFQkKE/maxresdefault.jpg</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+<item>
+<title>[COLOR blue]VH1 Classics/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vod.cdn.iutpcdn.com/LIVE/H01/CANAL728/PROFILE03.m3u8</link>
+<thumbnail>http://tv.tecnotv.net/logo/vh1%20classisc.png</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+ 
+  
+<item>
+<title>[COLOR blue]MTV/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vod.cdn.iutpcdn.com/LIVE/H01/CANAL726/PROFILE03.m3u8</link>
+<thumbnail>http://tv.tecnotv.net/logo/mtv.png</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+<item>
+<title>[COLOR blue]MTV Live/[COLOR orange] MUSICA [COLOR red] [/COLOR]</title>
+<link>http://vod.cdn.iutpcdn.com/LIVE/H01/CANAL701/PROFILE03.m3u8</link>
+<thumbnail>http://tv.tecnotv.net/logo/mtv%20live%20hd.png</thumbnail>
+<fanart>http://www.mundo-r.com/sites/default/files/imce/TV/tv_total_hd_musica_600.png</fanart>
+</item>
+
+
+
+<item>
+<title>[COLOR cyan]DJING[/COLOR]  [COLOR magenta][/COLOR]</title>
+<link>http://www.djing.com/tv/h-05.m3u8</link>
+<thumbnail>http://www.djing.com/img/facebook.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]VEVO CH1[/COLOR]  [COLOR magenta]+NUEVO[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/04/prog_index.m3u8</link>
+<thumbnail>http://www.tubefilter.com/wp-content/uploads/2014/05/vevo-newfronts-600x369.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]VEVO CH2[/COLOR]  [COLOR magenta]+NUEVO[/COLOR]</title>
+<link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/04/prog_index.m3u8</link>
+<thumbnail>http://www.lucky-charmes.com/wp-content/uploads/2014/01/VEVO-Android-App-For-Music.png</thumbnail>
+</item>
+
+ <item>
+<title>[COLOR cyan]MTUNES HD[/COLOR]  [COLOR magenta][/COLOR]</title>
+<link></link>
+<thumbnail>http://b.vimeocdn.com/ts/282/282/282282149_640.jpg</thumbnail>
+</item>
+
+ 
+	<item>
+<title>[COLOR cyan]KISS UK[/COLOR]  [COLOR magenta][/COLOR]</title>
+<link></link>
+<thumbnail>http://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/445/?sUrl=http://offlinehbpl.hbpl.co.uk/news/OWM/0847F9DD-A568-9065-73B0384C780A9539.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR cyan]DANCE HD[/COLOR]</title>
+<link></link>
+<thumbnail>http://en.kingofsat.net/jpg/dancetv.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR cyan]ELECTROSOUND TV[/COLOR]  [COLOR magenta][/COLOR]</title>
+<link>rtmp://www.electrosound.tv:1935/public/stream<link>
+<thumbnail>http://static.radio.de/images/broadcasts/0b/10/3697/w175.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR cyan]ESKA ROCK[/COLOR]</title>
+<link>http://stream.smcloud.net/live/eska_rock/playlist.m3u8</link>
+<thumbnail>http://img2.wikia.nocookie.net/__cb20121023154708/logopedia/images/7/7c/Eska.rock.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]ESKA TV[/COLOR]</title>
+<link>http://stream.smcloud.net/live/eskatv/playlist.m3u8</link>
+<thumbnail>http://thumbs.eska.pl/common/8/3/s/837810cmSG.jpg/ru-0-r-244,244-n-837810cmSG.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]ESKA PARTY[/COLOR]</title>
+<link>http://stream.smcloud.net/live/eska_party/playlist.m3u8</link>
+<thumbnail>http://thumbs.eska.pl/common/8/3/s/837810cmSG.jpg/ru-0-r-244,244-n-837810cmSG.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]ESKA BEST MUSIC[/COLOR]</title>
+<link>http://stream.smcloud.net/live/best/playlist.m3u8</link>
+<thumbnail>http://thumbs.eska.pl/common/9/2/s/923254SHhQ.jpg/ru-0-r-244,244-n-923254SHhQ.jpg</thumbnail>
+</item>
+
+<item>
+	<title>[COLOR cyan]ESKA GO[/COLOR]</title>
+	<link>http://stream.smcloud.net/live/vox/playlist.m3u8</link>
+	<thumbnail>http://i.imgur.com/z4245Nd.jpg</thumbnail>
+</item>
+
+<item>
+	<title>[COLOR cyan]WAWA[/COLOR]</title>
+	<link>http://stream.smcloud.net/live/wawa/playlist.m3u8</link>
+	<thumbnail>http://i.imgur.com/zFglyh9.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]RADIO 105[/COLOR]</title>
+<link>rtmp://fms.105.net/live/105Test1</link>
+<thumbnail>http://www.105.net/gfx/lgo/radio-105-network.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]JIM[/COLOR]</title>
+<link>rtmp://rtmp.jim.stream.vmmacdn.be/vmma-jim-rtmplive-live/jim</link>
+<thumbnail>http://dekosmonauten.be/wp-content/uploads/2011/08/url-2.jpeg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]KISS TV[/COLOR]</title>
+<link>rtmp://tst.es.flash.glb.ipercast.net/tst.es-live/ playpath=live swfUrl=http://www.kisstelevision.es/flowplayer-3.2.16.swf live=vcx7 timeout=15</link>
+<thumbnail>http://www.ranklogos.com/wp-content/uploads/2012/04/kiss-tv-logo-1.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]VIRGIN TV[/COLOR]</title>
+<link>rtmp://fms.105.net:1935/live playpath=virgin1 swfUrl=http://video.virginradioitaly.it/co...y.it/com/universalmind/tv/virgin/videoXML.xml live=1 pageUrl=http://verlatelegratis.com/canales/virgintv.php timeout=15</link>
+<thumbnail>http://4.bp.blogspot.com/--VTpfgywu1Q/TufXCki2QRI/AAAAAAAAAFk/fElcgOele0Q/s1600/virgin_tv.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR cyan]FIRST MUSIC HD[/COLOR]</title>
+<link></link>
+<thumbnail>http://ak6.picdn.net/shutterstock/videos/595072/preview/stock-footage-shining-music-text-music-hd-shining-dancing-text-music-great-for-all-music-and-dance.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]JAZZ TV[/COLOR]</title>
+<link></link>
+<thumbnail>http://4.bp.blogspot.com/-BTE6F20qb_c/TaPCf6LGIsI/AAAAAAAAAa4/S5b0AidFFsU/s1600/jazz.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]EUROPA PLUS MUSIC[/COLOR]</title>
+<link>rtmp://europaplus.cdnvideo.ru:1935/europaplus-live/eptv_main.sdp</link>
+<thumbnail>http://tv-online.at.ua/logo/Europa_Plus.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]PARTY TV ENTERTAIMENT[/COLOR]</title>
+<link></link>
+<thumbnail>http://www.rayman-fanpage.de/rayman4/grafik_rabbids3/logos/rayman_raving_rabbids_tv_party_400.gif</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]ROUGE TV FRANCE[/COLOR]</title>
+<link></link>
+<thumbnail>http://www.rougetv.ch/img/logo_rougetv.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]FRESH TV MUSIC[/COLOR]</title>
+<link></link>
+<thumbnail>http://www.umsu.manchester.ac.uk/africar/wordpress/wp-content/uploads/940360-Fresh-TV1.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]ROCK HD[/COLOR]</title>
+<link></link>
+<thumbnail>http://www.venicequeen.it/cms/images/stories/rock_tv_nero.gif</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]OCHO TV MUSIC[/COLOR]</title>
+<link></link>
+<thumbnail>http://www.ochotv.com/img/logo_ochotv_gde.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]PINK TV[/COLOR]</title>
+<link>rtmp://fms.pik-tv.com/live/piktv2pik2tv.flv</link>
+<thumbnail>http://www.svet.rs/wp-content/uploads/2012/07/pink.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]POLO TV[/COLOR]</title>
+<link>rtmp://stream.smcloud.net/live/polotv</link>
+<thumbnail>http://1.bp.blogspot.com/-JjoPVnAcca4/UYFNcSfPzJI/AAAAAAAAM9k/hVdhjXnDGoI/s1600/polo_tv_logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]DELUXE 80S EXTREME[/COLOR]</title>
+<link></link>
+<thumbnail>http://cdn002.itunedradio.com/img/logos/deluxe_80s_extreme.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]DELUXE ALLSTARS[/COLOR]</title>
+<link></link>
+<thumbnail>http://de.kingofsat.net/jpg/deluxemusic.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]VH1 CLASSICS[/COLOR]       [COLOR lime]P2P[/COLOR]</title> 
+<link>plugin://plugin.video.p2p-streams/?url=$doregex[url]&amp;mode=1&amp;name=BT+Sport+1</link>
+<regex>
+<name>url</name>	
+<expres>this.loadPlayer\("([^"]*)</expres>
+<page>http://allfon.tv/?id=111#4</page>
+<referer></referer>
+</regex>
+<thumbnail>http://gradajoven.es/logo/logo/all/ARENAVISION%203.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+<item>
+<title>[COLOR cyan]VH1 CLASSIC[/COLOR]</title>
+<link></link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/de/thumb/e/ec/VH1_Classic_UK-old.svg/551px-VH1_Classic_UK-old.svg.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]HIT MUSIC CHANNEL[/COLOR]</title>
+<link>rtmp://92.249.129.130:1935/live playpath=music1 swfUrl=http://myhit.tv/flash/flowplayer_3/flowplayer.musicchannel.swf pageUrl=http://myhit.tv token=mafUp8VaxEcRegEn# live=1 timeout=15</link>
+<thumbnail>http://users2.ml.mindenkilapja.hu/users/tv-onlinecsatornak/uploads/HiTMC_logo.png</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>[COLOR cyan]V[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]V[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
