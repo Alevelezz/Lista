@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+
+<item>
+    <title>[COLOR oldlace]                   UNITED KINGDOM TV ON CABLEDIRECTO[/COLOR]</title>
+    <link>--live</link>
+    <thumbnail>http://i2mag.com/wp-content/uploads/2012/09/Unotelly-Channels.jpg</thumbnail>
+    </item>
+
+
+
+<item>
+    <title>[COLOR blue]*********************************[/COLOR]  [COLOR red]NEWS[/COLOR]  [COLOR blue]*************************[/COLOR]</title>
+    <link>UK</link>
+    <thumbnail>http://staging.mediawales.co.uk/_files/images//jun_10/mw__1276511479_News_Image.jpg</thumbnail>
+    </item>
+	
+	
+	<item>
+<title>[COLOR oldlace]LONDON EYE[/COLOR]</title>
+<link>$doregex[m3u8]</link>
+<regex>
+<name>m3u8</name>
+<expres>450\s*(.*)\s</expres>
+<page>$doregex[get-url]</page>
+<referer>http://www.guoman.com/</referer>
+<regex>
+<name>get-url</name>
+<expres>$pyFunction:'$doregex[url]'.replace('|','%7C')</expres>
+<page></page>
+</regex>
+<regex>
+<name>url</name>
+<expres>source src="(.*?)"</expres>
+<page>$doregex[ifr]</page>
+<referer>http://www.guoman.com/</referer>
+</regex>
+<regex>
+<name>ifr</name>
+<expres>iframe src="(.*?)"</expres>
+<page>http://live.streamdays.com/a5qxmfd0</page>
+<referer>http://www.guoman.com/</referer>
+</regex>
+<thumbnail>http://www.claytonhotelchiswick.com/wp-content/uploads/2015/03/london-eye-2048x1024.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]TOWER BRIDGE[/COLOR]</title>
+<link>http://rtmp.octopus.tv:1935/live/towerbridge.stream/playlist.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/8/8b/Tower_bridge_London_Twilight_-_November_2006.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR cyan]ALJAZEERA[/COLOR]</title>
+<link>rtmp://aljazeeraflashlivefs.fplive.net/aljazeeraflashlive-live/aljazeera_eng_high</link>
+<thumbnail>http://www.qassimy.com/channel-tv-live/files/image/al_jazeera_english_news_live_online_free_channel.jpg</thumbnail>
+</item>
+
+
+
+<item>			
+	<title>[COLOR oldlace][B]Sky News[COLOR blue] HD[/COLOR][/B]</title>        
+    <link></link>
+    <thumbnail>http://theident.gallery/thumbs/skynewshd_2010_SNHD-2010-STING-1-2.jpg</thumbnail>
+    </item>
+	
+	<item>
+<title>[COLOR oldlace]SKY NEWS[/COLOR]    [COLOR lime]with multiple resolutions[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://tomburke.co.uk/wp-content/uploads/2014/11/sky-news-logo.png</thumbnail>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR red] Resolution:[/COLOR][COLOR yellow] [makelist.param1]p[/COLOR]</title>
+<link>[makelist.param2]</link>
+<thumbnail>http://tomburke.co.uk/wp-content/uploads/2014/11/sky-news-logo.png</thumbnail>
+]]></listrepeat>
+<expres>x(\d+).*\n(.*?)\s</expres>
+<page>$doregex[geturl]</page>
+</regex>
+<regex>
+<name>geturl</name>
+<expres><![CDATA[#$pyFunction
+import requests, re, xbmcgui, xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url = 'https://www.youtube.com/watch?v=y60wDzZt8yg'):
+ session = requests.Session()
+ session.cookies = Cookie_Jar
+ source = session.get(url)
+ m3u8 = re.findall('"hlsvp":"(.*?)"', source.text)[0].replace('\/','/').replace('%2C',',').replace('%3A',':')
+ return m3u8
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+	
+	<item>
+<title>[COLOR cyan]SKY NEWS[/COLOR]     [COLOR lime]with livestreamer[/COLOR]</title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,):
+ import re
+ from livestreamer import Livestreamer
+ session = Livestreamer()
+ streams = session.streams("https://www.youtube.com/watch?v=y60wDzZt8yg")
+ best = re.findall("'best'.*?HLSStream\('(.*?)'", str(streams))[0]
+ return best
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://theident.gallery/thumbs/skynewshd_2010_SNHD-2010-STING-1-2.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]SKY NEWS [/COLOR]</title>
+<link>$doregex[url]</link>
+<regex>
+    <name>url</name>
+    <expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>
+    <page></page>
+</regex>
+<regex>
+    <name>jsonurl</name>
+    <expres>hlsvp":"(.*?)"</expres>
+    <page>https://www.youtube.com/watch?v=y60wDzZt8yg</page>
+</regex>
+<thumbnail>http://theident.gallery/thumbs/skynewshd_2010_SNHD-2010-STING-1-2.jpg</thumbnail>
+</item>
+
+
+
+
+	
+	<#item>
+<title>[COLOR cyan]SKY NEWS YOUTUBE[/COLOR]</title>
+<link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=y60wDzZt8yg</link>
+<thumbnail>http://theident.gallery/thumbs/skynewshd_2010_SNHD-2010-STING-1-2.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]SKY NEWS 2[/COLOR]</title>
+<link></link>
+<thumbnail>http://theident.gallery/thumbs/skynewshd_2010_SNHD-2010-STING-1-2.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]BBC NEWS[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/27</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=27&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR orange]BBC NEWS[/COLOR]</title>
+<ftv>27</ftv>
+<thumbnail>http://ichef.bbci.co.uk/images/ic/640x360/p015jpms.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]SKY NEWS[/COLOR]</title>
+<link></link>
+<thumbnail>http://s6.postimg.org/w7najylu9/sky_news.png</thumbnail>
+<fanart>http://s6.postimg.org/607uzeihd/Main_Background.png</fanart>
+</item>
+
+<item>			
+	<title>[COLOR oldlace][B]BBC News[COLOR blue] HD[/COLOR][/B]</title>        
+    <link></link>
+    <thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/2/24/BBC_News_HD_Logo.svg/1280px-BBC_News_HD_Logo.svg.png</thumbnail>
+    </item>
+
+<item>
+<title>[COLOR cyan]BBC NEWS[/COLOR]</title>
+<link></link>
+<thumbnail>http://s6.postimg.org/x63nm8z69/BBCNews.png</thumbnail>
+<fanart>http://s6.postimg.org/607uzeihd/Main_Background.png</fanart>
+</item>
+
+<item>
+	<title>[COLOR cyan]BBC NEWS[/COLOR]         [COLOR lime]HD[/COLOR]</title>
+	<link></link>
+	<thumbnail>http://i.imgur.com/sDwL3Tk.png</thumbnail>
+</item>
+
+<item>
+	<title>[COLOR cyan]BBC WORLD NEWS[/COLOR]         [COLOR lime][/COLOR]</title>
+	<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/BBCW/tu1_1.m3u8</link>
+	<thumbnail>http://i.imgur.com/sDwL3Tk.png</thumbnail>
+</item>
+
+<item>			
+	<title>[COLOR oldlace][B]BBC WORLD News[COLOR blue] HD[/COLOR][/B]</title>        
+    <link></link>
+    <thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/2/24/BBC_News_HD_Logo.svg/1280px-BBC_News_HD_Logo.svg.png</thumbnail>
+    </item>
+	
+	
+	
+	
+	<item>
+<title>[COLOR oldlace]EURONEWS[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/1672</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=1672&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://3.bp.blogspot.com/-PGV2NXjPAYU/UX_GO3erRZI/AAAAAAAA3Jg/q1ieedGaBmw/s1600/euronews-logo.jpeg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]EURONEWS ESP[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/2906</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=2906&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://3.bp.blogspot.com/-PGV2NXjPAYU/UX_GO3erRZI/AAAAAAAA3Jg/q1ieedGaBmw/s1600/euronews-logo.jpeg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR cyan]EURONEWS[/COLOR]</title>
+<link>http://fr-par-iphone-2.cdn.hexaglobe.net/streaming/euronews_ewns/ipad_en.m3u8</link>
+<thumbnail>http://3.bp.blogspot.com/-PGV2NXjPAYU/UX_GO3erRZI/AAAAAAAA3Jg/q1ieedGaBmw/s1600/euronews-logo.jpeg</thumbnail>
+</item>
+
+<item>
+	<title>[COLOR oldlace]CNN[/COLOR]</title>
+	<link>plugin://plugin.video.tvtime.tva/?channel=CNN&amp;mode=play</link>
+	<thumbnail>http://fernandoromao.net/wp-content/uploads/2012/06/cnn-international.jpg</thumbnail>
+	</item>
+
+<item>
+<title>[COLOR cyan]CNN[/COLOR]  [COLOR orange] [/COLOR] </title>
+<link>http://d1hya96e2cm7qi.cloudfront.net/Live/_definst_/sweetbcha1novD177_W_150.sdp/media_7419.m3u8</link>
+<thumbnail>http://fernandoromao.net/wp-content/uploads/2012/06/cnn-international.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]CNN INTERNACIONAL[/COLOR]</title>
+<link></link>
+<thumbnail>http://fernandoromao.net/wp-content/uploads/2012/06/cnn-international.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]FRANCE 24[/COLOR] with livestreamer</title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,):
+ import re
+ from livestreamer import Livestreamer
+ session = Livestreamer()
+ streams = session.streams("https://www.youtube.com/watch?v=gq11un3xqsA")
+ best = re.findall("'best'.*?HLSStream\('(.*?)'", str(streams))[0]
+ return best
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://3.bp.blogspot.com/-PGV2NXjPAYU/UX_GO3erRZI/AAAAAAAA3Jg/q1ieedGaBmw/s1600/euronews-logo.jpeg</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[COLOR oldlace]FRANCE 24[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/298</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=298&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://3.bp.blogspot.com/-PGV2NXjPAYU/UX_GO3erRZI/AAAAAAAA3Jg/q1ieedGaBmw/s1600/euronews-logo.jpeg</thumbnail>
+</item>
+
+
+
+		<item>
+<title>[COLOR cyan]FRANCE 24[/COLOR]</title>
+<ftv>298</ftv>
+<thumbnail>http://a81.phobos.apple.com/us/r30/Purple4/v4/d1/ce/0f/d1ce0fe5-3f77-4551-3b96-7a770ed8f55b/mzl.avnuounj.png</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR cyan]DW NEWS[/COLOR] with livestreamer</title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,):
+ import re
+ from livestreamer import Livestreamer
+ session = Livestreamer()
+ streams = session.streams("https://www.youtube.com/watch?v=gNosnzCaS4I")
+ best = re.findall("'best'.*?HLSStream\('(.*?)'", str(streams))[0]
+ return best
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://pbs.twimg.com/profile_images/608213167496417280/QSxgcLn_.png</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[COLOR cyan] I24 NEWS[/COLOR]       [COLOR lime][/COLOR]</title>
+<link></link>
+<thumbnail>http://a81.phobos.apple.com/us/r30/Purple4/v4/d1/ce/0f/d1ce0fe5-3f77-4551-3b96-7a770ed8f55b/mzl.avnuounj.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]ABC NEWS[/COLOR]</title>
+<link>http://abclive.abcnews.com/i/abc_live4@136330/index_1200_av-b.m3u8</link>
+<thumbnail>http://a.abcnews.com/images/US/abc_news_default_2000x2000_update_16x9t_384.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]ALJAZEERA[/COLOR]        [COLOR pink] filmon addon requerido[/COLOR]</title>
+<ftv>4</ftv>
+<thumbnail>http://s6.postimg.org/da7o6pi4x/aljazeera.png</thumbnail>
+<fanart>http://s6.postimg.org/607uzeihd/Main_Background.png</fanart>
+</item>
+
+<item>
+<title>[COLOR cyan]CNBC UK[/COLOR]        [COLOR pink] filmon addon requerido[/COLOR] </title>
+<link>http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/cnbc_eu/ls_satlink/b_828.m3u8</link>
+<thumbnail>http://s6.postimg.org/vtlykd1qp/CNBC.png</thumbnail>
+<fanart>http://s6.postimg.org/607uzeihd/Main_Background.png</fanart>
+</item>
+
+<item>
+<title>[COLOR cyan]BLOOMBERG[/COLOR]        [COLOR pink] filmon addon requerido[/COLOR] </title>
+<ftv>81</ftv>
+<thumbnail>http://s6.postimg.org/suf1x8s9d/bloomberg.png</thumbnail>
+<fanart>http://s6.postimg.org/607uzeihd/Main_Background.png</fanart>
+</item>
+
+<item>
+<title>[COLOR cyan]CCTV NEWS[/COLOR]      [COLOR pink] filmon addon requerido[/COLOR]</title>
+<ftv>1675</ftv>
+<thumbnail>http://s6.postimg.org/io6ge97v5/CCTV_News.png</thumbnail>
+<fanart>http://s6.postimg.org/607uzeihd/Main_Background.png</fanart>
+</item>
+
+<item>
+<title>[COLOR cyan]EURONEWS[/COLOR]      [COLOR pink] filmon addon requerido[/COLOR] </title>
+<ftv>1672</ftv>
+<thumbnail>http://s6.postimg.org/bfutoyv4h/euronews.png</thumbnail>
+<fanart>http://s6.postimg.org/607uzeihd/Main_Background.png</fanart>
+</item>
+
+
+
+
+
+
+<item>
+<title>[COLOR cyan]TEST[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+
+
+
+
+
+
+	
+	<item>
+    <title>[COLOR blue]********************************[/COLOR]  [COLOR red]LONDON TV[/COLOR]  [COLOR blue]********************************[/COLOR]</title>
+    <link>UK</link>
+    <thumbnail>http://www.world-of-accessories.co.uk/images/large/64-120313191732.jpg</thumbnail>
+    </item>
+	
+	<item>
+<title>[COLOR oldlace] .Zem TV UK Now[/COLOR]</title>
+<link>http://ignora.me</link>
+<jsonrpc>plugin://plugin.video.ZemTV-shani/?mode=66&amp;name=%5bCOLOR%20red%5d%3e%3eclick%20here%20for%20all%20categories%3c%3c%5b%2fCOLOR%5d&amp;url=uktv</jsonrpc>
+<thumbnail>http://www.zemtv.com/wp-content/uploads/2014/12/zem-logo-final1.png</thumbnail>
+</item>
+	
+	
+	
+	
+			
+
+		<item>
+<title>[COLOR yellow]LONDON LIVE[/COLOR]</title>
+<link>http://bcoveliveios-i.akamaihd.net/hls/live/217434/3083279840001/master_900.m3u8</link>
+<thumbnail>http://www.arthousecrouchend.co.uk/wp-content/uploads/2014/04/London_Live_LOGO.jpg</thumbnail>
+</item>
+
+<item>
+	<title>[COLOR orange]BBC ONE[/COLOR]      [COLOR lime]HD[/COLOR]</title>
+	<link></link>
+	<thumbnail>http://i.imgur.com/LNntCZg.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]BBC ONE[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/14</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=14&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/1/1a/BBC_One_2002.png</thumbnail>
+</item>
+
+	
+		<item>
+<title>[COLOR orange]BBC ONE[/COLOR]</title>
+<ftv>14</ftv>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/1/1a/BBC_One_2002.png</thumbnail>
+</item>
+
+<item>
+	<title>[COLOR orange]BBC TWO[/COLOR]      [COLOR lime]HD[/COLOR]</title>
+	<link></link>
+	<thumbnail>http://i.imgur.com/yqkAyRC.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]BBC TWO[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/25</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=25&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://i1.cdnds.net/10/24/broadcasting_bbc_two.jpg</thumbnail>
+</item>
+
+		<item>
+<title>[COLOR orange]BBC TWO[/COLOR]</title>
+<ftv>25</ftv>
+<thumbnail>http://i1.cdnds.net/10/24/broadcasting_bbc_two.jpg</thumbnail>
+</item>
+
+<item>
+	<title>[COLOR orange]BBC THREE[/COLOR]      [COLOR lime]HD[/COLOR]</title>
+	<link></link>
+	<thumbnail>http://i.imgur.com/ttE9Tur.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]BBC THREE[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/113</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=113&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://static.trustedreviews.com/94/00002b398/d6a4_orh350w620/BBC-Three.jpg</thumbnail>
+</item>
+
+		<item>
+<title>[COLOR orange]BBC THREE[/COLOR]</title>
+<ftv>113</ftv>
+<thumbnail>http://static.trustedreviews.com/94/00002b398/d6a4_orh350w620/BBC-Three.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]BBC FOUR[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/103</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=103&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://i.imgur.com/Lq5TFDi.png</thumbnail>
+</item>
+
+<item>
+	<title>[COLOR orange]BBC FOUR[/COLOR]      [COLOR lime]HD[/COLOR]</title>
+	<link></link>
+	<thumbnail>http://i.imgur.com/Lq5TFDi.png</thumbnail>
+</item>
+
+		<item>
+<title>[COLOR orange]BBC FOUR[/COLOR]</title>
+<ftv>103</ftv>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/thumb/5/58/BBC_Four_HD_Logo.svg/1280px-BBC_Four_HD_Logo.svg.png</thumbnail>
+</item>
+
+<item>
+	<title>[COLOR orange]FILM 4[/COLOR]      [COLOR lime]HD[/COLOR]</title>
+	<link></link>
+	<thumbnail>http://i.imgur.com/fMxK0WK.png</thumbnail>
+</item>
+
+<item>
+	<title>[COLOR orange]CHANNEL 4[/COLOR]      [COLOR lime]HD[/COLOR]</title>
+	<link></link>
+	<thumbnail>http://advanced-television.com/wp-content/uploads/2011/05/channel-4-logo.gif</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]CHANNEL 4[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/2</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=2&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://advanced-television.com/wp-content/uploads/2011/05/channel-4-logo.gif</thumbnail>
+</item>
+
+		<item>
+<title>[COLOR orange]CHANNEL 4[/COLOR]</title>
+<ftv>2</ftv>
+<thumbnail>http://advanced-television.com/wp-content/uploads/2011/05/channel-4-logo.gif</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]MORE 4[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/97</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=97&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+		<item>
+<title>[COLOR orange]CHANNEL 5[/COLOR]</title>
+<ftv>22</ftv>
+<thumbnail>http://tv-live.org.uk/wp/media/resources/five2002.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]5 USA[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/845</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=845&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.livetvonlinewatchfree.com/wp-content/uploads/2014/11/5usa1.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR orange]5 USA[/COLOR]</title>
+<ftv>845</ftv>
+<thumbnail>http://www.livetvonlinewatchfree.com/wp-content/uploads/2014/11/5usa1.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]ITV1[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/11</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=11&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://advanced-television.com/wp-content/uploads/2011/05/channel-4-logo.gif</thumbnail>
+</item>
+	
+
+	<item>
+<title>[COLOR orange]ITV 1[/COLOR]</title>
+<ftv>11</ftv>
+<thumbnail>http://blog-images.muddymatches.co.uk.s3.amazonaws.com/muddy-news/wp-content/uploads/2013/09/ITV.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]ITV2[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/67</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=67&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]ITV3[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/26</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=26&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]ITV BE[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/3211</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=3211&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+	<title>[COLOR orange]TRAVEL CHANNEL[/COLOR]      [COLOR lime]HD[/COLOR]</title>
+	<link></link>
+	<thumbnail>http://www.travelchannel.co.uk/img/logos/logo.svg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]TRAVEL CHANNEL +1[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/842</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=842&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.travelchannel.co.uk/img/logos/logo.svg</thumbnail>
+</item>
+
+	<item>
+<title>[COLOR orange]TRAVEL CHANNEL +1[/COLOR]</title>
+<ftv>842</ftv>
+<thumbnail>http://www.travelchannel.co.uk/img/logos/logo.svg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]DAVE[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/370</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=370&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://dave.uktv.co.uk/static/img/default_image.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR orange]DAVE[/COLOR]</title>
+<ftv>370</ftv>
+<thumbnail>http://dave.uktv.co.uk/static/img/default_image.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]QUEST[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/2707</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=2707&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]E4[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/65</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=65&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://i.imgur.com/VgXUJXc.png</thumbnail>
+</item>
+
+<item>
+	<title>[COLOR orange]E4[/COLOR]      [COLOR lime]HD[/COLOR]</title>
+	<link></link>
+	<thumbnail>http://i.imgur.com/VgXUJXc.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR orange]E4[/COLOR]</title>
+<ftv>65</ftv>
+<thumbnail>http://d.ibtimes.co.uk/en/full/1435063/e4.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR orange]CBS DRAMA[/COLOR]</title>
+<ftv>1805</ftv>
+<thumbnail>http://hub.tv-ark.org.uk/images/otherchannels/cbs_images/cbsdrama_ident_2011a.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR orange]CBS REALITY[/COLOR]</title>
+<ftv>1808</ftv>
+<thumbnail>http://www.watchallchannels.com/wp-content/uploads/2015/02/CBS-Reality-TV.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]PICK[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/371</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=371&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR orange]PICK[/COLOR]</title>
+<ftv>371</ftv>
+<thumbnail>http://www.watchallchannels.com/wp-content/uploads/2015/02/Pick-TV.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]REALLY[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/2798</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=2798&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR orange]REALLY[/COLOR]</title>
+<ftv>372</ftv>
+<thumbnail>http://really.uktv.co.uk/static/img/default_image.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]YESTERDAY[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/1039</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=1039&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.televisual.com/images/news/3_1366327959_Screen%20shot%202013-04-18%20at%2023.49.54.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR orange]YESTERDAY[/COLOR]</title>
+<ftv>1039</ftv>
+<thumbnail>http://www.televisual.com/images/news/3_1366327959_Screen%20shot%202013-04-18%20at%2023.49.54.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]TRU TV[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/3707</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=3707&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR oldlace]ALIENS AND UFOS[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/3548</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=3548&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+
+<item>
+<title>https://sastatv.com/</title>
+<link>$doregex[makelist]</link>
+<regex>
+   <name>makelist</name>
+   <listrepeat><![CDATA[ 
+      <title> [makelist.param1]</title>
+      <link>$doregex[makelist2]</link>
+      <thumbnail>https://sastatv.com/website/img/logo.png</thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[aria-expanded="false">\n\W*(.*?)\W*<\/(?s)(.*?)dropdown closed">]]></expres>
+   <page>https://sastatv.com/demo/</page>
+   <cookieJar></cookieJar>
+</regex>
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[ 
+      <title> [makelist2.param2]</title>
+      <link>$doregex[finalurl]</link>
+      <thumbnail>https://sastatv.com/website/img/logo.png</thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[dropdown-item" href="([^"]+)">(.*?)<\/]]></expres>
+   <page>[makelist.param2]</page>
+</regex>
+<regex>
+<name>finalurl</name>
+<expres><![CDATA[#$pyFunction
+import requests, re, xbmcgui, xbmc
+def GetLSProData(page_data,Cookie_Jar,m,url = 'https://sastatv.com/demo/[makelist2.param1]'):
+ session = requests.Session()
+ session.cookies = Cookie_Jar
+ source = session.get(url)
+ m3u8 = re.findall('file.*?[",\'](http.*m3u8.*?)[",\']', source.text)[0]
+ return m3u8 + '|User-Agent=iPhone'
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://sastatv.com/website/img/logo.png</thumbnail>
+</item>
+
+
+
+<item>
+    <title>[COLOR blue]********************************[/COLOR]  [COLOR red]USA TV[/COLOR]  [COLOR blue]********************************[/COLOR]</title>
+    <link>UK</link>
+    <thumbnail>http://www.world-of-accessories.co.uk/images/large/64-120313191732.jpg</thumbnail>
+    </item>
+	
+	
+ <item>
+<title>[COLOR blue]E![/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+
+ <item>
+<title>[COLOR blue]TBS[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR blue]BRAVO [/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR blue]COMEDY CENTRAL [/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR blue]SYFY[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR blue]AMC[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR blue]FX[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]TNT[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]NAT GEO WILD[/COLOR]</title>
+<link></link>
+<thumbnail>http://pmcvariety.files.wordpress.com/2014/03/nat_geo_wild.jpg?w=1000&h=563&crop=1</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]FOX[/COLOR]</title>
+<thumbnail>http://www.lyngsat-logo.com/hires/ff/fox_asia.png</thumbnail>
+<link></link></item>
+</item>
+
+<item>
+<title>[COLOR yellow]FOX LIFE[/COLOR]</title>
+<thumbnail>http://www.lyngsat-logo.com/hires/ff/fox_life_ru.png</thumbnail>
+<link></link></item>
+</item>
+
+<item>
+<title>[COLOR yellow]BBC ENTERTAIMENT[/COLOR]</title>
+<thumbnail>http://www.lyngsat-logo.com/hires/bb/bbc_entertainment_asia.png</thumbnail>
+<link></link></item>
+</item>
+
+<item>
+<title>[COLOR yellow]SONY TURBO[/COLOR]</title>
+<thumbnail>http://www.lyngsat-logo.com/hires/ss/sony_turbo_ru.png</thumbnail>
+<link></link></item>
+</item>
+
+
+
+
+
+
+
+<item>
+<title>[COLOR yellow]CANAL SPORT[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow][/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+
+	
