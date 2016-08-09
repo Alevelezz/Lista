@@ -114,34 +114,36 @@
 
 
 <item>
-<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]  Entretenimiento[/COLOR]  [COLOR skyblue][/COLOR]  </title>
-<link>http://ignorame</link><thumbnail>http://adryanlist.org/adryan/img/entretenimiento.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
-<externallink>http://adryanlist.org/adryan/ent.xml</externallink>
+<title>[COLOR blue]>>>>>[/COLOR][COLOR oldlace][B][I]     **IPTV ESPAÑA** [/I][/B][/COLOR]     [COLOR lime][B][I] [/I][/B][/COLOR]</title>
+<link>http://ignorame</link><thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail><fanart>http://www.dingleberrypi.com/wp-content/uploads/2012/10/xbmc.jpeg</fanart>
+<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#073;&#080;&#084;&#086;&#046;&#120;&#109;&#108;</externallink>
 </item>
 
 
 
 <em>
-<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]  [B]Television [COLOR skyblue]24/7[/COLOR][/B][/COLOR] [COLOR lightgreen] [/COLOR]</title>
-<thumbnail>http://adryanlist.org/adryan/img/247.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg/fanart>
-</externallink>http://adryanlist.org/adryan/p247.xml</externallink>
+<title>[COLOR blue]>>>>>[/COLOR][COLOR oldlace][B][I]     **TOTAL PLAY 2** [/I][/B][/COLOR]     [COLOR lime][B][I] [/I][/B][/COLOR]</title>
+<thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail><fanart>http://www.dingleberrypi.com/wp-content/uploads/2012/10/xbmc.jpeg</fanart>
+</externallink>http://adryanlist.org/adryan/totalp.xml</externallink>
 <link>NA</link>
 </item>
 
 
 
 <tem>
-<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]  Musica[/COLOR]</title>
-<link>http://ignorame</link><thumbnail>http://adryanlist.org/adryan/img/musica.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
-<externallink>http://adryanlist.org/adryan/music.xml</externallink>
+<title>[COLOR blue][/COLOR][COLOR orange]*****[/COLOR][COLOR cyan][B][I]NUEVAS LISTAS Y RADIO DE COLOMBIA[/B][/I][/COLOR][COLOR orange]*****[/COLOR][COLOR blue][/COLOR]</title>
+<link>http://ignorame</link><thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail><fanart>http://www.dingleberrypi.com/wp-content/uploads/2012/10/xbmc.jpeg</fanart>
+<externallink>https://raw.githubusercontent.com/alevelezz/Lista/master/pagina2</externallink>
 </item>
 
-<item>
+<=item>
 <title>[COLOR lime]•[/COLOR][COLOR deepskyblue]  Paises[/COLOR]</title>
 <link>http://ignorame</link><thumbnail>http://adryanlist.org/adryan/img/paises.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
 <externallink>http://adryanlist.org/adryan/paises.xml</externallink>
 </item>
-<item>
+
+
+<=item>
 <title>[COLOR lime]•[/COLOR][COLOR deepskyblue]  Internacionales[/COLOR] </title>
 <link>http://ignorame</link><thumbnail>http://adryanlist.org/adryan/img/internacional.jpg</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
 <externallink>http://adryanlist.org/adryan/inter.xml</externallink>
