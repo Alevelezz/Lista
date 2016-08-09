@@ -1,0 +1,564 @@
+ 
+ <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ 
+ 
+ <item>
+    <title>[COLOR oldlace][B][I]                        DOCUMANIA EN CABLEDIRECTO!![/B][/I][/COLOR]</title>
+    <link>--live</link>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    </item>
+	
+			
+	
+		
+
+
+<item>
+    <title>[COLOR blue]                        ***********[/COLOR]  [COLOR oldlace]ESPAÑOL[/COLOR]  [COLOR blue]*************[/COLOR]</title>
+    <link>UK</link>
+    <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
+    </item>
+	
+	
+		<item>
+<title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** IPTV ESPAÑA **</title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR lightblue]Servidor: [/COLOR][COLOR lightgreen] [makelist2.param1][/COLOR] **</title>
+ <link>$doregex[makelist]</link>
+ <thumbnail>http://i.imgur.com/x9GX15w.jpg</thumbnail>
+ <fanart>http://i.imgur.com/hftJKqk.jpg</fanart>
+ ]]></listrepeat>
+<expres>Server:"(.*?)" URL="(.*?)"; regex"(.*?)"</expres>
+<page>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#108;&#105;&#115;&#116;&#097;&#050;/&#109;&#097;&#115;&#116;&#101;&#114;/&#115;&#101;&#114;&#118;&#101;&#114;&#046;&#116;&#120;&#116;</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[COLOR blue]C[/COLOR][COLOR yellow]T[/COLOR][COLOR red]A[/COLOR] ** [COLOR skyblue][makelist.param1][/COLOR] **</title>
+ <link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=[COLOR lightblue]CableDirecto [/COLOR] [makelist.param1]</link>
+ <thumbnail></thumbnail>
+ ]]></listrepeat>
+<expres>#EXTINF:-1,[makelist2.param3](.*?)\n(.*)</expres>
+<page>[makelist2.param2]</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+<thumbnail></thumbnail>
+</item> 
+	
+	
+	<item> 
+	<title>[COLOR lightblue]Historia[/COLOR]</title>
+	<link>rtmp://31.220.40.61/privatestream/ playpath=historiaa?keys=JPrKaaB-78Aum-6cbFL6-w&keyt=1462303192 swfUrl=http://privatestream.tv/js/jwplayer.flash.swf live=1 pageUrl=http://privatestream.tv/player?streamname=historiaa&width=800&height=600</link></item>
+
+	<item> <title>[COLOR lightblue]National geographic channel[/COLOR]</title><link>rtmp://www1.iguide.to/iguide playpath=wxinkrd3hz9tmm5 swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link></item>
+
+	
+	<item> <title>[COLOR lightblue]Nat Geo Wild[/COLOR]</title><link>rtmp://www1.iguide.to/iguide playpath=g56e7s9ox08kada swfUrl=http://www.iguide.to/player/secure_player_iguide_embed_token.swf live=1 pageUrl=http://www.iguide.to/embedplayer_new.php?width=650&height=400&channel=30323&autoplay=true token=#ed%h0#w18623jsda6523lDGD</link></item>
+	
+	
+	
+	
+
+
+
+	
+	
+	<item>
+<title>[COLOR blue]HISTORY [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/History-Channel-en-vivo/'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://b.vimeocdn.com/ts/234/738/234738830_640.jpg</thumbnail>
+</item>
+
+
+		<item>
+<title>[COLOR blue]DISCOVERY CHANNEL [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Discovery-En-vivo/'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://ijola.com/wp-content/uploads/2016/05/Discovery_Channel.jpg</thumbnail>
+</item>
+
+	<item>
+<title>[COLOR blue]DISCOVERY THEATER [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Discovery-HD-Theather-en-vivo/'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://i.ytimg.com/vi/np6Cksh-sDY/maxresdefault.jpg</thumbnail>
+</item>
+
+
+
+	<item>
+<title>[COLOR blue]NAT GEO WILD [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Nat-Geo-Wild-en-vivo/'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://i.ytimg.com/vi/jtocBh4Vyj8/maxresdefault.jpg</thumbnail>
+</item>
+
+	<item>
+<title>[COLOR blue]NATIONAL GEOGRAPHIC [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Nat-Geo-en-vivo/'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://3.bp.blogspot.com/--jBVjaKtyks/U30yyeyscoI/AAAAAAAACZk/kMLS-UyRM2k/s1600/Logo+National_Geographic_Channel.png</thumbnail>
+</item>
+
+	<item>
+<title>[COLOR blue]TRU TV [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Tru-TV-HD-en-vivo/'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://pmcvariety.files.wordpress.com/2014/07/trutv-logo.jpg</thumbnail>
+</item>
+
+	<item>
+<title>[COLOR blue]E! [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/E-en-vivo/'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://tvseriesfinale.com/wp-content/uploads/2014/03/e01.jpg</thumbnail>
+</item>
+	
+
+
+
+
+
+<item>
+ <title>[COLOR oldlace][B][I]HISTORIA[/I][/B][/COLOR]        [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR]</title>
+ <sportsdevil>http://verdirectotv.com/canales/history.html</sportsdevil> 
+<referer>http://verdirectotv.com</referer>
+<thumbnail>http://graffica.info/wp-content/uploads/Canal-Historia-01.jpg</thumbnail>
+<fanart>http://graffica.info/wp-content/uploads/Canal-Historia-01.jpg</fanart>
+ <thumbnail></thumbnail> 
+</item>
+
+<item>
+<title>[COLOR oldlace]DISCOVERY CHANNEL [/COLOR]  [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR]</title>
+<sportsdevil>http://verdirectotv.com/tv/documentales/discovery.html</sportsdevil>
+<referer>http://verdirectotv.com/</referer>
+<thumbnail>http://labandasesupera.files.wordpress.com/2010/05/discovery_channel_logo_320.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]DISCOVERY MAX [/COLOR]  [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR]</title>
+<sportsdevil>http://latelete.tv/discovery-max-en-directo-por-internet/</sportsdevil>
+<referer>http://latelete.tv/</referer>
+<thumbnail>http://labandasesupera.files.wordpress.com/2010/05/discovery_channel_logo_320.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]NATIONAL GEOGRAPHIC [/COLOR]  [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR]</title>
+<sportsdevil>http://latelete.tv/national-geographic-en-directo-en-castellano-por-internet/</sportsdevil>
+<referer>http://latelete.tv/</referer>
+<thumbnail>http://labandasesupera.files.wordpress.com/2010/05/discovery_channel_logo_320.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR aquamarine]Bio [/COLOR]</title>
+<sportsdevil>http://latelete.tv/ver-bio-channel-online-en-directo/</sportsdevil>
+<referer>http://latelete.tv/</referer>
+<thumbnail>http://fotos.subefotos.com/e6782fc224874d5c09eee3f4bd86f14ao.jpg</thumbnail>
+<fanart>http://fotos.subefotos.com/e6782fc224874d5c09eee3f4bd86f14ao.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR aquamarine]Odisea [/COLOR]</title>
+<sportsdevil>http://latelete.tv/odisea-en-vivo-y-en-directo-gratis-por-internet/</sportsdevil>
+<referer>http://latelete.tv/</referer>
+<thumbnail>http://fotos.subefotos.com/e6782fc224874d5c09eee3f4bd86f14ao.jpg</thumbnail>
+<fanart>http://fotos.subefotos.com/e6782fc224874d5c09eee3f4bd86f14ao.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR aquamarine]Historia [/COLOR]</title>
+<sportsdevil>http://latelete.tv/canal-historia-en-directo-en-castellano-por-internet/</sportsdevil>
+<referer>http://latelete.tv/</referer>
+<thumbnail>http://fotos.subefotos.com/e6782fc224874d5c09eee3f4bd86f14ao.jpg</thumbnail>
+<fanart>http://fotos.subefotos.com/e6782fc224874d5c09eee3f4bd86f14ao.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR aquamarine]National Geographic Wild [/COLOR]</title>
+<sportsdevil>http://latelete.tv/nat-geo-wild-en-vivo-en-directo-gratis-por-internet/</sportsdevil>
+<referer>http://latelete.tv/</referer>
+<thumbnail>http://fotos.subefotos.com/e6782fc224874d5c09eee3f4bd86f14ao.jpg</thumbnail>
+<fanart>http://fotos.subefotos.com/e6782fc224874d5c09eee3f4bd86f14ao.jpg</fanart>
+</item>
+<item>
+<title>[COLOR aquamarine]Gran Hermano 24h [/COLOR]</title>
+<sportsdevil>http://latelete.tv/ver-gran-hermano-16-online-la-casa-en-directo-gratis/</sportsdevil>
+<referer>http://latelete.tv/</referer>
+<thumbnail>http://fotos.subefotos.com/e6782fc224874d5c09eee3f4bd86f14ao.jpg</thumbnail>
+<fanart>http://fotos.subefotos.com/e6782fc224874d5c09eee3f4bd86f14ao.jpg</fanart>
+</item>
+
+
+
+
+				
+
+
+<item>
+			<title>[COLOR orange][B]Discovery En español[/B][/COLOR]</title>
+			<link>http://iphone-streaming.ustream.tv/uhls/17248101/streams/live/iphone/playlist.m3u8</link>
+			<thumbnail></thumbnail>
+			</item>
+			
+			
+			
+			
+
+<item>
+			<title>[COLOR orange][B]MEXICO TRAVEL TV[/B][/COLOR]</title>
+			<link>http://cdns840stu1010.multistream.net/mtchlive/amlst:live/livestream.m3u8</link>
+			<thumbnail>http://traveltve.com/wp-content/uploads/2015/04/logo.png</thumbnail>
+			</item>
+
+
+	        <item>
+			<title>[COLOR orange][B]TRAVEL TV[/B][/COLOR]</title>
+			<link>rtmp://87.106.219.140/live//myStream_2</link>
+			<thumbnail>http://traveltve.com/wp-content/uploads/2015/04/logo.png</thumbnail>
+			</item>
+
+	
+
+<item>
+			<title>[COLOR yellow]DW LATINOAMERICA [/COLOR] [COLOR orange][/COLOR]</title>
+			<link>rtmp://$doregex[get-m3u8]/$doregex[get-file]</link>
+			<thumbnail>http://www.ourwebtv.com/Logos/DW%20Deutsche%20Welle%20Latinoamerica.png</thumbnail>
+			<regex>
+			<name>get-m3u8</name>
+			<expres>meta base="rtmp:\/\/(.*?)"</expres>
+			<page>http://www.metafilegenerator.de/DWelle/tv-latinoamerica/flv/tv.smil</page>
+			<referer>http://www.dw.de/multimedia/tv-en-vivo/s-100837</referer>
+			</regex>
+			<regex>
+			<name>get-file</name>
+			<expres>"high".*src="(.*?)"</expres>
+			<page>http://www.metafilegenerator.de/DWelle/tv-latinoamerica/flv/tv.smil</page>
+			<referer>http://www.dw.de/multimedia/tv-en-vivo/s-100837</referer>
+			</regex>
+			</item>
+			
+			<item>
+			<title>[COLOR yellow]DW LATINOAMERICA 480p [/COLOR] [COLOR orange][/COLOR]</title>
+			<link>rtmp://$doregex[get-m3u8]/$doregex[get-file]</link>
+			<thumbnail>http://www.ourwebtv.com/Logos/DW%20Deutsche%20Welle%20Latinoamerica.png</thumbnail>
+			<regex>
+			<name>get-m3u8</name>
+			<expres>meta base="rtmp:\/\/(.*?)"</expres>
+			<page>http://www.metafilegenerator.de/DWelle/tv-latinoamerica/flv/tv.smil</page>
+			<referer>http://www.dw.de/multimedia/tv-en-vivo/s-100837</referer>
+			</regex>
+			<regex>
+			<name>get-file</name>
+			<expres>"highest".*src="(.*?)"</expres>
+			<page>http://www.metafilegenerator.de/DWelle/tv-latinoamerica/flv/tv.smil</page>
+			<referer>http://www.dw.de/multimedia/tv-en-vivo/s-100837</referer>
+			</regex>
+			</item>
+
+
+
+
+
+
+
+<item>
+    <title>[COLOR blue]******************************[/COLOR]  [COLOR red]INGLES[/COLOR]  [COLOR blue]*****************************[/COLOR]</title>
+    <link>UK</link>
+    <thumbnail>http://buscador.comprarentuciudad.com/filesupload/4/productos/20138_digital_plus_producto_1_normal.jpg</thumbnail>
+    </item>
+	
+			<item>
+<title>[COLOR oldlace]TV UK Now[/COLOR]   [COLOR red]Documentary[/COLOR] </title>
+<link>http://ignora.me</link>
+<jsonrpc>plugin://plugin.video.ZemTV-shani/?mode=57&amp;name=%5bCOLOR%20red%5dDocumentary%5b%2fCOLOR%5d&amp;url=Documentary</jsonrpc>
+<thumbnail>http://www.zemtv.com/wp-content/uploads/2014/12/zem-logo-final1.png</thumbnail>
+</item>
+	
+	
+		<item>
+<title>[COLOR oldlace]TV UK Now Fav[/COLOR]</title>
+<link>http://ignora.me</link>
+<jsonrpc>plugin://plugin.video.live.streamspro/?fanart&amp;mode=53&amp;name=%5bCOLOR%20red%5dDocumentary%5b%2fCOLOR%5d&amp;url=plugin%3a%2f%2fplugin.video.ZemTV-shani%2f%3furl%3dDocumentary%26mode%3d57%26name%3d%255BCOLOR%2bred%255DDocumentary%255B%252FCOLOR%255D</jsonrpc>
+<thumbnail>http://www.zemtv.com/wp-content/uploads/2014/12/zem-logo-final1.png</thumbnail>
+</item>
+
+
+
+			
+
+					
+	
+	
+	<item>
+<title>[COLOR yellow]RT DOCUMENTALS[/COLOR]</title>
+<link>http://rt-a.akamaihd.net/ch_05@325609/720p.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+
+				
+	<item>
+<title>[COLOR orange]TRAVEL CHANNEL +1[/COLOR]</title>
+<ftv>842</ftv>
+<thumbnail>http://img3.wikia.nocookie.net/__cb20091114171921/logopedia/images/e/e4/Travel_Channel_2000.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+<item>
+<title>[COLOR blue]A & E[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+
+	   <item>
+<title>[COLOR blue]NATIONAL GEOGRAPHIC[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+   <item>
+<title>[COLOR blue]NAT GEO WILD[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+ <item>
+<title>[COLOR blue]DISCOVERY CHANNEL[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+ <item>
+<title>[COLOR blue]TLC[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+ <item>
+<title>[COLOR blue]ANIMAL PLANET[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+ <item>
+<title>[COLOR blue]HGTV[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+ <item>
+<title>[COLOR blue][/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+
+
+
+
+
+<item>
+<title>[COLOR lime]ALIENS AND UFOS  [/COLOR]</title>
+<link>rtmp://$doregex[ip]/live?$doregex[tok] playpath=live_aliensandufos swfUrl=http://vaughnlive.tv/4263819903/swf/VaughnSoftPlayer.swf pageUrl=http://vaughnlive.tv live=1 timeout=15</link>
+<regex>
+	<name>ip</name>
+	<expres>(.*?);</expres>
+	<page>http://mvn.vaughnsoft.net/video/edge/live_aliensandufos</page>
+	<referer>http://vaughnlive.tv</referer>
+</regex>
+<regex>
+	<name>tok</name>
+	<expres>mvnkey.(.*)</expres>
+	<page>http://mvn.vaughnsoft.net/video/edge/live_aliensandufos</page>
+	<referer>http://vaughnlive.tv</referer>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/aliensandufos_320.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR lime]DUAL SURVIVAL EXTREME  [/COLOR]</title>
+<link>rtmp://$doregex[ip]/live?$doregex[tok] playpath=live_lmshows_mws swfUrl=http://vaughnlive.tv/4263819903/swf/VaughnSoftPlayer.swf pageUrl=http://vaughnlive.tv live=1 timeout=15</link>
+<regex>
+	<name>ip</name>
+	<expres>(.*?);</expres>
+	<page>http://mvn.vaughnsoft.net/video/edge/live_lmshows_mws</page>
+	<referer>http://vaughnlive.tv</referer>
+</regex>
+<regex>
+	<name>tok</name>
+	<expres>mvnkey.(.*)</expres>
+	<page>http://mvn.vaughnsoft.net/video/edge/live_lmshows_mws</page>
+	<referer>http://vaughnlive.tv</referer>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/lmshows_mws_320.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR lightblue]H2[/COLOR](USA)  [COLOR gray][I]ilive[/I][/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://www.streamlive.to/view/73421/History_2_UK_%28HD%29'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>[COLOR lightblue]DISCOVERY SCIENCE[/COLOR](UK)  [COLOR gray][I]ilive[/I][/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://www.streamlive.to/view/73440/Discovery_Science_UK_%28HD%29'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>[COLOR lightblue]DISCOVERY SHED[/COLOR](UK)  [COLOR gray][I]ilive[/I][/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://www.streamlive.to/view/73424/Discovery_SHED_%28HD%29'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+<item>
+<title>[COLOR lightblue]ANIMAL PLANET[/COLOR](UK)  [COLOR gray][I]ilive[/I][/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://www.streamlive.to/view/70211/Animal_Planet_UK_%28HD%29'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR cyan]BIO SD[/COLOR]</title>
+<link></link>
+<thumbnail>http://www.logoeps.net/wp-content/uploads/2012/04/bio-biography_channel-logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR cyan]BIO LOW SD[/COLOR]</title>
+<link></link>
+<thumbnail>http://www.exclusivadigital.com/userfiles/image/Logo%20bio.jpg</thumbnail>
+</item>
+
+
+
+
+
