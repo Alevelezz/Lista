@@ -1,0 +1,732 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ 
+ 
+ <item>
+    <title>[COLOR blue][B][I]                    PELICULAS LAS 24 HORAS DEL DIA[/I][/B][/COLOR]</title>
+    <link>--live</link>
+    <thumbnail>https://dl.dropboxusercontent.com/u/37645340/Cabledirecto%20backgrounds/PELICULAS%20%20CABLEDIRECTO.jpg</thumbnail>
+    </item>
+	
+	
+	<=item>
+<title>[COLOR lime][B]MOVIE TRAILERS[COLOR blue] [/COLOR][/B]      [COLOR red][B]**ENTRA AQUI**[/COLOR][/B]   [COLOR lime][B]2015[/COLOR][/B] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[COLOR yellow][B][makelist.param2][/COLOR][/B]</title>
+    <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
+    <thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>\s?.data-video-id="(.*?)".*data-title="(.*?)"</expres>
+<page>https://www.youtube.com/playlist?list=PLScC8g4bqD44jbMn77Oc7Cr6BGnaaAwX4</page>
+<referer>https://www.youtube.com/user/movieclipsTRAILERS/playlists</referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+<item>
+<title>[COLOR blue] -------Listas Amigas[COLOR skyblue]--Exodus Movies-------[/COLOR]</title>
+<link>http://ignora.me</link>
+<jsonrpc>plugin://plugin.video.exodus/?action=movieNavigator</jsonrpc>
+<thumbnail>https://superrepo.org/static/images/icons/original/xrepository.exodus.png.pagespeed.ic.jNoWECfScl.jpg</thumbnail>
+<fanart>https://goo.gl/9oQCFk</fanart>
+</item>
+
+<item>
+<title>[COLOR cyan]KATHY HD TEST 3[/COLOR] with livestreamer</title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,):
+ import re
+ from livestreamer import Livestreamer
+ session = Livestreamer()
+ streams = session.streams("http://mvn.vaughnsoft.net/video/edge/mvn-live_katyhd")
+ best = re.findall("'best'.*?HLSStream\('(.*?)'", str(streams))[0]
+ return best
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://theident.gallery/thumbs/skynewshd_2010_SNHD-2010-STING-1-2.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR red]24/7[/COLOR] **  [COLOR lime]Ingles[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item>
+
+<item>
+			<title>[COLOR blue]CableDirecto[/COLOR] ** [makelist.param2] **</title>
+			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_[makelist.param1]  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>    
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.759_190-190-0.5933709153905511</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);</expres>  
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.759_190-190-0.5933709153905511</page>                              
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)"</expres>    
+<page>http://vaughnlive.tv/[makelist.param1]</page>                             
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+			<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail></item>
+]]></listrepeat>
+<expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
+<page>http://vaughnlive.tv/browse/misc</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://i.imgur.com/OKY9Szg.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+
+
+
+<item>
+<title>[COLOR red]24/7[/COLOR] **  [COLOR lime]Español[/COLOR] **</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item>
+
+<item>
+			<title>[COLOR blue]CableDirecto[/COLOR] **[COLOR oldlace] [makelist.param2] [/COLOR]**</title>
+			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_[makelist.param1]  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>    
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.759_190-190-0.5933709153905511</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);</expres>  
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.759_190-190-0.5933709153905511</page>                              
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)"</expres>    
+<page>http://vaughnlive.tv/[makelist.param1]</page>                             
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+			<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail></item>
+]]></listrepeat>
+<expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
+<page>http://vaughnlive.tv/browse/espanol</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://i.imgur.com/OKY9Szg.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+<item>
+			<title>[COLOR oldlace]LE CREAM STAFF  [/COLOR]         [COLOR lime]regex  [/COLOR]</title>
+			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_lcreme_staff  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>    
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_lcreme_staff?0.1.1.759_190-190-0.5933709153905511</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);</expres>  
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_lcreme_staff?0.1.1.759_190-190-0.5933709153905511</page>                              
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)"</expres>    
+<page>http://vaughnlive.tv/lcreme_staff</page>                             
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail></item>
+</item>
+
+
+<item>
+			<title>[COLOR oldlace]KATHY HD  [/COLOR]         [COLOR lime]regex  [/COLOR]</title>
+			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_katyhd  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>    
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_katyhd?0.1.1.759_190-190-0.5933709153905511</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);</expres>  
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_katyhd?0.1.1.759_190-190-0.5933709153905511</page>                              
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)"</expres>    
+<page>http://vaughnlive.tv/katyhd</page>                             
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail></item>
+</item>
+
+
+<item>
+			<title>[COLOR oldlace]MEGA MOVIES HD   [/COLOR]     [COLOR lime]regex  [/COLOR] </title>
+			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_mega_movieshd  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>    
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_mega_movieshd?0.1.1.759_190-190-0.5933709153905511</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);</expres>  
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_mega_movieshd?0.1.1.759_190-190-0.5933709153905511</page>                              
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)"</expres>    
+<page>http://vaughnlive.tv/mega_movieshd</page>                             
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/mega_extremo_320.jpg</thumbnail></item>
+</item>
+
+
+<item>
+			<title>[COLOR oldlace]MEGA EXTREMO   [/COLOR]       [COLOR lime]regex  [/COLOR]</title>
+			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_mega_extremo  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>    
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_mega_extremo?0.1.1.759_190-190-0.5933709153905511</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);</expres>  
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_mega_extremo?0.1.1.759_190-190-0.5933709153905511</page>                              
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)"</expres>    
+<page>http://vaughnlive.tv/mega_extremo</page>                             
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/mega_extremo_320.jpg</thumbnail></item>
+</item>
+
+
+<item>
+			<title>[COLOR oldlace]LCREME MAX    [/COLOR]        [COLOR lime]regex  [/COLOR]</title>
+			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_lcrememax  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>    
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_lcrememax?0.1.1.759_190-190-0.5933709153905511</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);</expres>  
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_mega_extremo?0.1.1.759_190-190-0.5933709153905511</page>                              
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)"</expres>    
+<page>http://vaughnlive.tv/lcrememax</page>                             
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/lcrememax_320.jpg</thumbnail></item>
+</item>
+
+<item>
+			<title>[COLOR oldlace]CINESCAPE[/COLOR]         [COLOR lime]regex  [/COLOR]</title>
+			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_cinescape  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>    
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_cinescape?0.1.1.759_190-190-0.5933709153905511</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);</expres>  
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_cinescape?0.1.1.759_190-190-0.5933709153905511</page>                              
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)"</expres>    
+<page>http://vaughnlive.tv/cinescape</page>                             
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail></item>
+</item>
+
+<item>
+<title>[COLOR oldlace]CINEMAX LATINO HD   [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/cinemax_latino'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>[COLOR oldlace]MEGAMOVIES HD   [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/mega_movieshd'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+<item>
+<title>[COLOR oldlace]MEGA EXTREMO   [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/mega_extremo'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/mega_extremo_320.jpg</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[COLOR oldlace]LCREME MAX    [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/lcrememax'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/lcrememax_320.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]LCREME     [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/lcreme_staff'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/lcreme_320.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]BROADCAST    [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/broadmovies'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/broadmovies_320.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]KATY HD    [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/katyhd'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/katyhd_320.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]PELICULAS MANIA    [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/peliculas_mania'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/estrenos_hd_320.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]CINESCAPE  [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/cinescape'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cinescape_320.jpg</thumbnail>
+</item>
+	
+	
+<item>
+<title>[COLOR oldlace]ZFTERROR [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/zfterror'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/imgur.php?id=YrYIsct.jpg</thumbnail>
+</item>	
+
+<item>
+<title>[COLOR oldlace]MEGA KIDS [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/mega_kids'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/mega_kids_320.jpg</thumbnail>
+</item>	
+
+
+<item>
+<title>[COLOR oldlace]MEGA MOVIES HD [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/mega_movieshd'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/mega_movieshd_320.jpg</thumbnail>
+</item>	
+
+
+<item>
+<title>[COLOR oldlace]UNIVERSAL MOVIES [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/universal_movies'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/imgur.php?id=kpyBXqP.jpg</thumbnail>
+</item>	
+
+
+<item>
+<title>[COLOR oldlace]VITATO [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/vitatotv'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/vitatotv_320.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR oldlace]321 ACTION MOVIES [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/321action_movies'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/321action_movies_320.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]CAJUNFLIX 123 [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/cajunflix123'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cajunflix123_320.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]SHOWTIME TV6 [/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/showtimetv6'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/showtimetv6_320.jpg</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+	
+<item> 
+<title>[COLOR oldlace]HBO [/COLOR]    [COLOR lime]INGLES[/COLOR]   [COLOR magenta][/COLOR]</title> 
+<link>$doregex[getIlive]</link> 
+<regex> <name>getIlive</name> 
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/view/1/watch-live-HBO-channel-for-free',False,False)</expres> 
+<page></page> 
+</regex>
+ <thumbnail>http://neoavatara.com/blog/wp-content/uploads/2011/12/t-hill-s-top-movies-of-2011-so-far-.jpg</thumbnail>
+</item>
+
+
+<item> 
+<title>[COLOR oldlace]HBO [/COLOR]    [COLOR lime]INGLES OPTION 2[/COLOR]   [COLOR magenta][/COLOR] </title> 
+<link>$doregex[get-rtmp] playpath=$doregex[get-path] token=$doregex[get-token] swfUrl=http://www.iguide.to/player/secure_player_iguide_token.swf pageUrl=http://www.iguide.to live=1 timeout=10</link> 
+<thumbnail>http://neoavatara.com/blog/wp-content/uploads/2011/12/t-hill-s-top-movies-of-2011-so-far-.jpg</thumbnail>
+<regex> 
+<name>get-rtmp</name> 
+ <expres>streamer: "(.*)"<expres>
+<page>http://www.iguide.to/view/1/watch-live-HBO-channel-for-free</page> 
+</regex> 
+<regex> 
+<name>get-path</name> 
+<expres>.*file: "([^.]*)<expres> 
+<page>http://www.iguide.to/view/1/watch-live-HBO-channel-for-free</page> 
+</regex> 
+<regex> 
+<name>get-token</name> 
+<expres>token":"([^"]*)</expres> 
+<page>http://www.iguide.to/serverfile.php?id=1403481956&amp</page> 
+<referer>http://www.iguide.to/view/1/watch-live-HBO-channel-for-free</referer> 
+</regex> 
+</item>
+
+
+
+
+<item>
+<title>[COLOR yellow][/COLOR]</title>
+<link>plugin://plugin.video.veetle/?channel=53b32cd1571df</link>
+<thumbnail></thumbnail>
+</item>
