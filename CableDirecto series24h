@@ -1,0 +1,1162 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ 
+ <item>
+    <title>       [COLOR lime][B][I]             LAS 24 HORAS DEL DIA SIN PARAR!![/B][/I][/COLOR]</title>
+    <link>--live</link>
+    <thumbnail>http://i2mag.com/wp-content/uploads/2012/09/Unotelly-Channels.jpg</thumbnail>
+    </item>
+	
+	<+item>
+    <title>        [COLOR red]***********[/COLOR]  [COLOR pink][/COLOR]  [COLOR red]************[/COLOR]</title>
+    <link>UK</link>
+    <thumbnail>https://dl.dropboxusercontent.com/u/37645340/Cabledirecto%20backgrounds/Espa%C3%B1ol%20Cabledirecto.jpg</thumbnail>
+    </item>
+	
+	<item>
+    <title>                      [COLOR blue]***********[/COLOR]  [COLOR oldlace][B][I]EN ESPAÑOL[/B][/I][/COLOR]  [COLOR blue]************[/COLOR]</title>
+    <link>UK</link>
+    <thumbnail>https://dl.dropboxusercontent.com/u/37645340/Cabledirecto%20backgrounds/Espa%C3%B1ol%20Cabledirecto.jpg</thumbnail>
+    </item>
+	
+	
+	<item>
+<title> [COLOR oldlace]24/7[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item>
+			<title>[makelist.param2]</title>
+			<link>rtmp://$doregex[getserver]/live?$doregex[clearCode] playpath=live_[makelist.param1] live=1 timeout=20</link>
+			<regex>
+			<name>clearCode</name>
+			<expres>$pyFunction:'$doregex[getencoded]'.replace("0m0","").replace("0n0","")</expres>
+			<page></page>
+			</regex>
+			<regex>
+			<name>getencoded</name>
+			<expres>:mvnkey-(.*)</expres>
+			<page>$doregex[getUrl]</page>
+			</regex>
+			<regex>
+			<name>getserver</name>
+			<expres>(.*?);</expres>
+			<page>$doregex[getUrl]</page>
+			</regex>
+			<regex>
+			<name>getUrl</name>
+			<expres>(.*)</expres>
+			<page>http://mvn.vaughnsoft.net/video/edge/live_[makelist.param1]$doregex[gettime]-$doregex[gettime].33434</page>
+			</regex>
+			<regex>
+			<name>gettime</name>
+			<expres>$pyFunction:str(int(round(time.time() * 1000)))</expres>
+			<page></page>
+			</regex>
+			<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail></item>
+]]></listrepeat>
+<expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
+<page>http://vaughnlive.tv/browse/espanol</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://i.imgur.com/OKY9Szg.png</thumbnail>
+<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR oldlace]CHESPIRITO MANIA[/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/chespirito_mania'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/chespirito_mania_320.jpg</thumbnail>
+</item>	
+
+
+<item>
+<title>[COLOR oldlace]MEGA ANIMES[/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/mega_animes'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/mega_animes_320.jpg</thumbnail>
+</item>	
+
+
+<item>
+<title>[COLOR oldlace]MEGA SIMPSONS[/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/mega_simpson'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/mega_simpson_320.jpg</thumbnail>
+</item>	
+
+
+<item>
+<title>[COLOR oldlace]CABALLEROS DEL ZODIACO[/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/vitatoseries'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/vitatoseries_320.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]PADRE DE FAMILIA[/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/mega_evolucionhd'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/mega_evolucionhd_320.jpg</thumbnail>
+</item>	
+
+
+
+	
+
+
+
+<item>
+    <title>                      [COLOR blue]    ***********[/COLOR]  [COLOR oldlace][B][I]EN INGLES[/B][/I][/COLOR]  [COLOR blue]************[/COLOR]</title>
+    <link>UK</link>
+    <thumbnail>https://dl.dropboxusercontent.com/u/37645340/Cabledirecto%20backgrounds/speak-english-Cabledirecto.jpg</thumbnail>
+    </item>
+	
+	
+http://62.210.107.171:8080/ecf38da4469404d2b805166835d817a7c307d6772fc4a070888a1ff8b5d98f19/hls/familguys4f.m3u8
+
+				
+	<item>
+<title>[COLOR yellow]FAMILY GUY [/COLOR]     [COLOR lime]m3u8 [/COLOR]</title>
+<link>http://62.210.107.171:8080/ecf38da4469404d2b805166835d817a7c307d6772fc4a070888a1ff8b5d98f19/hls/familguys4f.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36&amp;Referer=http://www.stream4free.pro/family-guy;url=</link>
+<thumbnail>https://usercontent1.hubstatic.com/7629996.jpg</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]AMERICAN DAD [/COLOR]     [COLOR lime]m3u8 [/COLOR]</title>
+<link>http://62.210.107.171:8080/ecf38da4469404d2b805166835d817a7c307d6772fc4a070888a1ff8b5d98f19/hls/americanxxx.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36&amp;Referer=http://www.stream4free.pro/american-dad;url=</link>
+<thumbnail>http://cdn1us.denofgeek.com/sites/denofgeekus/files/55318-american-dad-american-dad.jpg</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]THE SIMPSONS [/COLOR]     [COLOR lime]m3u8 [/COLOR]</title>
+<link>http://62.210.107.171:8080/ecf38da4469404d2b805166835d817a7c307d6772fc4a070888a1ff8b5d98f19/hls/simpsons.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36&amp;Referer=http://www.stream4free.pro/american-dad;url=</link>
+<thumbnail>http://pmcdeadline2.files.wordpress.com/2010/11/key_art_the_simpsons.jpg</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]SOUTH PARK[/COLOR]     [COLOR lime]m3u8 [/COLOR]</title>
+<link>http://62.210.107.171:8080/ecf38da4469404d2b805166835d817a7c307d6772fc4a070888a1ff8b5d98f19/hls/spark.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36&amp;Referer=http://www.stream4free.pro/american-dad;url=</link>
+<thumbnail>http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/2015/04/14/south-park.jpeg</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]MAN VS WILD[/COLOR]     [COLOR lime]m3u8 [/COLOR]</title>
+<link>http://62.210.82.111:8080/ecf38da4469404d2b805166835d817a7c307d6772fc4a070888a1ff8b5d98f19/hls/manwildushdx.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36&amp;Referer=http://www.stream4free.pro/american-dad;url=</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/0/07/ManVsWild.jpg</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]FRIENDS[/COLOR]     [COLOR lime]m3u8 [/COLOR]</title>
+<link>http://62.210.107.171:8080/ecf38da4469404d2b805166835d817a7c307d6772fc4a070888a1ff8b5d98f19/hls/friends.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36&amp;Referer=http://www.stream4free.pro/american-dad;url=</link>
+<thumbnail>http://az616578.vo.msecnd.net/files/2015/12/09/635852948635579517-1119709349_friends.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]STARGATE[/COLOR]     [COLOR lime]m3u8 [/COLOR]</title>
+<link>http://62.210.107.171:8080/ecf38da4469404d2b805166835d817a7c307d6772fc4a070888a1ff8b5d98f19/hls/stargateng.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36&amp;Referer=http://www.stream4free.pro/american-dad;url=</link>
+<thumbnail>https://i.kinja-img.com/gawker-media/image/upload/jqovacq3n6byc1mk42bq.jpg</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+			<title>[COLOR oldlace]STAR TREK VOYAGER[/COLOR]</title>
+			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_1ametv  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>    
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_1ametv?0.1.1.759_190-190-0.5933709153905511</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);</expres>  
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_1ametv?0.1.1.759_190-190-0.5933709153905511</page>                              
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)"</expres>    
+<page>http://vaughnlive.tv/1ametv</page>                             
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/1ametv_320.jpg</thumbnail></item>
+</item>
+
+<=item>
+<title>[COLOR oldlace]STAR TREK VOYAGER[/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/1ametv'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/1ametv_320.jpg</thumbnail>
+</item>	
+
+
+<item>
+<title>[COLOR oldlace]ALIENS AND UFOS PLUS STAR TREK[/COLOR]</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/aliensandufos6'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/aliensandufos6_320.jpg</thumbnail>
+</item>	
+	
+
+
+<item>
+<title>[COLOR oldlace]FAMILY GUY [/COLOR]  [COLOR pink]Sportsdevil [/COLOR]</title>
+<sportsdevil>http://ibrod.tv/familyguy.html</sportsdevil>
+<referer>http://ibrod.tv</referer>
+<thumbnail>https://homeentertainmentmichelle.files.wordpress.com/2012/11/family-guy-s11-itunes.jpeg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR oldlace]AMERICAN DAD [/COLOR]  [COLOR pink]Sportsdevil [/COLOR]</title>
+<sportsdevil>http://ibrod.tv/americandad.html</sportsdevil>
+<referer>http://ibrod.tv</referer>
+<thumbnail>http://www.bubbleblabber.com/wp-content/uploads/2014/10/am-dad.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]SOUTH PARK[/COLOR]  [COLOR pink]Sportsdevil [/COLOR]</title>
+<sportsdevil>http://ibrod.tv/southpark.html</sportsdevil>
+<referer>http://ibrod.tv</referer>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/a/ac/South_Park_sign_logo.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR oldlace]THE SIMPSONS[/COLOR]  [COLOR pink]Sportsdevil [/COLOR]</title>
+<sportsdevil>http://ibrod.tv/simpsons.html</sportsdevil>
+<referer>http://ibrod.tv</referer>
+<thumbnail>http://cdn3.whatculture.com/wp-content/uploads/2013/09/the-simpsons.jpg</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[B][COLOR oldlace]The Simpsons[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://arconaitv.me/s/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://i63.fastpic.ru/big/2015/0108/58/7ccc8317f7af2fceaddc87638ed88e58.jpg</thumbnail>
+</item>
+
+<item>
+<title>[B][COLOR oldlace]Family Guy[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/fg/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://vignette1.wikia.nocookie.net/fanon/images/2/22/4440-family-guy-family-guy-poster.jpg/revision/latest?cb=20150528130142</thumbnail>
+</item>
+
+<item>
+<title>[B][COLOR oldlace]American Dad[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/amerro/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://s.sidereel.com/tv_shows/42889/giant_2x/americandadvs.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]THE SIMPSONS capcha[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]</title>
+<link>$doregex[getmainPage]|User-Agent=Mozilla/5.0 (X11; Linux i686; rv:44.0) Gecko/20100101 Firefox/44.0 Iceweasel/44.0</link>
+<regex>
+<name>getmainPage</name>
+<expres>source src="(.*?)"</expres>
+<page>$pyFunction: unCaptcha.performCaptcha('http://www.stream4free.eu/simpsons-hd',Cookie_Jar,returnpage=True,captcharegex='sitekey: "(.*?)"')</page>
+<agent>Mozilla/5.0 (X11; Linux i686; rv:44.0) Gecko/20100101 Firefox/44.0 Iceweasel/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+	
+<item>
+<title>[COLOR yellow]THE SIMPSONS old[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]  </title>
+<link>$doregex[getURL]|User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36</link>
+<thumbnail>http://www.bubbleblabber.com/wp-content/uploads/2014/10/am-dad.jpg</thumbnail>
+<regex>
+<name>getURL</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.stream4free.eu/simpsons-hd</page>
+<referer>http://www.stream4free.eu</referer>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+<name>createCFCookie</name>                                                     
+<expres></expres>
+<page>$pyFunction:cloudflare.createCookie('http://www.stream4free.eu/simpsons-hd',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+<cookieJar></cookieJar>
+</regex>
+</item>	
+	
+
+<item>
+<title>[COLOR yellow]THE SIMPSONS[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]</title>
+<link>$doregex[url]|Referer=http://www.stream4free.eu/videojs/video-js.swf&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</link>
+<regex>
+	<name>url</name>
+	<expres>data-setup=.*?"(.*?)"</expres>
+	<page>http://www.stream4free.eu/simpsons-hd</page>
+	<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+	<name>createCFCookie</name>                                                     
+	<expres></expres>
+	<page>$pyFunction:cloudflare.createCookie('http://www.stream4free.eu/simpsons-hd',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+	<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn3.whatculture.com/wp-content/uploads/2013/09/the-simpsons.jpg</thumbnail>
+</item>
+
+
+	
+	
+
+
+<item>
+<title>[COLOR yellow]FAMILY GUY capcha[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]</title>
+<link>$doregex[getmainPage]|User-Agent=Mozilla/5.0 (X11; Linux i686; rv:44.0) Gecko/20100101 Firefox/44.0 Iceweasel/44.0</link>
+<regex>
+<name>getmainPage</name>
+<expres>source src="(.*?)"</expres>
+<page>$pyFunction: unCaptcha.performCaptcha('http://www.stream4free.eu/family-guy',Cookie_Jar,returnpage=True,captcharegex='sitekey: "(.*?)"')</page>
+<agent>Mozilla/5.0 (X11; Linux i686; rv:44.0) Gecko/20100101 Firefox/44.0 Iceweasel/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title>[COLOR yellow]FAMILY GUY old[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]  </title>
+<link>$doregex[getURL]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36</link>
+<thumbnail>http://www.bubbleblabber.com/wp-content/uploads/2014/10/am-dad.jpg</thumbnail>
+<regex>
+<name>getURL</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.stream4free.top/family-guy</page>
+<referer>http://www.stream4free.top</referer>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+<name>createCFCookie</name>                                                     
+<expres></expres>
+<page>$pyFunction:cloudflare.createCookie('http://www.stream4free.top/family-guy',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>[COLOR yellow]FAMILY GUY old 2[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]  </title>
+<link>$doregex[getURL]|User-Agent=Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36</link>
+<thumbnail>http://www.bubbleblabber.com/wp-content/uploads/2014/10/am-dad.jpg</thumbnail>
+<regex>
+<name>getURL</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.stream4free.top/family-guy</page>
+<referer>http://www.stream4free.top</referer>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+<name>createCFCookie</name>                                                     
+<expres></expres>
+<page>$pyFunction:cloudflare.createCookie('http://www.stream4free.top/family-guy',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR yellow]FAMILY GUY[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]</title>
+<link>$doregex[url]|Referer=http://www.stream4free.eu/videojs/video-js.swf&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</link>
+<regex>
+	<name>url</name>
+	<expres>data-setup=.*?"(.*?)"</expres>
+	<page>http://www.stream4free.eu/family-guy</page>
+	<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+	<name>createCFCookie</name>                                                     
+	<expres></expres>
+	<page>$pyFunction:cloudflare.createCookie('http://www.stream4free.eu/family-guy',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+	<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://homeentertainmentmichelle.files.wordpress.com/2012/11/family-guy-s11-itunes.jpeg</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+                <title>[COLOR yellow]AMERICAN DAD test oldregex[/COLOR]       [COLOR lime]stream4free[/COLOR] </title>
+                <link>$doregex[get-url]|User-Agent=Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36</link>
+                <thumbnail>http://www.bubbleblabber.com/wp-content/uploads/2014/10/am-dad.jpg</thumbnail>
+				<regex>
+                <name>get-url</name>
+                <expres>source src="(.*?)"</expres>
+                <page>http://www.stream4free.eu/american-dad</page>
+				<referer>http://www.stream4free.eu/</referer>
+                <cookieJar></cookieJar>
+                </regex>
+                </item>
+
+
+
+<item>
+<title>[COLOR yellow]AMERICAN DAD capcha[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]  </title>
+<link>$doregex[getmainPage]|User-Agent=Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36</link>
+<regex>
+<name>getmainPage</name>
+<expres>source src="(.*?)"</expres>
+<page>$pyFunction: unCaptcha.performCaptcha('http://www.stream4free.eu/american-dad',Cookie_Jar,returnpage=True,captcharegex='sitekey: "(.*?)"')</page>
+<agent>Mozilla/5.0 (X11; Linux i686; rv:44.0) Gecko/20100101 Firefox/44.0 Iceweasel/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>American Dad 24h</title>
+<link>$doregex[getURL]|User-Agent=Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36</link>
+<regex>
+<name>getURL</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.stream4free.eu/american-dad</page>
+<referer>http://www.stream4free.eu/</referer>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+<name>createCFCookie</name>
+<expres></expres>
+<page>$pyFunction:cloudflare.createCookie('http://www.stream4free.eu/american-dad',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]AMERICAN DAD old[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]  </title>
+<link>$doregex[getURL]|User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36</link>
+<thumbnail>http://www.bubbleblabber.com/wp-content/uploads/2014/10/am-dad.jpg</thumbnail>
+<regex>
+<name>getURL</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.stream4free.eu/american-dad</page>
+<referer>http://www.stream4free.eu</referer>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+<name>createCFCookie</name>                                                     
+<expres></expres>
+<page>$pyFunction:cloudflare.createCookie('http://www.stream4free.eu/american-dad',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+<item>
+<title>[COLOR yellow]AMERICAN DAD[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]</title>
+<link>$doregex[url]|Referer=http://www.stream4free.eu/videojs/video-js.swf&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</link>
+<regex>
+	<name>url</name>
+	<expres>data-setup=.*?"(.*?)"</expres>
+	<page>http://www.stream4free.eu/american-dad</page>
+	<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+	<name>createCFCookie</name>                                                     
+	<expres></expres>
+	<page>$pyFunction:cloudflare.createCookie('http://www.stream4free.eu/american-dad',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+	<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+
+<item>
+			<title>[COLOR oldlace]STAR TREK VOYAGER[/COLOR]</title>
+			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_1ametv  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>    
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_1ametv?0.1.1.759_190-190-0.5933709153905511</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);</expres>  
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_1ametv?0.1.1.759_190-190-0.5933709153905511</page>                              
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)"</expres>    
+<page>http://vaughnlive.tv/1ametv</page>                             
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/1ametv_320.jpg</thumbnail></item>
+</item>
+
+
+<item>
+<title>[COLOR yellow]AMERICAN DAD  nEW VAUNH [/COLOR][COLOR lime]*  [/COLOR]</title>
+<link>rtmp://$doregex[ip]/live?$doregex[tok] playpath=live_1ametv swfUrl=http://vaughnlive.tv/4263819903/swf/VaughnSoftPlayer.swf pageUrl=http://vaughnlive.tv live=1 timeout=15</link>
+<regex>
+	<name>ip</name>
+	<expres>([^;]*?);:</expres>
+	<page>http://mvn.vaughnsoft.net/video/edge/live_1ametv?0.1.1.759_190-190-0.5933709153905511</page>
+	<referer>http://vaughnlive.tv</referer>
+	<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+</regex>
+<regex>
+	<name>tok</name>
+	<expres>mvnkey-(.*?);</expres>
+	<page>http://mvn.vaughnsoft.net/video/edge/live_1ametv?0.1.1.759_190-190-0.5933709153905511</page>
+	<referer>http://vaughnlive.tv</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+	</regex>
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)"</expres>    
+<page>http://vaughnlive.tv/1ametv</page>                             
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://www.bubbleblabber.com/wp-content/uploads/2014/10/am-dad.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]SOUTH PARK capcha[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]  </title>
+<link>$doregex[getmainPage]|User-Agent=Mozilla/5.0 (X11; Linux i686; rv:44.0) Gecko/20100101 Firefox/44.0 Iceweasel/44.0</link>
+<regex>
+<name>getmainPage</name>
+<expres>source src="(.*?)"</expres>
+<page>$pyFunction: unCaptcha.performCaptcha('http://www.stream4free.eu/south-park-hd',Cookie_Jar,returnpage=True,captcharegex='sitekey: "(.*?)"')</page>
+<agent>Mozilla/5.0 (X11; Linux i686; rv:44.0) Gecko/20100101 Firefox/44.0 Iceweasel/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>[COLOR yellow]SOUTH PARK old[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]  </title>
+<link>$doregex[getURL]|User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36</link>
+<thumbnail>http://www.bubbleblabber.com/wp-content/uploads/2014/10/am-dad.jpg</thumbnail>
+<regex>
+<name>getURL</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.stream4free.eu/south-park-hd</page>
+<referer>http://www.stream4free.pro</referer>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+<name>createCFCookie</name>                                                     
+<expres></expres>
+<page>$pyFunction:cloudflare.createCookie('http://www.stream4free.pro/south-park-hd',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+<cookieJar></cookieJar>
+</regex>
+</item>	
+
+
+<item>
+<title>[COLOR yellow]SOUTH PARK[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]</title>
+<link>$doregex[url]|Referer=http://www.stream4free.eu/videojs/video-js.swf&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</link>
+<regex>
+	<name>url</name>
+	<expres>data-setup=.*?"(.*?)"</expres>
+	<page>http://www.stream4free.eu/south-park-hd</page>
+	<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+	<name>createCFCookie</name>                                                     
+	<expres></expres>
+	<page>$pyFunction:cloudflare.createCookie('http://www.stream4free.eu/south-park-hd',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+	<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://cdn3.whatculture.com/wp-content/uploads/2013/09/the-simpsons.jpg</thumbnail>
+</item>
+
+
+
+  	
+<item>
+<title>[COLOR yellow]SOUTH PARK  [/COLOR][COLOR lime]*  [/COLOR]</title>
+<link>rtmp://$doregex[ip]/live?$doregex[tok] playpath=live_highspothorror106 swfUrl=http://vaughnlive.tv/4263819903/swf/VaughnSoftPlayer.swf pageUrl=http://vaughnlive.tv live=1 timeout=15</link>
+<regex>
+	<name>ip</name>
+	<expres>(.*?);</expres>
+	<page>http://mvn.vaughnsoft.net/video/edge/live_highspothorror106</page>
+	<referer>http://vaughnlive.tv</referer>
+</regex>
+<regex>
+	<name>tok</name>
+	<expres>mvnkey.(.*)</expres>
+	<page>http://mvn.vaughnsoft.net/video/edge/live_highspothorror106</page>
+	<referer>http://vaughnlive.tv</referer>
+</regex>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/a/ac/South_Park_sign_logo.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]SOUTH PARK  [/COLOR][COLOR lime]**  [/COLOR]</title>
+<link>rtmp://$doregex[ip]/live?$doregex[tok] playpath=live_profe3195 swfUrl=http://vaughnlive.tv/4263819903/swf/VaughnSoftPlayer.swf pageUrl=http://vaughnlive.tv live=1 timeout=15</link>
+<regex>
+	<name>ip</name>
+	<expres>(.*?);</expres>
+	<page>http://mvn.vaughnsoft.net/video/edge/live_profe3195</page>
+	<referer>http://vaughnlive.tv</referer>
+</regex>
+<regex>
+	<name>tok</name>
+	<expres>mvnkey.(.*)</expres>
+	<page>http://mvn.vaughnsoft.net/video/edge/live_profe3195</page>
+	<referer>http://vaughnlive.tv</referer>
+</regex>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/a/ac/South_Park_sign_logo.png</thumbnail>
+</item>
+
+
+
+
+				
+
+<item>
+<title>[B][COLOR oldlace]Adult Swim[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/as/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://williamhenrydesign.com/wp-content/uploads/2015/02/AdultSwim-A-To-Z-Variant.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[B][COLOR oldlace]Adventure Time[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/at/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://ia.media-imdb.com/images/M/MV5BMjE2MzE1MDI2M15BMl5BanBnXkFtZTgwNzUyODQxMDE@._V1_SX640_SY720_.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[B][COLOR oldlace]American Dad[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/amerro/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://s.sidereel.com/tv_shows/42889/giant_2x/americandadvs.jpg</thumbnail>
+</item>
+
+<item>
+<title>[B][COLOR oldlace]Anime[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://arconaitv.me/animes/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://images5.fanpop.com/image/photos/31700000/anime-poster-anime-31793513-1912-2560.png</thumbnail>
+</item>
+
+
+<item>
+<title>[B][COLOR oldlace]Archer[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/arc/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://www.gstatic.com/tv/thumb/tvbanners/7952201/p7952201_b_v7_ad.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[B][COLOR oldlace]Bobs Burgers[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/bb/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://ia.media-imdb.com/images/M/MV5BMTg2MzI0NTQ3OV5BMl5BanBnXkFtZTgwODMyMzc1MDE@._V1_SY317_CR1,0,214,317_AL_.jpg</thumbnail>
+</item>
+
+<item>
+<title>[B][COLOR oldlace]Classic Toons[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/ct/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://static.comicvine.com/uploads/original/4/43369/1219618-lgpp30509looney_tunes_characters_looney_tunes_poster.jpg</thumbnail>
+</item>
+ 
+<#item>
+	<title>[COLOR oldlace][B]Doug[/B][/COLOR]</title>
+	<link>http://50.7.136.90:81/live/aaaaaaaaaa@hotmail.com/user0011/1392.ts</link>
+<thumbnail>http://s.sidereel.com/tv_shows/25767/giant_2x/72210-2.jpg</thumbnail>
+</item>
+
+<#item>
+	<title>[COLOR oldlace][B]Dexters Laboratory[/B][/COLOR]</title>
+	<link>http://50.7.136.90:81/live/aaaaaaaaaa@hotmail.com/user0011/1375.ts</link>
+<thumbnail>http://orig10.deviantart.net/31ff/f/2013/013/3/5/dexters_laboratory_by_mikhaildingle-d5rez8b.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[B][COLOR oldlace]Family Guy[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/fg/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://vignette1.wikia.nocookie.net/fanon/images/2/22/4440-family-guy-family-guy-poster.jpg/revision/latest?cb=20150528130142</thumbnail>
+</item>
+
+
+<item>
+<title>[B][COLOR oldlace]Futurama[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/future/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://www.tvposter.net/posters/futurama_1999_2391_poster.jpg</thumbnail>
+</item>
+
+<#item>
+	<title>[COLOR oldlace][B]Gundam Wing[/B][/COLOR]</title>
+	<link>http://50.7.136.90:81/live/aaaaaaaaaa@hotmail.com/user0011/1400.ts</link>
+<thumbnail>http://images.allposters.com/images/125/007_fvgw3.jpg</thumbnail>
+</item>
+
+<#item>
+	<title>[COLOR oldlace][B]I Am Weasel[/B][/COLOR]</title>
+	<link>http://50.7.136.90:81/live/aaaaaaaaaa@hotmail.com/user0011/1404.ts</link>
+<thumbnail>https://s-media-cache-ak0.pinimg.com/736x/41/86/f2/4186f2757132c0c78d080a01dd9fca79.jpg</thumbnail>
+</item>
+
+<item>
+<title>[B][COLOR oldlace]Invader Zim[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/iz/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://www.allmyanime.tv/images/invader-zim.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[B][COLOR oldlace]King of the Hill[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/koth/")</expres>
+<page></page>
+</regex>
+<thumbnail>https://d1b4spazz1bu7a.cloudfront.net/t/p/w342/r6dIrTjWLE3GfcTZzrDYikt6YDn.jpg</thumbnail>
+</item>
+
+
+<#item>
+	<title>[COLOR oldlace][B]Monster Rancher[/B][/COLOR]</title>
+	<link>http://50.7.136.90:81/live/aaaaaaaaaa@hotmail.com/user0011/1415.ts</link>
+<thumbnail>http://ia.media-imdb.com/images/M/MV5BMjAzMDY3MjY2N15BMl5BanBnXkFtZTYwMTAxNDU5._V1_SX640_SY720_.jpg</thumbnail>
+</item>
+
+<item>
+<title>[B][COLOR oldlace]Regular Show[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://arconaitv.me/rs/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://caseyedwards.com/TumblrPics/RegularShow-v1.jpg</thumbnail>
+</item>
+
+<item>
+<title>[B][COLOR oldlace]Rick & Morty[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://arconaitv.me/rm/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://4.bp.blogspot.com/-RKkDzPZ5q8A/VbbcFAnPfPI/AAAAAAAAC-Y/JzU5nUXRdfQ/s1600/RaMSignedMailer.jpg</thumbnail>
+</item>
+
+
+<#item>
+	<title>[COLOR oldlace][B]Ronin Warriors[/B][/COLOR]</title>
+	<link>http://50.7.136.90:81/live/aaaaaaaaaa@hotmail.com/user0011/1398.ts</link>
+<thumbnail>http://ecx.images-amazon.com/images/I/517KMT1RA4L.jpg<thumbnail>
+</item>
+
+<item>
+<title>[B][COLOR oldlace]Samurai Jack[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://arconaitv.me/sj/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://vignette4.wikia.nocookie.net/playstationallstarsfanfictionroyale/images/7/79/Samurai_Jack_collagelarge2betterrgb.jpg/revision/latest?cb=20130530164401</thumbnail>
+</item>
+
+
+<#item>
+	<title>[COLOR oldlace][B]Samurai Pizza Cats[/B][/COLOR]</title>
+	<link>http://50.7.136.90:81/live/aaaaaaaaaa@hotmail.com/user0011/1357.ts</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/8/84/Samurai_Pizza_Cats_logo.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>[B][COLOR oldlace]South Park[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://arconaitv.me/sp/")</expres>
+<page></page>
+</regex>
+<thumbnail>https://koleksitvserieshdtv.files.wordpress.com/2014/11/south-park-south-park-poster.jpg</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[B][COLOR oldlace]The Marvelous Misadventures of Flapjack[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://www.arconaitv.me/flapjack/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://iv1.lisimg.com/image/4115182/680full-the-marvelous-misadventures-of-flapjack-poster.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[B][COLOR oldlace]Always Sunny in Philadelphia[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://arconaitv.me/asip/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://theurbanbrain.com/wp-content/uploads/2014/07/75805-2.jpg</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[B][COLOR oldlace]Better Call Saul[/B][/COLOR]</title>
+<link>$doregex[file]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&amp;X-Playback-Session-Id=$GUID$</link>
+<regex>
+<name>file</name>
+<expres>source src="(.*?)"</expres>
+<page>http://www.justproxy.co.uk/index.php</page>
+<referer>http://www.justproxy.co.uk</referer>
+<rawpost>q=$doregex[url-quote]&amp;hl%5Binclude_form%5D=on&amp;hl%5Baccept_cookies%5D=on&amp;hl%5Bshow_images%5D=on&amp;hl%5Bshow_referer%5D=on&amp;hl%5Bbase64_encode%5D=on&amp;hl%5Bstrip_meta%5D=on&amp;hl%5Bsession_cookies%5D=on</rawpost>
+</regex>
+<regex>
+<name>url-quote</name>
+<expres>$pyFunction:urllib.quote("https://arconaitv.me/bcs/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://i1.wp.com/bitcast-a-sm.bitgravity.com/slashfilm/wp/wp-content/images/Better-Call-Saul-Comic.jpg?resize=600%2C921</thumbnail>
+</item>
