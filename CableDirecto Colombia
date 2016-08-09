@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+<item>
+<title>[COLOR yellow]LATINO WEB TV[/COLOR]     [COLOR lime]1 [/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+<link>$doregex[finalURL]</link>
+<regex>
+<name>finalURL</name>
+<expres>$pyFunction: '$doregex[getURL]|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf' if not '$doregex[getURL]'=='' else 'plugin://plugin.video.youtube/play/?video_id=CEGSitBJ7Gw'</expres>
+<page></page>
+</regex>
+<regex>
+<name>getURL</name>
+<expres>file.+?[",']([^"']*)</expres>
+<page>$doregex[get-canales]</page>
+<referer>http://latino-webtv.com/</referer>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get-canales</name>
+<expres>SRC.+?[",']([^"']*)</expres>
+<page>http://embed.latino-webtv.com/$doregex[get-embed].html</page>
+<referer>http://latino-webtv.com/</referer>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get-embed</name>
+<expres>$pyFunction: '$doregex[get-name]' if not '$doregex[get-name]'=='' else '$doregex[get-channel]' </expres>
+<page></page>
+</regex>
+<regex>
+<name>get-name</name>
+<expres>src=[",']http.*?embed\.latino-webtv\.com\/(.*?)\.html</expres>
+<page>http://latino-webtv.com/[makelist.param1]/</page>
+<referer>http://latino-webtv.com/</referer>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get-channel</name>
+<expres>channel.+?[",']([^"']*)</expres>
+<page>http://latino-webtv.com/[makelist.param1]/</page>
+<referer>http://latino-webtv.com/</referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>a href=[",']([^<]*)/[",'].*?src=[",']([^<]*)[",']\W</expres>
+<page>http://latino-webtv.com/</page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+<item>
+<title>[COLOR yellow]LATINO WEB TV[/COLOR]     [COLOR lime]2 [/COLOR]</title>
+<link>$doregex[makelist]</link>
+ <regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+ 
+<link>$doregex[Final_URL]</link>
+ 
+<regex>
+<name>Final_URL</name>
+<expres>$pyFunction: '$doregex[getURL1]|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf' if not '$doregex[getURL1]'=='' else 'plugin://plugin.video.youtube/play/?video_id=CEGSitBJ7Gw' </expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>getURL1</name>
+<expres>file: [",'](.*?)[",'],</expres>
+<page>$doregex[frame]</page>
+<referer>http://latino-webtv.com/</referer>
+<cookieJar></cookieJar>
+</regex>
+ 
+<regex>
+<name>frame</name>
+<expres>frame NAME=.*?[SRC,src]=[",'](.*?)[",'] FRAMEBORDER="\d</expres>
+<page>$doregex[Final_Frame]</page>
+<referer>http://latino-webtv.com/</referer>
+<cookieJar></cookieJar>
+</regex>
+ 
+<regex>
+<name>Final_Frame</name>
+<expres>$pyFunction: '$doregex[Frame1]' if not '$doregex[Frame1]'=='' else '$doregex[Frame2]' </expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>Frame1</name>
+<expres>iframe src=[",'](.*?)[",'] width="\d</expres>
+<page>http://latino-webtv.com/[makelist.param1]/</page>
+<referer>http://latino-webtv.com/</referer>
+<cookieJar></cookieJar>
+</regex>
+ 
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>a href=[",']([^<]*)/[",'].*?src=[",']([^<]*)[",']\W</expres>
+<page>http://latino-webtv.com/</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>Frame2</name>
+<expres>frame NAME=.*?[SRC,src]=[",'](.*?)[",'] FRAMEBORDER="\d</expres>
+<page>http://embed.latino-webtv.com/$doregex[channel].html</page>
+<referer>http://latino-webtv.com/</referer>
+<cookieJar></cookieJar>
+</regex>
+ 
+<regex>
+<name>channel</name>
+<expres>channel=[",'](.*?)[",'];</expres>
+<page>http://latino-webtv.com/[makelist.param1]/</page>
+<referer>http://latino-webtv.com/</referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+http://hlslive.lcdn.une.net.co:80/v1/AUTH_HLSLIVE/0003/tn1_1.m3u8
+
+
+
+
+<item>
+<title>[COLOR blue]WIN SPORTS[/COLOR]  [COLOR orange]Une[/COLOR] </title>
+<link>http://hlslive.lcdn.une.net.co:80/v1/AUTH_HLSLIVE/0001/tu1/manifest.m3u8</link>
+<thumbnail>http://www.mundovans.com/images/stories/Win_Sports_el_nuevo_canal_deportivo_en_Colombia.jpg</thumbnail>
+</item>
+
+
+http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/MESH/tu1_3.m3u8
+
+http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/0001/tu1_manifest.m3u8
+
+
+rtmp://50.23.173.13:1935/live/cablenoticiastv_360p swfUrl=http://p.jwpcdn.com/6/12/jwplayer.flash.swf pageUrl=http://www.cablenoticias.tv/ live=1 timeout=15
+
+
+
+http://cnmedia.eastus2.cloudapp.azure.com:1935/live/smil:cablenoticiastv.smil/chunklist_w2045022241_b2628000_slEN.m3u8
+
+<item>
+<title>[COLOR yellow]CABLE NOTICIAS[/COLOR]     [COLOR lime]HD 1080p [/COLOR] </title>
+<link>http://cnmedia.eastus2.cloudapp.azure.com:1935/live/smil:cablenoticiastv.smil/chunklist_w518704973_b1364000_slEN.m3u8</link>
+<thumbnail>http://i.imgur.com/Eezkv.png</thumbnail>
+</item>
+	
+	
+<item>
+<title>[COLOR yellow]CABLE NOTICIAS[/COLOR]     [COLOR lime]HD 720p [/COLOR] </title>
+<link>http://cnmedia.eastus2.cloudapp.azure.com:1935/live/smil:cablenoticiastv.smil/chunklist_w2045022241_b1364000_slEN.m3u8</link>
+<thumbnail>http://i.imgur.com/Eezkv.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR blue]CABLE NOTICIAS[/COLOR]  [COLOR orange]Une[/COLOR] </title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/CNOT/tu1_manifest.m3u8</link>
+<thumbnail>http://i.imgur.com/Eezkv.png</thumbnail>
+</item>
+
+			<+item>
+ <title>[COLOR blue][B][I]CABLE NOTICIAS[/I][/B][/COLOR]         [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR]</title>
+ <sportsdevil>http://www.colombia.com/tv/i2480/cable-noticias</sportsdevil> 
+<referer>http://www.colombia.com/</referer>
+<thumbnail>https://pbs.twimg.com/profile_images/548617942133268480/F72G3GEW.jpeg</thumbnail>
+<fanart>https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxJwTPC2CvZ7gtAoLG3OJ8GOF4PKhaow8A6kn8w_lnJ_3vGR3B</fanart>
+ <thumbnail></thumbnail> 
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]EL TIEMPO  [/COLOR] [COLOR orange][/COLOR]   [COLOR lawngreen]F4M[/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?url=http%3A%2F%2Fooyalahd2-f.akamaihd.net%2Fz%2Feltiempo1avts_1603%401603%2Fmanifest.f4m%3Fhdcore%3D2.10.3%26g%3DFGHOOGQFBJFY%0A&simpledownloader=true</link>
+<thumbnail>http://static.eltiempo.com/media/images/imagen-streaming.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR blue]EL TIEMPO[/COLOR]  [COLOR orange][/COLOR] </title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/TIEM/tu1_manifest.m3u8</link>
+<thumbnail>http://www.elextramedios.com/drupal/sites/default/files/images/stories/fotosarticulos/sept2010/prensa62-el-tiempo-tv.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR oldlace]EURONEWS ESP[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
+<link>$doregex[getM3U8]</link>
+<regex>
+<name>getM3U8</name>
+<expres>"url":"(.*?)"</expres>
+<page>http://www.filmon.com/api-v2/channel/2906</page>
+<referer>http://www.filmon.com/tv/channel/export?channel_id=2906&</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://3.bp.blogspot.com/-PGV2NXjPAYU/UX_GO3erRZI/AAAAAAAA3Jg/q1ieedGaBmw/s1600/euronews-logo.jpeg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]EURONEWS[/COLOR]  [COLOR orange][/COLOR] </title>
+<link>http://fr-par-iphone-1.cdn.hexaglobe.net/streaming/euronews_ewns/22-live.m3u8</link>
+<thumbnail>http://static.euronews.com/media/default-img-textv2.gif</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]EURONEWS[/COLOR]  [COLOR orange] 2[/COLOR] </title>
+<link>http://fr-par-iphone-1.cdn.hexaglobe.net/streaming/euronews_ewns/ipad_es.m3u8</link>
+<thumbnail>http://static.euronews.com/media/default-img-textv2.gif</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]RT NOTICIAS[/COLOR]  [COLOR orange][/COLOR] </title>
+<link>http://rt.ashttp14.visionip.tv/live/RT_en_Espanol-SD/chunklist.m3u8?wowzasessionid=1670421395</link>
+<thumbnail>http://radioytv.com/i/tv/internacional/rt-noticias-i.gif</thumbnail>
+</item>
+
+
+
+  <item>
+<title>[COLOR yellow]TELEMEDELLIN [/COLOR]  [COLOR lime]HD [/COLOR]</title>
+<link>$doregex[get-page]$doregex[get-initsesion]|Cookie=$get_cookies$&amp;User-Agent=AppleCoreMedia/1.0.0.11B554a (iPhone; U; CPU OS 7_0_4 like Mac OS X; en_gb)&amp;X-Playback-Session-Id=$GUID$ timeout=15</link>
+<thumbnail>http://www.kolombiaestereo.com/511px-Telemedellin_svg.png</thumbnail>
+<regex>
+<name>get-initsesion</name>
+<expres></expres>
+<page>$doregex[get-page]</page>
+<agent>AppleCoreMedia/1.0.0.11B554a (iPhone; U; CPU OS 7_0_4 like Mac OS X; en_gb)</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get-page</name>
+<expres>"m3u8_url":"(.*?)"</expres>
+<page>http://new.livestream.com/telemedellinhd/telemedellinhd/embed</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+<item>
+<title>[COLOR blue]TELEMEDELLIN[/COLOR]  [COLOR orange]Une[/COLOR] </title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/TMED/tu1_manifest.m3u8</link>
+<thumbnail>http://1.bp.blogspot.com/-RMJhwbE6zO0/U7fw9nQcbBI/AAAAAAAAR9I/gfRDYauRfMs/s1600/logo-telemedellin.png</thumbnail>
+</item>
+
+<item>
+ <title>[COLOR blue][B][I]TELEMEDELLIN[/I][/B][/COLOR]   [COLOR lime]HD [/COLOR]        [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR]</title>
+ <sportsdevil>http://www.carteltv.net/canal_telemedellin.html</sportsdevil> 
+<referer>http://www.carteltv.net/</referer>
+<thumbnail>http://telemedellin.tv/images/contenido/2014/12/telemedellin-hd.jpg</thumbnail>
+<fanart>http://www.ajuc.org/imagenes/original/364752logo.png</fanart>
+ <thumbnail></thumbnail> 
+</item>
+
+
+
+
+ <item>
+<title>[COLOR yellow]TELEANTIOQUIA [/COLOR]  [COLOR lime]HD [/COLOR]</title>
+<link>$doregex[get-page]$doregex[get-initsesion]|Cookie=$get_cookies$&amp;User-Agent=AppleCoreMedia/1.0.0.11B554a (iPhone; U; CPU OS 7_0_4 like Mac OS X; en_gb)&amp;X-Playback-Session-Id=$GUID$ timeout=15</link>
+<thumbnail>http://www.teleantioquia.co/v2_base/file_loader.php?id_file=15156-m21</thumbnail>
+<regex>
+<name>get-initsesion</name>
+<expres></expres>
+<page>$doregex[get-page]</page>
+<agent>AppleCoreMedia/1.0.0.11B554a (iPhone; U; CPU OS 7_0_4 like Mac OS X; en_gb)</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get-page</name>
+<expres>"m3u8_url":"(.*?)"</expres>
+<page>http://new.livestream.com/canal-teleantioquia/events/3496592/embed</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53</agent>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+<item>
+<title>[COLOR blue]TELEANTIOQUIA[/COLOR]  [COLOR orange]Une[/COLOR] </title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/TANT/tu1_manifest.m3u8</link>
+<thumbnail>https://nadaesmentira.files.wordpress.com/2015/02/teleantioquia.png</thumbnail>
+</item>	
+	
+
+<item>
+ <title>[COLOR blue][B][I]TELEANTIOQUIA[/I][/B][/COLOR]   [COLOR lime]HD [/COLOR]        [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR]</title>
+ <sportsdevil>http://www.carteltv.net/canal_teleantioquia.html</sportsdevil> 
+<referer>http://www.carteltv.net/</referer>
+<thumbnail>http://www.seeklogo.com/images/T/Tele_Antioquia-logo-6F449A5E79-seeklogo.com.gif</thumbnail>
+<fanart>http://www.teleantioquia.co/v2_base/file_loader.php?id_file=15156-m21</fanart>
+ <thumbnail></thumbnail> 
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]test[/COLOR]</title>
+<link></link>
+<thumbnail>http://img1.wikia.nocookie.net/__cb20120118005234/logopedia/images/4/46/CARACOL_TV_LOGO_(6).jpg</thumbnail>
+</item>	
+
+
+
+
+
+<#item>
+<title>[COLOR blue]CARACOL 2[/COLOR]</title>
+<link>http://79.143.186.15/live/caracol.m3u8|Referer=http://latino-webtv.com/player/jwplayer.flash.swf</link>
+<thumbnail></thumbnail>
+</item>
+
+<+item>
+<title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]HD [/COLOR][COLOR magenta] tv[/COLOR]</title>
+<link>http://latino-webtv.ml:88/live/caracol.m3u8|User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2698.0 Safari/537.36&amp;Referer=http://latino-webtv.com/embed/reproducir.php?name=caracol&amp;url=</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]LatinoWeb tv [/COLOR] </title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Caracol-en-vivo/'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://vignette3.wikia.nocookie.net/logopedia/images/4/46/CARACOL_TV_LOGO_(6).jpg/revision/latest?cb=20120118005234</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]1 [/COLOR][COLOR magenta] tv[/COLOR]</title>
+<link>plugin://plugin.video.colombiatv/?mode=brightcove&amp;channelid=4229814000001</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]2 [/COLOR][COLOR magenta] tv[/COLOR] </title>
+<link>plugin://plugin.video.colombiatv/?mode=publisher&amp;host=janjua&amp;channelid=cdsrfgwtrg</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]3 [/COLOR] [COLOR magenta] tv[/COLOR]</title>
+<link>plugin://plugin.video.colombiatv/?mode=publisher&amp;host=mips&amp;channelid=sirvetv26</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+<fanart></fanart>
+</item>
+
+<#item>
+<title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]4 [/COLOR][COLOR magenta] tv[/COLOR]</title>
+<link>plugin://plugin.video.colombiatv/?mode=brightcove&amp;channelid=4229814000001</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]5 [/COLOR][COLOR magenta] tv[/COLOR]</title>
+<link></link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+<fanart></fanart>
+</item>	
+
+
+
+	
+
+http://cdn.divertiendo.me/caracol1b.php?width=680&height=380
+
+
+<item>
+<title>[COLOR yellow]CARACOL 1[/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+<sportsdevil>http://vuelaverde.com/canales/caracol.html</sportsdevil>
+<referer>http://vuelaverde.com</referer>
+	<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR yellow]CARACOL 2 [/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+<sportsdevil>http://cdn.divertiendo.me/caracol1.php?width=680&height=380</sportsdevil>
+<referer>http://cdn.divertiendo.me</referer>
+	<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]CARACOL  [/COLOR] [COLOR orange][/COLOR]   [COLOR lawngreen]F4M[/COLOR]</title>
+<link></link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>[COLOR yellow]CARACOL 1 [/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+<sportsdevil>http://cdn.divertiendo.me/caracol1.php?width=680&height=380</sportsdevil>
+<referer>http://cdn.divertiendo.me</referer>
+	<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR yellow]CARACOL 2 [/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+<sportsdevil>http://futbolenvivoaldia.co/reproductor/canal6a.php</sportsdevil>
+<referer>http://futbolenvivoaldia.co</referer>
+	<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR yellow]CARACOL 3[/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+<sportsdevil>http://canalesdelpueblotv.com/caracol-en-vivo-senal-03/</sportsdevil>
+<referer>http://canalesdelpueblotv.com/</referer>
+	<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]CARACOL 4[/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+<sportsdevil>http://www.mitierratvco2.com/canales/caracol/canal_3.html</sportsdevil>
+<referer>http://www.mitierratvco2.com</referer>
+	<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]CARACOL 5[/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+<sportsdevil>http://canalesdelpueblotv.com/caracol-en-vivo-senal-01/</sportsdevil>
+<referer>http://canalesdelpueblotv.com</referer>
+	<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
+</item>
+
+
+<item>
+			<title>[COLOR yellow]CARACOL 6[/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR]  </title>
+			<sportsdevil>http://canalesdelpueblotv.com/caracol-en-vivo-senal-04/</sportsdevil>
+			<referer>http://canalesdelpueblotv.com</referer>
+			<thumbnail></thumbnail>
+            <fanart></fanart>
+			</item>
+			
+			
+<item>
+<title>[COLOR yellow]RCN[/COLOR]     [COLOR lime]LatinoWeb tv [/COLOR] </title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/RCN-en-vivo/'):
+    import liveresolver
+    u = liveresolver.resolve(url)
+    return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://empleos.universia.net.co/resources/logos_emp/Logo_653747.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR yellow]RCN[/COLOR]     [COLOR lime]1 [/COLOR][COLOR magenta] tv[/COLOR]</title>
+<link>plugin://plugin.video.colombiatv/?mode=lw&amp;channelid=rcn</link>
+<thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]RCN[/COLOR]     [COLOR lime]2 [/COLOR][COLOR magenta] tv[/COLOR]</title>
+<link>plugin://plugin.video.colombiatv/?mode=publisher&amp;host=janjua&amp;channelid=rgsrbnhhgm</link>
+<thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR yellow]RCN[/COLOR]     [COLOR lime]3 [/COLOR][COLOR magenta] tv[/COLOR]</title>
+<link>plugin://plugin.video.colombiatv/?mode=publisher&amp;host=janjua&amp;channelid=tvvirtual6</link>
+<thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<#item>
+<title>[COLOR yellow]RCN[/COLOR]     [COLOR lime]4 [/COLOR][COLOR magenta] tv[/COLOR]</title>
+<link>plugin://plugin.video.colombiatv/?mode=p2pcast&amp;channelid=512706</link>
+<thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
+<fanart></fanart>
+</item>
+
+
+
+<#item>
+<title>[COLOR yellow]RCN[/COLOR]     [COLOR lime]HD2 [/COLOR][COLOR magenta] tv[/COLOR]</title>
+<link>plugin://plugin.video.colombiatv/?mode=fog&amp;url=http%3A%2F%2F62.210.75.76%2Fphp%2Frcnhd2.php%3Fwidth%3D680%26height%3D380&amp;channelid=rcnhd2</link>
+<thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
+<fanart></fanart>
+</item>
+
+
+<#item>
+			<title>[COLOR yellow]RCN[/COLOR]     [COLOR magenta] Mips[/COLOR]</title>
+			<link>rtmp://$doregex[ip]/live playpath=rkochando?id=235422$doregex[pk] swfUrl=http://www.mipsplayer.com/content/scripts/fplayer.swf tcUrl=rtmp://mips.tv:1935/live/
+			pageUrl=http://www.mipsplayer.com swfVfy=1 timeout=15 live=1 conn=S:OK</link>
+			<thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)<expres>
+			<page>http://www.mipsplayer.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>pk</name>
+			<expres>ea=(.*)'</expres> 
+			<page>http://www.mipsplayer.com/embedplayer/f12019/1/620/382</page>
+			<referer>http://www.mipsplayer.com/</referer>
+			</regex>
+			</item>
+
+
+
+<=item>
+			<title>[COLOR yellow]RCN[/COLOR]     [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+			<sportsdevil>http://canalesdelpueblotv.com/canal-rcn-en-vivo-senal-04/</sportsdevil>
+			<referer>http://canalesdelpueblotv.com/</referer>
+			<thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
+            <fanart></fanart>
+			</item>
+			
+			<=item>
+			<title>[COLOR yellow]RCN 2[/COLOR]     [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+			<sportsdevil>http://canalesdelpueblotv.com/canal-rcn-en-vivo-senal-01/</sportsdevil>
+			<referer>http://canalesdelpueblotv.com/</referer>
+			<thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
+            <fanart></fanart>
+			</item>
+			
+			<=item>
+http://mitierratvco2.com/canales/canal160.html
+	<title>[COLOR yellow]RCN[/COLOR]     [COLOR lawngreen]iguide 2[/COLOR]</title>
+	<link>$doregex[rtmp] playpath=$doregex[path] token=$doregex[tok] swfUrl=http://cdn1.iguide.to/player/secure_player_iguide_token.swf swfVfy=1 pageUrl=http://www.iguide.to live=1 timeout=15</link>
+	<regex>
+		<name>rtmp</name>
+		<expres>streamer': '(.*?)'</expres>
+		<page>http://www.iguide.to/embedplayer_new.php?width=640&amp;height=410&amp;channel=31164&amp;autoplay=true</page>
+		<referer>http://mitierratvco2.com</referer>
+	</regex>
+	<regex>
+		<name>path</name>
+		<expres>file': '(.*).flv</expres>
+		<page>http://www.iguide.to/embedplayer_new.php?width=640&amp;height=410&amp;channel=31164&amp;autoplay=true</page>
+		<referer>http://mitierratvco2.com</referer>
+	</regex>
+	<regex>
+		<name>tok</name>
+		<expres>token":"([^"]*)</expres>
+		<page>$doregex[tokpg]</page>
+		<referer>http://www.iguide.to/embedplayer_new.php?width=640&amp;height=410&amp;channel=31164&amp;autoplay=true</referer>
+	</regex>
+	<regex>
+		<name>tokpg</name>
+		<expres>getJSON\("([^"]*)</expres>
+		<page>http://www.iguide.to/embedplayer_new.php?width=640&amp;height=410&amp;channel=31164&amp;autoplay=true</page>
+		<referer>http://mitierratvco2.com</referer>
+	</regex>
+	<thumbnail>http://www.canalrcn.com/sites/default/files/programas/canal-rcn-720x405.jpg</thumbnail>
+</item>
+
+<item>
+			<title>[COLOR yellow]RCN[/COLOR]     [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+			<sportsdevil>http://www.mitierratvco2.com/canales/rcn/canal_2.html</sportsdevil>
+			<referer>http://www.mitierratvco2.com</referer>
+			<thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
+            <fanart></fanart>
+			</item>
+
+
+
+
+			
+
+
+
+
+<item>
+<title>[COLOR yellow]RCN OFF[/COLOR]</title>
+<link></link>
+<thumbnail>http://1.bp.blogspot.com/-ovOkmmqXgys/T6AfwTbCQkI/AAAAAAAACNk/BfQjVhztmak/s1600/rcn+television.jpg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR blue]UNE[/COLOR]  [COLOR orange][/COLOR] </title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/UNEM/tu1_manifest.m3u8</link>
+<thumbnail>http://www.etp.com.co/images/canalUneProductos/logo.png</thumbnail>
+</item>	
+
+<item>
+<title>[COLOR blue]TELECAFE[/COLOR]  [COLOR orange]Une[/COLOR] </title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/TCAF/tu1_manifest.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/554999318222872576/jm8xD9tC.jpeg</thumbnail>
+</item>	
+
+<item>
+<title>[COLOR blue]CANAL ANTIESTRESS[/COLOR]  [COLOR orange]Une[/COLOR] </title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/ANTI/tu1_manifest.m3u8</link>
+<thumbnail>http://www.adslzone.tv/wp-content/uploads/2009/04/humor_channel_logo.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR blue]SUN CHANNEL[/COLOR]  [COLOR orange]Une[/COLOR] </title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/SUN/tu1_manifest.m3u8</link>
+<thumbnail>https://pbs.twimg.com/profile_images/568891279811944448/JiOTtBc-.jpeg</thumbnail>
+</item>
+
+<item>
+<title>[COLOR blue]CANAL DE LAS ESTRELLAS[/COLOR]  [COLOR orange]Une[/COLOR] </title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/CEST/tu1_1.m3u8</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/e/eb/Canal_de_las_Estrellas_2006_logo.PNG</thumbnail>
+</item>
+
+
+	<item>
+<title>[COLOR yellow]UNO EN DIRECTO [/COLOR]</title>
+<link></link>
+<thumbnail>http://radiotrece.com.mx/wp-content/uploads/2013/09/UNO-TV.jpg</thumbnail>
+</item>
+
+
+
+
+
+
+
+			
+			<+item>
+			<title>[COLOR yellow]UNIVISION HD36[/COLOR]      [COLOR lime] [/COLOR]</title>
+			<link>rtmp://$doregex[getserver]/live?$doregex[clearCode] playpath=live_univision_hd36 live=1 timeout=20</link>
+			<thumbnail>https://upload.wikimedia.org/wikipedia/en/c/cd/Univision_logo.png</thumbnail>
+			<regex>
+			<name>clearCode</name>
+			<expres>$pyFunction:'$doregex[getencoded]'.replace("0m0","").replace("0n0","")</expres>
+			<page></page>
+			</regex>
+			<regex>
+			<name>getencoded</name>
+			<expres>:mvnkey-(.*)</expres>
+			<page>$doregex[getUrl]</page>
+			</regex>
+			<regex>
+			<name>getserver</name>
+			<expres>(.*?);</expres>
+			<page>$doregex[getUrl]</page>
+			</regex>
+			<regex>
+			<name>getUrl</name>
+			<expres>(.*)</expres>
+			<page>http://mvn.vaughnsoft.net/video/edge/live_univision_hd36$doregex[gettime]-$doregex[gettime].33434</page>
+			</regex>
+			<regex>
+			<name>gettime</name>
+			<expres>$pyFunction:str(int(round(time.time() * 1000)))</expres>
+			<page></page>
+			</regex>
+			</item>
+			
+			
+			
+			
+	
+
+
+
+<item>
+<title>[COLOR yellow]CANAL DE LAS ESTRELLAS[/COLOR] [COLOR lime] [/COLOR]</title>
+<link>http://tvsawpdvr-lh.akamaihd.net/i/stch02wp_1@119660/index_648_av-p.m3u8</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/e/eb/Canal_de_las_Estrellas_2006_logo.PNG</thumbnail>
+</item>
+
+
+ <item>
+			<title>[COLOR orange][B]CANAL UNO COLOMBIA [/B][/COLOR]</title>
+			<link></link>
+			<thumbnail>http://img2.wikia.nocookie.net/__cb20140414163219/logopedia/images/3/32/Canal_1_Colombia.png</thumbnail>
+			</item>
+
+
+			<item>
+			<title>[COLOR yellow]TELECAFE[/COLOR]</title>
+			<link>http://xtelecafex.api.channel.livestream.com/3.0/playlist.m3u8</link>
+			<thumbnail>http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/052011/untitled-1_206.png</thumbnail>
+</item>
+
+
+
+       
+
+<item>
+<title>[COLOR yellow]TELEPACIFICO[/COLOR]</title>
+			<link></link>
+			<thumbnail></thumbnail>
+</item>
+			
+
+			<item>
+			<title>[COLOR yellow]TELECARIBE[/COLOR]</title>
+			<link>http://cdns840stu1010.multistream.net/telecaribelive/amlst:live/master.m3u8</link>
+			<thumbnail>http://www.telecaribe.com.co/images/stories/telecaribe%20nos%20une.png</thumbnail>
+</item>
+			
+
+<item>
+			<title>[COLOR yellow]SEÑAL COLOMBIA[/COLOR]<title>
+			<link>http://173.192.25.13:1935/TELE/smil:senalcolombia.smil/canalesdelpueblotv.m3u8</link>
+			<thumbnail></thumbnail>
+			</item>
+			
+			
+
+
+<item>
+<title>[COLOR blue]TELE AMIGA[/COLOR]  [COLOR orange]Une[/COLOR] </title></title>
+<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/0002/tu1_1.m3u8</link>
+<thumbnail></thumbnail>
+</item>	
+
+
+<item>
+<title>[COLOR yellow]PEÑOL TV[/COLOR]</title>
+<link></link>
+<thumbnail>http://www.tvpenol.com/wp-content/uploads/2015/03/banner_tvpenol.jpg</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[COLOR yellow]EL TIEMPO  [/COLOR] [COLOR orange][/COLOR]  [COLOR magenta]++NUEVO[/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?url=http%3A%2F%2Fooyalahd2-f.akamaihd.net%2Fz%2Feltiempo1avts_1603%401603%2Fmanifest.f4m%3Fhdcore%3D2.10.3%26g%3DFGHOOGQFBJFY%0A&simpledownloader=true</link>
+<thumbnail>http://static.eltiempo.com/media/images/imagen-streaming.jpg</thumbnail>
+</item>
+
+            <item>
+			<title>[COLOR orange][B]CANAL 13[/B][/COLOR]</title>
+			<link>http://cdns840stu1010.multistream.net/canaltr3celive/amlst:live/playlist.m3u8</link>
+			<thumbnail>http://telecafe.gov.co/wp-content/uploads/2013/08/canal_13_trece.png</thumbnail>
+			</item>
+
+            <item>
+			<title>[COLOR orange][B]TELECOLOMBIA[/B][/COLOR]</title>
+			<link></link>
+			<thumbnail></thumbnail>
+			</item>
+
+
+<item>
+<title>[COLOR yellow]ZOOM CANAL[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title>Canal Cnc QuindÃ­o</title>
+			<link></link>
+			
+
+			<item><title>[COLOR yellow]SEÑAL INSTITUCIONAL[/COLOR]</title>
+			<link></link>
+			
+			
+
+
+
+<item>
+<title>[COLOR yellow]TELECARIBE[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+
+
+ 
+
+<item>
+<title>[COLOR yellow]CNC MEDELLIN[/COLOR]</title>
+<link>plugin://plugin.video.f4mTester/?url=http%3A%2F%2Fiptvcolombia.ddns.net%2Fhds-live%2Flivepkgr%2F_definst_%2Fliveevent%2Fcanalcnc1.f4m%0A&simpledownloader=true</link>
+<thumbnail>http://3.bp.blogspot.com/-93I8nMw7cig/UZf1rlOAhFI/AAAAAAAAHls/Q3cfJO3A-yU/s1600/Aplicacion-Noticias-de-Arauca-para-blackberry.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR yellow]LA CEJA TV[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR yellow]SEÑAL INSTITUCIONAL[/COLOR]</title>
+<link></link>
+<thumbnail>http://img1.wikia.nocookie.net/__cb20110129011826/logopedia/images/c/ce/2176698204_f01fcc5e65_o.gif</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]TELEPACIFICO[/COLOR]</title>
+<link></link>
+<thumbnail>http://www.kolombiaestereo.com/LOGO_TELEPACIFICO_2010_.png</thumbnail>
+</item>
+
+<item>
+<title>[COLOR yellow]TRECE[/COLOR]</title>
+<link></link>
+<thumbnail>http://3.bp.blogspot.com/-ZcNDnWls7iU/UDEemUxuXxI/AAAAAAAAAmo/ZMoxPa10k_w/s1600/canal_13_trece.png</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>[COLOR yellow]KISS TV[/COLOR]</title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
