@@ -55,6 +55,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <thumbnail>http://theident.gallery/thumbs/skynewshd_2010_SNHD-2010-STING-1-2.jpg</thumbnail>
 </item>
 
+
 <item>
 <title>[COLOR red]24/7[/COLOR] **  [COLOR lime]Ingles[/COLOR] **</title>
 <link>$doregex[makelist]</link>
@@ -69,7 +70,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <regex>
 <name>get_ip</name>
 <expres>([^;]*?);:</expres>    
-<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.759_190-190-0.5933709153905511</page>                               
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                               
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
@@ -79,7 +80,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <regex>
 <name>get_key</name>
 <expres>mvnkey-(.*?);</expres>  
-<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.759_190-190-0.5933709153905511</page>                              
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                              
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
@@ -125,7 +126,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <regex>
 <name>get_ip</name>
 <expres>([^;]*?);:</expres>    
-<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.759_190-190-0.5933709153905511</page>                               
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                               
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
@@ -135,7 +136,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <regex>
 <name>get_key</name>
 <expres>mvnkey-(.*?);</expres>  
-<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.759_190-190-0.5933709153905511</page>                              
+<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                              
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
@@ -164,7 +165,10 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
 </item>
 
-<item>
+
+
+
+
 			<title>[COLOR oldlace]LE CREAM STAFF  [/COLOR]         [COLOR lime]regex  [/COLOR]</title>
 			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_lcreme_staff  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
 <regex>
