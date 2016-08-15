@@ -8,22 +8,6 @@
     </item>
 	
 	
-	<=item>
-<title>[COLOR lime][B]MOVIE TRAILERS[COLOR blue] [/COLOR][/B]      [COLOR red][B]**ENTRA AQUI**[/COLOR][/B]   [COLOR lime][B]2015[/COLOR][/B] </title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-    <title>[COLOR yellow][B][makelist.param2][/COLOR][/B]</title>
-    <link>plugin://plugin.video.youtube/play/?video_id=[makelist.param1]</link>
-    <thumbnail>NA</thumbnail>
-]]></listrepeat>
-<expres>\s?.data-video-id="(.*?)".*data-title="(.*?)"</expres>
-<page>https://www.youtube.com/playlist?list=PLScC8g4bqD44jbMn77Oc7Cr6BGnaaAwX4</page>
-<referer>https://www.youtube.com/user/movieclipsTRAILERS/playlists</referer>
-<cookieJar></cookieJar>
-</regex>
-</item>
 
 
 
@@ -35,79 +19,10 @@
 <fanart>https://goo.gl/9oQCFk</fanart>
 </item>
 
-<item>
-<title>[COLOR cyan]KATHY HD TEST 3[/COLOR] with livestreamer</title>
-<link>$doregex[url]</link>
-<regex>
-<name>url</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,):
- import re
- from livestreamer import Livestreamer
- session = Livestreamer()
- streams = session.streams("http://mvn.vaughnsoft.net/video/edge/mvn-live_katyhd")
- best = re.findall("'best'.*?HLSStream\('(.*?)'", str(streams))[0]
- return best
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://theident.gallery/thumbs/skynewshd_2010_SNHD-2010-STING-1-2.jpg</thumbnail>
-</item>
 
 
-<item>
-<title>[COLOR red]24/7[/COLOR] **  [COLOR lime]Ingles[/COLOR] **</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<item>
 
-<item>
-			<title>[COLOR blue]CableDirecto[/COLOR] ** [makelist.param2] **</title>
-			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_[makelist.param1]  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
-<regex>
-<name>get_ip</name>
-<expres>([^;]*?);:</expres>    
-<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                               
-<referer>http://vaughnlive.tv/</referer>
-<connection>keep-alive</connection>
-<agent>Mozilla/5.0</agent>
-<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>get_key</name>
-<expres>mvnkey-(.*?);</expres>  
-<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                              
-<referer>http://vaughnlive.tv/</referer>
-<connection>keep-alive</connection>
-<agent>Mozilla/5.0</agent>
-<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>get_channel</name>
-<expres>embedSWF\(\"(.*?)"</expres>    
-<page>http://vaughnlive.tv/[makelist.param1]</page>                             
-<referer>http://vaughnlive.tv/</referer>
-<connection>keep-alive</connection>
-<agent>Mozilla/5.0</agent>
-<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
-<cookieJar></cookieJar>
-</regex>
-			<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail></item>
-]]></listrepeat>
-<expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
-<page>http://vaughnlive.tv/browse/misc</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://i.imgur.com/OKY9Szg.png</thumbnail>
-<fanart>http://i.imgur.com/4EwPUOD.jpg</fanart>
-</item>
+
 
 <item>
 <title>[COLOR red]24/7[/COLOR] **  [COLOR lime]Ingles[/COLOR] **</title>
@@ -262,7 +177,7 @@ _psn12v?
 <regex>
 <name>get_ip</name>
 <expres>([^;]*?);:</expres>    
-<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                               
+<page>http://mvn.vaughnsoft.net/video/edge/vnm-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                               
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
@@ -272,7 +187,7 @@ _psn12v?
 <regex>
 <name>get_key</name>
 <expres>mvnkey-(.*?);</expres>  
-<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                              
+<page>http://mvn.vaughnsoft.net/video/edge/vnm-live_[makelist.param1]?0.1.1.764_892-892-0.6960240444168448</page>                              
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
@@ -310,7 +225,7 @@ _psn12v?
 <regex>
 <name>get_ip</name>
 <expres>([^;]*?);:</expres>    
-<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_lcreme_staff?0.1.1.759_190-190-0.5933709153905511</page>                               
+<page>http://mvn.vaughnsoft.net/video/edge/vnm-live_lcreme_staff?0.1.1.759_190-190-0.5933709153905511</page>                               
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
@@ -320,7 +235,7 @@ _psn12v?
 <regex>
 <name>get_key</name>
 <expres>mvnkey-(.*?);</expres>  
-<page>http://mvn.vaughnsoft.net/video/edge/mnv-live_lcreme_staff?0.1.1.759_190-190-0.5933709153905511</page>                              
+<page>http://mvn.vaughnsoft.net/video/edge/vnm-live_lcreme_staff?0.1.1.759_190-190-0.5933709153905511</page>                              
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
