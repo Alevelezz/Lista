@@ -236,7 +236,7 @@ http://62.210.107.171:8080/088c4474f46358ee9a7052a063bda36ae8c2c5b1fc7b83f43e3a8
 <regex>
 <name>get_ip</name>
 <expres>([^;]*?);:</expres>    
-<page>http://mvn.vaughnsoft.net/video/edge/vnm-live_1ametv?0.1.1.765_61-61-0.7326283943839371</page>                               
+<page>http://mvn.vaughnsoft.net/video/edge/vmn-live_1ametv?0.1.1.765_61-61-0.7326283943839371</page>                               
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
@@ -246,7 +246,7 @@ http://62.210.107.171:8080/088c4474f46358ee9a7052a063bda36ae8c2c5b1fc7b83f43e3a8
 <regex>
 <name>get_key</name>
 <expres>mvnkey-(.*?);</expres>  
-<page>http://mvn.vaughnsoft.net/video/edge/vnm-live_1ametv?0.1.1.765_61-61-0.7326283943839371</page>                              
+<page>http://mvn.vaughnsoft.net/video/edge/vmn-live_1ametv?0.1.1.765_61-61-0.7326283943839371</page>                              
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
