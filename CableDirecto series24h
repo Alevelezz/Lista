@@ -171,8 +171,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://vaughnlive.tv/mega_evolucion
 
 
 
-http://62.210.107.171:8080/93fa703b60dd29bc2d6380697ae6243784345d201eece851e5b89374a8e1d7dc/hls/familguys4f.m3u8
-
+http://62.210.107.171:8080/94a658376f62f433e1ba05fd457f779a0ae2db8669afc2745b9fd0d8f78fe88c/hls/familguys4f.m3u8"
 
 				
 <item>
@@ -223,6 +222,10 @@ http://62.210.107.171:8080/93fa703b60dd29bc2d6380697ae6243784345d201eece851e5b89
 <thumbnail>https://i.kinja-img.com/gawker-media/image/upload/jqovacq3n6byc1mk42bq.jpg</thumbnail>
 <fanart></fanart>
 </item>
+
+
+
+
 
 
 
