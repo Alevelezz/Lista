@@ -35,7 +35,7 @@
 			</regex>
 			<regex>
 			<name>getencoded</name>
-			<expres>:mvnkey-(.*)</expres>
+			<expres>:vmnkey-(.*)</expres>
 			<page>$doregex[getUrl]</page>
 			</regex>
 			<regex>
@@ -46,7 +46,7 @@
 			<regex>
 			<name>getUrl</name>
 			<expres>(.*)</expres>
-			<page>http://mvn.vaughnsoft.net/video/edge/live_[makelist.param1]$doregex[gettime]-$doregex[gettime].33434</page>
+			<page>http://vmn.vaughnsoft.net/video/edge/live_[makelist.param1]$doregex[gettime]-$doregex[gettime].33434</page>
 			</regex>
 			<regex>
 			<name>gettime</name>
