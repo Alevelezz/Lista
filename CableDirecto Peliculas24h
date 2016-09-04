@@ -262,7 +262,7 @@ _psn12v?
 <regex>
 <name>get_ip</name>
 <expres>([^;]*?);:</expres>    
-<page>http://mvn.vaughnsoft.net/video/edge/vnm-live_katyhd0.1.1.764_892-892-0.6960240444168448?</page>                               
+<page>http://mvn.vaughnsoft.net/video/edge/vmn-live_katyhd0.1.1.764_892-892-0.6960240444168448</page>                               
 <referer>http://vaughnlive.tv/</referer>
 <connection>keep-alive</connection>
 <agent>Mozilla/5.0</agent>
