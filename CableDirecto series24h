@@ -306,6 +306,16 @@ http://62.210.107.171:8080/048a3d7a3c74231bcba85c030e0543862a53a0e4570f2d8ab11a7
 <cookieJar></cookieJar>
 </regex>
 <regex>
+<name>get_key2</name>
+<expres>;.*;(.*?)</expres>  
+<page>http://mvn.vaughnsoft.net/video/edge/mzn-live_1ametv?0.1.1.767_865-865-0.10672002471983433</page>                               
+<referer>http://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
 <name>get_channel</name>
 <expres>embedSWF\(\"(.*?)"</expres>    
 <page>http://vaughnlive.tv/1ametv</page>                             
