@@ -329,7 +329,7 @@ http://62.210.107.171:8080/048a3d7a3c74231bcba85c030e0543862a53a0e4570f2d8ab11a7
 </item>
 
  <item>
-			<title>mega extremo</title>
+			<title>star trek</title>
 			<link>rtmp://$doregex[get_ip]/live app=live?$doregex[get_key] playpath=live_mega_extremo  swfUrl=http://vaughnlive.tv$doregex[get_channel] pageUrl=http://vaughnlive.tv/  live=true</link>
 <regex>
 <name>get_ip</name>
