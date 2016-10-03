@@ -163,7 +163,62 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 </regex>
 </item>
 
+<item>
+<title>TEST | BBC News - FILMON</title>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLSRETRY&amp;url=$doregex[get-url]</link>
 
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+def getCookiesString(cookieJar):
+    try:
+        cookieString=""
+        for index, cookie in enumerate(cookieJar):
+            cookieString+=cookie.name + "=" + cookie.value +";"
+    except: pass
+    #print 'cookieString',cookieString
+    return cookieString
+
+def f4mcallback(param, type, error, Cookie_Jar, url, headers):
+  if type==1:
+    newurl=getUrl(param,Cookie_Jar)
+    oldservername=url.split('/')[2]
+    newserver=newurl.split('/')
+    newserver[2]=oldservername
+    newurl='/'.join(newserver)
+    return newurl,Cookie_Jar
+  else:
+    return '',None
+
+def getUrl(param, Cookie_Jar):
+  import requests, re, urllib, inspect
+  headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'}
+  url = 'http://www.filmon.com/tv/channel/export?channel_id='+param
+  session = requests.session()
+  session.cookies = Cookie_Jar
+  source= session.get(url, headers = headers)
+  swf = re.findall('streamer":"(.*?)"', source.text)[0]
+  cleanswf = swf.replace('\\/','/')
+  referer = 'http://www.filmon.com' + cleanswf
+  headers1 = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+  url2 = 'http://www.filmon.com/api-v2/channel/%s?protocol=hls'%param
+  source1= session.get(url2, headers = headers1)
+  getHD = re.findall('"high","url":"([^"]+)"', source1.text)[0]
+  return getHD 
+ 
+def GetLSProData(page_data,Cookie_Jar,m):
+  import os,urllib
+  callbackfunction=os.path.realpath(__file__)
+  callbackparam='27'
+  url=getUrl('27',Cookie_Jar)
+  referer = 'http://www.filmon.com/'
+  print 'url',url
+  return urllib.quote_plus (url + '|Referer=' + referer+'&cookie='+getCookiesString(Cookie_Jar)+'&User-Agent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36') +'&callbackpath='+urllib.quote_plus(callbackfunction)+'&callbackparam='+urllib.quote_plus(callbackparam)
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+<thumbnail>http://obamapacman.com/wp-content/uploads/2011/06/BBC-Logo-iPad.jpg</thumbnail>
+</item>
 
 
 <item>
