@@ -5,6 +5,43 @@
     <link>--live</link>
     <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
     </item>
+    
+    
+    
+<item>
+<Title>latino-webtv</title>
+<link>$doregex[makelist]</link>
+<regex><name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR snow]  [makelist.param1] [/COLOR]</title>
+        <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[serveur3]</link>		
+        <thumbnail>[makelist.param2]</thumbnail>
+		<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[wb_element"><a href="(.*?/)"><img alt.*?src="(.*?jpg)"]]></expres>
+<page>http://latino-webtv.com/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<regex><name>serveur1</name>
+<expres><![CDATA[iframe src="(.*?)"]]></expres>
+<page>http://latino-webtv.com/[makelist.param1]</page>
+<referer>http://latino-webtv.com/</referer>
+<cookieJar></cookieJar>
+</regex>
+<regex><name>serveur2</name>
+<expres><![CDATA[frame NAME="top" SRC="(.*?)"]]></expres>
+<page>$doregex[serveur1]</page>
+<referer>http://latino-webtv.com/[makelist.param1]</referer>
+<cookieJar></cookieJar>
+</regex>
+<regex><name>serveur3</name>
+<expres><![CDATA[file: "(.*?)"]]></expres>
+<page>$doregex[serveur2]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
 	
 
 <item>
