@@ -591,7 +591,14 @@ http://cdn.divertiendo.me/caracol1b.php?width=680&height=380
 			<thumbnail></thumbnail>
             <fanart></fanart>
 			</item>
-			
+
+
+<item>
+<title>[COLOR yellow]RCN Oficial[/COLOR]</title>
+<link>http://canalrcn-mobile-encoder.4cloud.co/livercn/AppSenalRcn/playlist.m3u8</link>
+<thumbnail>http://1.bp.blogspot.com/-ovOkmmqXgys/T6AfwTbCQkI/AAAAAAAACNk/BfQjVhztmak/s1600/rcn+television.jpg</thumbnail>
+</item>
+
 			
 <item>
 <title>[COLOR yellow]RCN[/COLOR]     [COLOR lime]LatinoWeb tv [/COLOR] </title>
@@ -776,11 +783,7 @@ http://mitierratvco2.com/canales/canal160.html
 
 
 
-<item>
-<title>[COLOR yellow]RCN OFF[/COLOR]</title>
-<link></link>
-<thumbnail>http://1.bp.blogspot.com/-ovOkmmqXgys/T6AfwTbCQkI/AAAAAAAACNk/BfQjVhztmak/s1600/rcn+television.jpg</thumbnail>
-</item>
+
 
 <item>
 <title>[COLOR blue]UNE[/COLOR]  [COLOR orange][/COLOR] </title>
