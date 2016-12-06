@@ -331,7 +331,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
  import re
  from livestreamer import Livestreamer
  session = Livestreamer()
- streams = session.streams("https://www.youtube.com/watch?v=gq11un3xqsA")
+ streams = session.streams("https://www.youtube.com/watch?v=2JnKgrsMZXQ")
  best = re.findall("'best'.*?HLSStream\('(.*?)'", str(streams))[0]
  return best
 ]]></expres>
