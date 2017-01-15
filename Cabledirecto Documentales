@@ -194,9 +194,59 @@
 	<page></page>
 </regex>
  </item>
+ 
+  <item>
+<title>[COLOR blue]NAT GEO WILD[/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[getCoded]&amp;name=Natgeo Wild</link>
+<regex>
+ <name>wowzasessionid</name>
+ <expres>NAME=.*?SRC="(.*?)"</expres>
+ <page>http://embed.latino-webtv.com/natgeowild.html</page>
+ <referer>http://embed.latino-webtv.com/</referer>
+ <agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36</agent>
+<cookieJar></cookieJar>
+ </regex>
+
+<regex><name>m3u8</name>
+ <expres>file: "(.*?)"</expres>
+ <page><![CDATA[$doregex[wowzasessionid]]]></page>
+ <referer>http://embed.latino-webtv.com/</referer>
+ <agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36</agent>
+<cookieJar></cookieJar>
+ </regex>
+ 
+<regex><name>getCoded</name>
+	<expres>$pyFunction:urllib.quote_plus('$doregex[m3u8]|Referer=http://latino-webtv.com/embed/canales.php?ch=257%26name=Syfy%26hd=no&amp;X-Requested-With=ShockwaveFlash/24.0.0.186&amp;Accept: */*')</expres>
+	<page></page>
+</regex>
+ </item>
 
 
+ <item>
+<title>[COLOR blue]DISCOVERY THEATER[/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[getCoded]&amp;name=Discovery Theater</link>
+<regex>
+ <name>wowzasessionid</name>
+ <expres>NAME=.*?SRC="(.*?)"</expres>
+ <page>http://embed.latino-webtv.com/HD-Theater.html</page>
+ <referer>http://embed.latino-webtv.com/</referer>
+ <agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36</agent>
+<cookieJar></cookieJar>
+ </regex>
 
+<regex><name>m3u8</name>
+ <expres>file: "(.*?)"</expres>
+ <page><![CDATA[$doregex[wowzasessionid]]]></page>
+ <referer>http://embed.latino-webtv.com/</referer>
+ <agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36</agent>
+<cookieJar></cookieJar>
+ </regex>
+ 
+<regex><name>getCoded</name>
+	<expres>$pyFunction:urllib.quote_plus('$doregex[m3u8]|Referer=http://latino-webtv.com/embed/canales.php?ch=257%26name=Syfy%26hd=no&amp;X-Requested-With=ShockwaveFlash/24.0.0.186&amp;Accept: */*')</expres>
+	<page></page>
+</regex>
+ </item>
 
 
 	
