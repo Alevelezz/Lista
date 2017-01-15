@@ -60,61 +60,8 @@
 </item>
 
 
-<item>
-<Title>latino-webtv</title>
-<link>$doregex[makelist]</link>
-<regex><name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR snow]  [makelist.param1] [/COLOR]</title>
-        <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[serveur3]</link>		
-        <thumbnail>[makelist.param2]</thumbnail>
-		<fanart></fanart>
-]]></listrepeat>
-<expres><![CDATA[wb_element"><a href="(.*?/)"><img alt.*?src="(.*?jpg)"]]></expres>
-<page>http://latino-webtv.com/</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-<regex><name>serveur1</name>
-<expres><![CDATA[iframe src="(.*?)"]]></expres>
-<page>http://latino-webtv.com/[makelist.param1]</page>
-<referer>http://latino-webtv.com/</referer>
-<cookieJar></cookieJar>
-</regex>
-<regex><name>serveur2</name>
-<expres><![CDATA[frame NAME="top" SRC="(.*?)"]]></expres>
-<page>$doregex[serveur1]</page>
-<referer>http://latino-webtv.com/[makelist.param1]</referer>
-<cookieJar></cookieJar>
-</regex>
-<regex><name>serveur3</name>
-<expres><![CDATA[file: "(.*?)"]]></expres>
-<page>$doregex[serveur2]</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-</item>
 
 
-<item>
-<title>[COLOR cyan]24/7 SPACE[/COLOR]     [COLOR lime]with livestreamer[/COLOR]</title>
-<link>$doregex[url]</link>
-<regex>
-<name>url</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,):
- import re
- from livestreamer import Livestreamer
- session = Livestreamer()
- streams = session.streams("https://www.youtube.com/watch?v=UGPuEDyAsU8")
- best = re.findall("'best'.*?HLSStream\('(.*?)'", str(streams))[0]
- return best
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://theident.gallery/thumbs/skynewshd_2010_SNHD-2010-STING-1-2.jpg</thumbnail>
-</item>
 
 
 
