@@ -440,18 +440,7 @@ http://cnmedia.eastus2.cloudapp.azure.com:1935/live/smil:cablenoticiastv.smil/ch
 
 
 
-<#item>
-<title>[COLOR blue]CARACOL 2[/COLOR]</title>
-<link>http://79.143.186.15/live/caracol.m3u8|Referer=http://latino-webtv.com/player/jwplayer.flash.swf</link>
-<thumbnail></thumbnail>
-</item>
 
-<+item>
-<title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]HD [/COLOR][COLOR magenta] tv[/COLOR]</title>
-<link>http://latino-webtv.ml:88/live/caracol.m3u8|User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2698.0 Safari/537.36&amp;Referer=http://latino-webtv.com/embed/reproducir.php?name=caracol&amp;url=</link>
-<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
-<fanart></fanart>
-</item>
 
 <item>
 <title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]LatinoWeb tv [/COLOR] </title>
@@ -475,7 +464,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Caracol-en-
 
 <item>
 <title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]1 [/COLOR][COLOR magenta] tv[/COLOR]</title>
-<link>plugin://plugin.video.colombiatv/?mode=brightcove&amp;channelid=4229814000001</link>
+<link>plugin://plugin.video.colombiatv/?mode=ssh101random&amp;url=http%3A%2F%2Fcdn.divertiendo.me%2Fcaracol1b.php%3Fwidth%3D720%26height%3D380</link>
 <thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
 <fanart></fanart>
 </item>
