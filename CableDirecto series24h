@@ -205,24 +205,6 @@
 
 
 
-<item>
-<title>[COLOR yellow]AMERICAN DAD old[/COLOR]       [COLOR lime]stream4free  eu[/COLOR]  </title>
-<link>$doregex[getURL]|User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36</link>
-<thumbnail>http://www.bubbleblabber.com/wp-content/uploads/2014/10/am-dad.jpg</thumbnail>
-<regex>
-<name>getURL</name>
-<expres>source src="(.*?)"</expres>
-<page>http://www.stream4free.eu/american-dad</page>
-<referer>http://www.stream4free.eu</referer>
-<cookieJar>$doregex[createCFCookie]</cookieJar>
-</regex>
-<regex>
-<name>createCFCookie</name>                                                     
-<expres></expres>
-<page>$pyFunction:cloudflare.createCookie('http://www.stream4free.eu/american-dad',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
-<cookieJar></cookieJar>
-</regex>
-</item>
 
 
 
