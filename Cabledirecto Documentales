@@ -166,134 +166,39 @@
 	<page></page>
 </regex>
  </item>
-
-
-
-	
-	
-	<item>
+ 
+ <item>
 <title>[COLOR blue]HISTORY [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
-<link>$doregex[GetPageUrl]</link>
+<link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[getCoded]&amp;name=Syfy</link>
 <regex>
-<name>GetPageUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/History-Channel-en-vivo/'):
-    import liveresolver
-    u = liveresolver.resolve(url)
-    return u
-]]></expres>
-<page></page>
+ <name>wowzasessionid</name>
+ <expres>NAME=.*?SRC="(.*?)"</expres>
+ <page>http://embed.latino-webtv.com/history.html</page>
+ <referer>http://embed.latino-webtv.com/</referer>
+ <agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<thumbnail>http://b.vimeocdn.com/ts/234/738/234738830_640.jpg</thumbnail>
-</item>
+ </regex>
 
-
-		<item>
-<title>[COLOR blue]DISCOVERY CHANNEL [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
-<link>$doregex[GetPageUrl]</link>
-<regex>
-<name>GetPageUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Discovery-En-vivo/'):
-    import liveresolver
-    u = liveresolver.resolve(url)
-    return u
-]]></expres>
-<page></page>
+<regex><name>m3u8</name>
+ <expres>file: "(.*?)"</expres>
+ <page><![CDATA[$doregex[wowzasessionid]]]></page>
+ <referer>http://embed.latino-webtv.com/</referer>
+ <agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36</agent>
 <cookieJar></cookieJar>
+ </regex>
+ 
+<regex><name>getCoded</name>
+	<expres>$pyFunction:urllib.quote_plus('$doregex[m3u8]|Referer=http://latino-webtv.com/embed/canales.php?ch=257%26name=Syfy%26hd=no&amp;X-Requested-With=ShockwaveFlash/24.0.0.186&amp;Accept: */*')</expres>
+	<page></page>
 </regex>
-<thumbnail>http://ijola.com/wp-content/uploads/2016/05/Discovery_Channel.jpg</thumbnail>
-</item>
-
-	<item>
-<title>[COLOR blue]DISCOVERY THEATER [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
-<link>$doregex[GetPageUrl]</link>
-<regex>
-<name>GetPageUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Discovery-HD-Theather-en-vivo/'):
-    import liveresolver
-    u = liveresolver.resolve(url)
-    return u
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://i.ytimg.com/vi/np6Cksh-sDY/maxresdefault.jpg</thumbnail>
-</item>
+ </item>
 
 
 
-	<item>
-<title>[COLOR blue]NAT GEO WILD [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
-<link>$doregex[GetPageUrl]</link>
-<regex>
-<name>GetPageUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Nat-Geo-Wild-en-vivo/'):
-    import liveresolver
-    u = liveresolver.resolve(url)
-    return u
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://i.ytimg.com/vi/jtocBh4Vyj8/maxresdefault.jpg</thumbnail>
-</item>
 
-	<item>
-<title>[COLOR blue]NATIONAL GEOGRAPHIC [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
-<link>$doregex[GetPageUrl]</link>
-<regex>
-<name>GetPageUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Nat-Geo-en-vivo/'):
-    import liveresolver
-    u = liveresolver.resolve(url)
-    return u
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://3.bp.blogspot.com/--jBVjaKtyks/U30yyeyscoI/AAAAAAAACZk/kMLS-UyRM2k/s1600/Logo+National_Geographic_Channel.png</thumbnail>
-</item>
-
-	<item>
-<title>[COLOR blue]TRU TV [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
-<link>$doregex[GetPageUrl]</link>
-<regex>
-<name>GetPageUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Tru-TV-HD-en-vivo/'):
-    import liveresolver
-    u = liveresolver.resolve(url)
-    return u
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://pmcvariety.files.wordpress.com/2014/07/trutv-logo.jpg</thumbnail>
-</item>
-
-	<item>
-<title>[COLOR blue]E! [/COLOR]    [COLOR lime]LatinoWeb tv [/COLOR] </title>
-<link>$doregex[GetPageUrl]</link>
-<regex>
-<name>GetPageUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/E-en-vivo/'):
-    import liveresolver
-    u = liveresolver.resolve(url)
-    return u
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://tvseriesfinale.com/wp-content/uploads/2014/03/e01.jpg</thumbnail>
-</item>
 	
-
+	
+	
 
 
 
