@@ -175,7 +175,7 @@
 <regex>
  <name>wowzasessionid</name>
  <expres>NAME=.*?SRC="(.*?)"</expres>
- <page>http://embed.latino-webtv.com/history.html</page>
+ <page>http://embed.latino-webtv.com/natgeo.html</page>
  <referer>http://embed.latino-webtv.com/</referer>
  <agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36</agent>
 <cookieJar></cookieJar>
