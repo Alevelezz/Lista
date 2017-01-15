@@ -2874,12 +2874,12 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'https://www.youtube.com/watch?v=y
 <item><title>[COLOR blue]freeiptvlinks[/COLOR]</title>
 <link>https://forums.tvaddons.ag/$doregex[makelist]</link>            
 <regex><name>makelist</name>
-<listrepeat><=!=[=C=D=A=T=A=[
+<listrepeat><![CDATA[
 <title>[makelist.param1]</title>
                 <link>https://forums.tvaddons.ag/ignorme</link>
                 <externallink>[makelist.param1]$$TSDOWNLOADER$$|User-Agent=Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2 Git:2015-10-19-02e7013</externallink>
-]=]=></listrepeat>
-<expres><=!=[=C=D=A=T=A=[#$pyFunction
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
 import requests
 import re
 def GetLSProData(page_data,Cookie_Jar,m,url='http://www.freeiptvlinks.net//category/iptv-links/spain/'):
