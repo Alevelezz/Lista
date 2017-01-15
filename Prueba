@@ -2886,7 +2886,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://www.freeiptvlinks.net//categ
  link=requests.get(url).text
  matchpag = re.compile('hellip; <a rel="nofollow" href="(http://www.freeiptvlinks.net//category/iptv-links/spain/.*?)"').findall(link)
  return matchpag
-]=]=></expres>
+]]></expres>
 <page></page>
 <referer></referer>
 <agent>Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0</agent>
