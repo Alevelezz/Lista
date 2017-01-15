@@ -422,20 +422,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/E-en-vivo/'
     <thumbnail>http://buscador.comprarentuciudad.com/filesupload/4/productos/20138_digital_plus_producto_1_normal.jpg</thumbnail>
     </item>
 	
-			<item>
-<title>[COLOR oldlace]TV UK Now[/COLOR]   [COLOR red]Documentary[/COLOR] </title>
-<link>http://ignora.me</link>
-<jsonrpc>plugin://plugin.video.ZemTV-shani/?mode=57&amp;name=%5bCOLOR%20red%5dDocumentary%5b%2fCOLOR%5d&amp;url=Documentary</jsonrpc>
-<thumbnail>http://www.zemtv.com/wp-content/uploads/2014/12/zem-logo-final1.png</thumbnail>
-</item>
-	
-	
-		<item>
-<title>[COLOR oldlace]TV UK Now Fav[/COLOR]</title>
-<link>http://ignora.me</link>
-<jsonrpc>plugin://plugin.video.live.streamspro/?fanart&amp;mode=53&amp;name=%5bCOLOR%20red%5dDocumentary%5b%2fCOLOR%5d&amp;url=plugin%3a%2f%2fplugin.video.ZemTV-shani%2f%3furl%3dDocumentary%26mode%3d57%26name%3d%255BCOLOR%2bred%255DDocumentary%255B%252FCOLOR%255D</jsonrpc>
-<thumbnail>http://www.zemtv.com/wp-content/uploads/2014/12/zem-logo-final1.png</thumbnail>
-</item>
+			
 
 
 
@@ -463,7 +450,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/E-en-vivo/'
 	
 	<item>
 <title>[COLOR yellow]RT DOCUMENTALS[/COLOR]</title>
-<link>http://rt-a.akamaihd.net/ch_05@325609/720p.m3u8</link>
+<link></link>
 <thumbnail></thumbnail>
 </item>
 
@@ -534,124 +521,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/E-en-vivo/'
 
 
 
-
-<item>
-<title>[COLOR lime]ALIENS AND UFOS  [/COLOR]</title>
-<link>rtmp://$doregex[ip]/live?$doregex[tok] playpath=live_aliensandufos swfUrl=http://vaughnlive.tv/4263819903/swf/VaughnSoftPlayer.swf pageUrl=http://vaughnlive.tv live=1 timeout=15</link>
-<regex>
-	<name>ip</name>
-	<expres>(.*?);</expres>
-	<page>http://mvn.vaughnsoft.net/video/edge/live_aliensandufos</page>
-	<referer>http://vaughnlive.tv</referer>
-</regex>
-<regex>
-	<name>tok</name>
-	<expres>mvnkey.(.*)</expres>
-	<page>http://mvn.vaughnsoft.net/video/edge/live_aliensandufos</page>
-	<referer>http://vaughnlive.tv</referer>
-</regex>
-<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/aliensandufos_320.jpg</thumbnail>
-</item>
-
-
-<item>
-<title>[COLOR lime]DUAL SURVIVAL EXTREME  [/COLOR]</title>
-<link>rtmp://$doregex[ip]/live?$doregex[tok] playpath=live_lmshows_mws swfUrl=http://vaughnlive.tv/4263819903/swf/VaughnSoftPlayer.swf pageUrl=http://vaughnlive.tv live=1 timeout=15</link>
-<regex>
-	<name>ip</name>
-	<expres>(.*?);</expres>
-	<page>http://mvn.vaughnsoft.net/video/edge/live_lmshows_mws</page>
-	<referer>http://vaughnlive.tv</referer>
-</regex>
-<regex>
-	<name>tok</name>
-	<expres>mvnkey.(.*)</expres>
-	<page>http://mvn.vaughnsoft.net/video/edge/live_lmshows_mws</page>
-	<referer>http://vaughnlive.tv</referer>
-</regex>
-<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/lmshows_mws_320.jpg</thumbnail>
-</item>
-
-
-<item>
-<title>[COLOR lightblue]H2[/COLOR](USA)  [COLOR gray][I]ilive[/I][/COLOR]</title>
-<link>$doregex[GetPageUrl]</link>
-<regex>
-<name>GetPageUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://www.streamlive.to/view/73421/History_2_UK_%28HD%29'):
-    import liveresolver
-    u = liveresolver.resolve(url)
-    return u
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-</item>
-
-<item>
-<title>[COLOR lightblue]DISCOVERY SCIENCE[/COLOR](UK)  [COLOR gray][I]ilive[/I][/COLOR]</title>
-<link>$doregex[GetPageUrl]</link>
-<regex>
-<name>GetPageUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://www.streamlive.to/view/73440/Discovery_Science_UK_%28HD%29'):
-    import liveresolver
-    u = liveresolver.resolve(url)
-    return u
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-</item>
-
-<item>
-<title>[COLOR lightblue]DISCOVERY SHED[/COLOR](UK)  [COLOR gray][I]ilive[/I][/COLOR]</title>
-<link>$doregex[GetPageUrl]</link>
-<regex>
-<name>GetPageUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://www.streamlive.to/view/73424/Discovery_SHED_%28HD%29'):
-    import liveresolver
-    u = liveresolver.resolve(url)
-    return u
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-</item>
-
-
-<item>
-<title>[COLOR lightblue]ANIMAL PLANET[/COLOR](UK)  [COLOR gray][I]ilive[/I][/COLOR]</title>
-<link>$doregex[GetPageUrl]</link>
-<regex>
-<name>GetPageUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://www.streamlive.to/view/70211/Animal_Planet_UK_%28HD%29'):
-    import liveresolver
-    u = liveresolver.resolve(url)
-    return u
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-</item>
-
-
-
-
-<item>
-<title>[COLOR cyan]BIO SD[/COLOR]</title>
-<link></link>
-<thumbnail>http://www.logoeps.net/wp-content/uploads/2012/04/bio-biography_channel-logo.jpg</thumbnail>
-</item>
-
-<item>
-<title>[COLOR cyan]BIO LOW SD[/COLOR]</title>
-<link></link>
-<thumbnail>http://www.exclusivadigital.com/userfiles/image/Logo%20bio.jpg</thumbnail>
-</item>
 
 
 
