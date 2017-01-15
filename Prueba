@@ -2829,40 +2829,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'https://www.youtube.com/watch?v=y
 </item>
 
 
-<item>
-<Title>latino-webtv</title>
-<link>$doregex[makelist]</link>
-<regex><name>makelist</name>
-  <listrepeat><![CDATA[
-        <title>[COLOR snow]  [makelist.param1] [/COLOR]</title>
-        <link>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[serveur3]</link>		
-        <thumbnail>[makelist.param2]</thumbnail>
-		<fanart></fanart>
-]]></listrepeat>
-<expres><![CDATA[wb_element"><a href="(.*?/)"><img alt.*?src="(.*?jpg)"]]></expres>
-<page>http://latino-webtv.com/</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-<regex><name>serveur1</name>
-<expres><![CDATA[iframe src="(.*?)"]]></expres>
-<page>http://latino-webtv.com/[makelist.param1]</page>
-<referer>http://latino-webtv.com/</referer>
-<cookieJar></cookieJar>
-</regex>
-<regex><name>serveur2</name>
-<expres><![CDATA[frame NAME="top" SRC="(.*?)"]]></expres>
-<page>$doregex[serveur1]</page>
-<referer>http://latino-webtv.com/[makelist.param1]</referer>
-<cookieJar></cookieJar>
-</regex>
-<regex><name>serveur3</name>
-<expres><![CDATA[file: "(.*?)"]]></expres>
-<page>$doregex[serveur2]</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-</item>
+
 
 
 <item>
@@ -2871,27 +2838,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'https://www.youtube.com/watch?v=y
 <thumbnail></thumbnail>
 </item>
 
-<item><title>[COLOR blue]freeiptvlinks[/COLOR]</title>
-<link>https://forums.tvaddons.ag/$doregex[makelist]</link>            
-<regex><name>makelist</name>
-<listrepeat><![CDATA[
-<title>[makelist.param1]</title>
-                <link>https://forums.tvaddons.ag/ignorme</link>
-                <externallink>[makelist.param1]$$TSDOWNLOADER$$|User-Agent=Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2 Git:2015-10-19-02e7013</externallink>
-]]></listrepeat>
-<expres><![CDATA[#$pyFunction
-import requests
-import re
-def GetLSProData(page_data,Cookie_Jar,m,url='http://www.freeiptvlinks.net//category/iptv-links/spain/'):
- link=requests.get(url).text
- matchpag = re.compile('hellip; <a rel="nofollow" href="(http://www.freeiptvlinks.net//category/iptv-links/spain/.*?)"').findall(link)
- return matchpag
-]]></expres>
-<page></page>
-<referer></referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0</agent>
-<cookieJar></cookieJar></regex>
-</item>
+
 
 
 
