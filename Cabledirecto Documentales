@@ -359,18 +359,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/E-en-vivo/'
 			
 			
 
-<item>
-			<title>[COLOR orange][B]MEXICO TRAVEL TV[/B][/COLOR]</title>
-			<link>http://cdns840stu1010.multistream.net/mtchlive/amlst:live/livestream.m3u8</link>
-			<thumbnail>http://traveltve.com/wp-content/uploads/2015/04/logo.png</thumbnail>
-			</item>
 
-
-	        <item>
-			<title>[COLOR orange][B]TRAVEL TV[/B][/COLOR]</title>
-			<link>rtmp://87.106.219.140/live//myStream_2</link>
-			<thumbnail>http://traveltve.com/wp-content/uploads/2015/04/logo.png</thumbnail>
-			</item>
 
 	
 
