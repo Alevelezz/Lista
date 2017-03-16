@@ -502,15 +502,15 @@ http://cdn.divertiendo.me/caracol1b.php?width=680&height=380
 
 
 <item>
-<title>[COLOR yellow]CARACOL 1 [/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
-<sportsdevil>http://cdn.divertiendo.me/caracol1.php?width=680&height=380</sportsdevil>
+<title>[COLOR yellow]CARACOL 3 [/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+<sportsdevil>http://cdn.divertiendo.me/caracoltabs.php?width=680&height=380</sportsdevil>
 <referer>http://cdn.divertiendo.me</referer>
 	<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
 </item>
 
 
 <item>
-<title>[COLOR yellow]CARACOL 2 [/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+<title>[COLOR yellow]CARACOL 4 [/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
 <sportsdevil>http://futbolenvivoaldia.co/reproductor/canal6a.php</sportsdevil>
 <referer>http://futbolenvivoaldia.co</referer>
 	<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
@@ -518,7 +518,7 @@ http://cdn.divertiendo.me/caracol1b.php?width=680&height=380
 
 
 <item>
-<title>[COLOR yellow]CARACOL 3[/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+<title>[COLOR yellow]CARACOL 5[/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
 <sportsdevil>http://canalesdelpueblotv.com/caracol-en-vivo-senal-03/</sportsdevil>
 <referer>http://canalesdelpueblotv.com/</referer>
 	<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
@@ -527,7 +527,7 @@ http://cdn.divertiendo.me/caracol1b.php?width=680&height=380
 
 
 <item>
-<title>[COLOR yellow]CARACOL 4[/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+<title>[COLOR yellow]CARACOL 6[/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
 <sportsdevil>http://www.mitierratvco2.com/canales/caracol/canal_3.html</sportsdevil>
 <referer>http://www.mitierratvco2.com</referer>
 	<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
@@ -536,7 +536,7 @@ http://cdn.divertiendo.me/caracol1b.php?width=680&height=380
 
 
 <item>
-<title>[COLOR yellow]CARACOL 5[/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
+<title>[COLOR yellow]CARACOL 7[/COLOR]    [COLOR green][/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR] </title>
 <sportsdevil>http://canalesdelpueblotv.com/caracol-en-vivo-senal-01/</sportsdevil>
 <referer>http://canalesdelpueblotv.com</referer>
 	<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
@@ -544,7 +544,7 @@ http://cdn.divertiendo.me/caracol1b.php?width=680&height=380
 
 
 <item>
-			<title>[COLOR yellow]CARACOL 6[/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR]  </title>
+			<title>[COLOR yellow]CARACOL 8[/COLOR]    [COLOR pink][B][I]SportsDevil[/I][/B][/COLOR]  </title>
 			<sportsdevil>http://canalesdelpueblotv.com/caracol-en-vivo-senal-04/</sportsdevil>
 			<referer>http://canalesdelpueblotv.com</referer>
 			<thumbnail></thumbnail>
