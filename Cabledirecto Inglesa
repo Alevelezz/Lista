@@ -255,105 +255,105 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <item>
 <title>[COLOR oldlace]Bbc Two[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=90&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>http://tvseriesfinale.com/wp-content/uploads/2015/12/bbc_two.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Itv[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=204&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/9/92/ITV_logo_2013.svg/1280px-ITV_logo_2013.svg.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Channel 4[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=92&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Channel_4_logo_2015.svg/2000px-Channel_4_logo_2015.svg.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Channel 5[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=93&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2016/02/FiveLogo10.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Dave[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=300&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>http://digitalspyuk.cdnds.net/13/06/768x576/gallery_media-dave-logo.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Really[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=306&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://uktv-static.s3.amazonaws.com/prod/really/img/default_image.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Yesterday [/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=308&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Yesterday_logo_2012.svg/1200px-Yesterday_logo_2012.svg.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Drama[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=200&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://pbs.twimg.com/profile_images/743754792757977088/8z6Ds85z.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Home[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=512&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://pbs.twimg.com/profile_images/2161986267/high_res_home_logo.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]4music[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=128&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/4_Music_logo.svg/985px-4_Music_logo.svg.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Itv 3[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=556&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://assets.tvplayer.com/tvos/images/channels/558.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Itv 4[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=558&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>http://www.bundesligalounge.com/wp-content/uploads/2012/08/300x195_145x94_ITV4_FinalLogo_WHT_.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]More4[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=553&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/7/79/More4_logo.svg/932px-More4_logo.svg.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]ItvBe[/COLOR]     [COLOR lime][/COLOR] [COLOR lime]Itv Player [/COLOR]</title>
 <link>plugin://plugin.video.itv/?url=http%3A%2F%2Fitvbeliveios-i.akamaihd.net%2Fhls%2Flive%2F219078%2Fitvlive%2FITVBE%2Fmaster_Main1800.m3u8&amp;mode=7&amp;name=ITVBe+Live&amp;iconimage=C%3A%5CUsers%5CLondon%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.itv%5Cart%2F8.jpg</link>
-<thumbnail></thumbnail>
+<thumbnail>https://cdn.itv.com/uploads/editor/fueVEODDx1AknYpGeZDK0h4C8N_Nu8IAs0T6KSZkTnM.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]ItvBe[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=557&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://cdn.itv.com/uploads/editor/fueVEODDx1AknYpGeZDK0h4C8N_Nu8IAs0T6KSZkTnM.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
@@ -361,28 +361,28 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <item>
 <title>[COLOR oldlace]Quest Red[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=557&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://assets.tvplayer.com/common/logos/150/Inverted/577.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Quest[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=327&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://yt3.ggpht.com/-KW2e6-Cfhao/AAAAAAAAAAI/AAAAAAAAAAA/OuOKv2IDEcE/s900-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Travel Channel[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=126&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>http://www.travelchannel.co.uk/img/logos/logo.svg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]4Seven[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=565&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/5/57/4seven.svg/879px-4seven.svg.png</thumbnail>
 <fanart></fanart>
 </item>
 
@@ -391,48 +391,48 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <item>
 <title>[COLOR oldlace]Bbc 4[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=110&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>http://ichef.bbci.co.uk/corporate2/images/width/live/p0/0k/98/p00k98qk.jpg/624</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Qvc[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=247&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/QVC.svg/2000px-QVC.svg.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Dave Ja Vu[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=317&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://assets.tvplayer.com/tvos/images/channels/317.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Yesterday +[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=318&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://www.creativereview.co.uk/images/uploads/2012/07/lead_image_2_0.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Travel Channel +[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=255&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://pbs.twimg.com/profile_images/849734088567083008/StxzLTpG_400x400.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Bbc red Button[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=343&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>http://informitv.com/wordpress/wp-content/uploads/2015/11/BBC-red-button.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]Community Channel[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=259&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://www.communitychannel.org/sites/communitychannel.org/themes/communitychannel/images/360-cc-logo.png</thumbnail>
 <fanart></fanart>
 </item>
