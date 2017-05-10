@@ -375,7 +375,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <item>
 <title>[COLOR oldlace]Travel Channel[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=126&amp;mode=200&amp;</link>
-<thumbnail>http://www.travelchannel.co.uk/img/logos/logo.svg</thumbnail>
+<thumbnail>https://pbs.twimg.com/profile_images/849734088567083008/StxzLTpG_400x400.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
