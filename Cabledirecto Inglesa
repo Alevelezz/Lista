@@ -488,7 +488,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 </item>
 
 <item>
-<title>[COLOR yellow]BBC ONE[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta] [/COLOR]</title>
+<title>[COLOR oldlace]Bbc One[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=89&amp;mode=200&amp;</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
