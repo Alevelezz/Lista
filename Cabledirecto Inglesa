@@ -144,7 +144,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 
 
 <item>
-<title>[COLOR oldlace]Bbc News[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]IPlayer [/COLOR]</title>
+<title>[COLOR oldlace]Bbc News[/COLOR]     [COLOR lime][/COLOR] [COLOR lime]IPlayer [/COLOR]</title>
 <link>plugin://plugin.video.iplayerwww/?url=bbc_news24&amp;mode=203&amp;name=BBC+News+Channel&amp;iconimage=C%3A%5CUsers%5CLondon%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.iplayerwww%5Cmedia%5Cbbc_news24.png&amp;description=&amp;subtitles_url=&amp;logged_in=False</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
@@ -349,6 +349,13 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <item>
 <title>[COLOR oldlace]More4[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=553&amp;mode=200&amp;</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR oldlace]ItvBe[/COLOR]     [COLOR lime][/COLOR] [COLOR lime]IPlayer [/COLOR]</title>
+<link>plugin://plugin.video.itv/?url=http%3A%2F%2Fitvbeliveios-i.akamaihd.net%2Fhls%2Flive%2F219078%2Fitvlive%2FITVBE%2Fmaster_Main1800.m3u8&amp;mode=7&amp;name=ITVBe+Live&amp;iconimage=C%3A%5CUsers%5CLondon%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.itv%5Cart%2F8.jpg</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </item>
