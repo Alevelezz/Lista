@@ -146,43 +146,33 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <item>
 <title>[COLOR oldlace]Bbc News[/COLOR]     [COLOR lime][/COLOR] [COLOR lime]IPlayer [/COLOR]</title>
 <link>plugin://plugin.video.iplayerwww/?url=bbc_news24&amp;mode=203&amp;name=BBC+News+Channel&amp;iconimage=C%3A%5CUsers%5CLondon%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.iplayerwww%5Cmedia%5Cbbc_news24.png&amp;description=&amp;subtitles_url=&amp;logged_in=False</link>
-<thumbnail></thumbnail>
+<thumbnail>http://icons.iconarchive.com/icons/martz90/hex/512/bbc-news-icon.png</thumbnail>
 <fanart></fanart>
 </item>
 
 	
-	<#item>
-<title>[COLOR cyan]SKY NEWS YOUTUBE[/COLOR]</title>
-<link>plugin://plugin.video.youtube/?action=play_video&amp;videoid=y60wDzZt8yg</link>
-<thumbnail>http://theident.gallery/thumbs/skynewshd_2010_SNHD-2010-STING-1-2.jpg</thumbnail>
-</item>
 
-<item>
-<title>[COLOR cyan]SKY NEWS 2[/COLOR]</title>
-<link></link>
-<thumbnail>http://theident.gallery/thumbs/skynewshd_2010_SNHD-2010-STING-1-2.jpg</thumbnail>
-</item>
 
 
 
 <item>
 <title>[COLOR oldlace]Bbc News[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=111&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>http://up.metropol247.co.uk/112011/1322261148_379242983.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]France 24[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=199&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/6/65/FRANCE_24_logo.svg/1200px-FRANCE_24_logo.svg.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR oldlace]EuroNews[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=287&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>http://uz24.uz/userfiles/images/euronews(2).jpg</thumbnail>
 <fanart></fanart>
 </item>
 
@@ -258,7 +248,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <item>
 <title>[COLOR oldlace]Bbc One[/COLOR]     [COLOR lime][/COLOR] [COLOR magenta]Tv Player [/COLOR]</title>
 <link>plugin://plugin.video.tvplayer/?url=89&amp;mode=200&amp;</link>
-<thumbnail></thumbnail>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/BBC_One_logo.svg/1200px-BBC_One_logo.svg.png</thumbnail>
 <fanart></fanart>
 </item>
 
