@@ -8,7 +8,7 @@
     
     
     
-<item>
+<=item>
 <Title>latino-webtv</title>
 <link>$doregex[makelist]</link>
 <regex><name>makelist</name>
