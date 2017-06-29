@@ -436,7 +436,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Caracol-en-
 
 <item>
 <title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]1 [/COLOR][COLOR magenta] tv[/COLOR]</title>
-<link>plugin://plugin.video.colombiatv/?mode=widestream&amp;url=http%3A%2F%2Fcdn.divertiendo.me&amp;channelid=2509</link>
+<link>plugin://plugin.video.colombiatv/?mode=widestream&amp;url=http%3A%2F%2Fcdn.chatytvgratis.net&amp;channelid=2509</link>
 <thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
 <fanart></fanart>
 </item>
