@@ -293,6 +293,12 @@ http://cnmedia.eastus2.cloudapp.azure.com:1935/live/smil:cablenoticiastv.smil/ch
 <thumbnail>http://radioytv.com/i/tv/internacional/rt-noticias-i.gif</thumbnail>
 </item>
 
+<item>
+<title>[COLOR yellow]TELEMEDELLIN [/COLOR]  [COLOR lime]HD [/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&amp;mode=104&amp</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/3/38/Telemedellin.svg</thumbnail>
+</item>
+
 
 
   <item>
