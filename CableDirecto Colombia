@@ -235,41 +235,10 @@ http://cnmedia.eastus2.cloudapp.azure.com:1935/live/smil:cablenoticiastv.smil/ch
 <thumbnail>http://www.elextramedios.com/drupal/sites/default/files/images/stories/fotosarticulos/sept2010/prensa62-el-tiempo-tv.jpg</thumbnail>
 </item>
 
-<item>
-<title>[COLOR oldlace]EURONEWS ESP[/COLOR]</title>
- 
-<link></link>
- 
-<link>$doregex[getM3U8]$$LSPlayOnlyOne$$$$lsname=[COLOR oldlace]EURONEWS[/COLOR]   [COLOR red] FilmOn[/COLOR]</link>
-<regex>
-<name>getM3U8</name>
-<expres>"url":"(.*?)"</expres>
-<page>http://www.filmon.com/api-v2/channel/2906</page>
-<referer>http://www.filmon.com/tv/channel/export?channel_id=2906&</referer>
-<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
-<cookieJar></cookieJar>
-</regex>
- 
-<link>http://fr-par-iphone-1.cdn.hexaglobe.net/streaming/euronews_ewns/22-live.m3u8$$lsname=Euronews2</link>
- 
-<link>http://fr-par-iphone-1.cdn.hexaglobe.net/streaming/euronews_ewns/ipad_es.m3u8$$lsname=Euronews3</link>
- <thumbnail>http://3.bp.blogspot.com/-PGV2NXjPAYU/UX_GO3erRZI/AAAAAAAA3Jg/q1ieedGaBmw/s1600/euronews-logo.jpeg</thumbnail>
- </item>
 
 
-<item>
-<title>[COLOR oldlace]EURONEWS ESP[/COLOR]     [COLOR red]Filmon[/COLOR]</title>
-<link>$doregex[getM3U8]</link>
-<regex>
-<name>getM3U8</name>
-<expres>"url":"(.*?)"</expres>
-<page>http://www.filmon.com/api-v2/channel/2906</page>
-<referer>http://www.filmon.com/tv/channel/export?channel_id=2906&</referer>
-<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0</agent>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>http://3.bp.blogspot.com/-PGV2NXjPAYU/UX_GO3erRZI/AAAAAAAA3Jg/q1ieedGaBmw/s1600/euronews-logo.jpeg</thumbnail>
-</item>
+
+
 
 
 
