@@ -297,7 +297,7 @@ http://cnmedia.eastus2.cloudapp.azure.com:1935/live/smil:cablenoticiastv.smil/ch
 <item>
 <title>[COLOR yellow]TELEMEDELLIN [/COLOR]  [COLOR lime]HD [/COLOR] [COLOR orange]Livestream[/COLOR]  </title>
 <link>plugin://plugin.video.livestream/?url=%2Flive_now&amp;mode=104&amp;name=%5BCOLOR%3DFF00B7EB%2F%5DTELEMEDELLINHD%5B%2FCOLOR%5D&amp;icon=http%3A%2F%2Fimg.new.livestream.com%2Fevents%2F00000000006c846c%2F5fb19e2e-dd75-49c2-aac8-2d0d0596150e_44460.jpg&amp;event_id=7111788&amp;owner_id=4608897&amp;video_id=LIVE&</link>
-<thumbnail>https://upload.wikimedia.org/wikipedia/commons/3/38/Telemedellin.svg</thumbnail>
+<thumbnail>https://i.vimeocdn.com/portrait/7189602_300x300</thumbnail>
 </item>
 
 
@@ -340,35 +340,6 @@ http://new.livestream.com/telemedellinhd/telemedellinhd/embed
  <thumbnail></thumbnail> 
 </item>
 
- <item>
-<title>[COLOR oldlace]TELEANTIOQUIA[/COLOR]</title>
- 
-
- 
-<link>$doregex[get-page]$doregex[get-initsesion]|Cookie=$get_cookies$&amp;User-Agent=AppleCoreMedia/1.0.0.11B554a (iPhone; U; CPU OS 7_0_4 like Mac OS X; en_gb)&amp;X-Playback-Session-Id=$GUID$$$lsname=[COLOR oldlace]TeleAntioquia[/COLOR]   [COLOR lime] HD[/COLOR]</link>
-<regex>
-<name>get-initsesion</name>
-<expres></expres>
-<page>$doregex[get-page]</page>
-<agent>AppleCoreMedia/1.0.0.11B554a (iPhone; U; CPU OS 7_0_4 like Mac OS X; en_gb)</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>get-page</name>
-<expres>"m3u8_url":"(.*?)"</expres>
-<page>http://new.livestream.com/canal-teleantioquia/events/3496592/embed</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53</agent>
-<cookieJar></cookieJar>
-</regex>
- <thumbnail>http://www.teleantioquia.co/v2_base/file_loader.php?id_file=15156-m21</thumbnail>
-
- <link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/TANT/tu1_manifest.m3u8$$lsname=[COLOR oldlace]TeleAntioquia[/COLOR]   [COLOR lime] Une[/COLOR]</link>
- 
- 
-<link></link>
- 
- <thumbnail></thumbnail>
- </item>
  
  
 <item>
