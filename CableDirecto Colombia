@@ -193,13 +193,13 @@ rtmp://50.23.173.13:1935/live/cablenoticiastv_360p swfUrl=http://p.jwpcdn.com/6/
 http://cnmedia.eastus2.cloudapp.azure.com:1935/live/smil:cablenoticiastv.smil/chunklist_w2045022241_b2628000_slEN.m3u8
 
 <item>
-<title>[COLOR yellow]CABLE NOTICIAS[/COLOR]     [COLOR lime]HD 1080p [/COLOR] </title>
+<title>[COLOR yellow]CABLE NOTICIAS[/COLOR]     [COLOR lime]HD 720p [/COLOR] </title>
 <link>http://cnmedia.eastus2.cloudapp.azure.com:1935/live/smil:cablenoticiastv.smil/chunklist_w333666426_b1428000_slES.m3u8</link>
 <thumbnail>http://i.imgur.com/Eezkv.png</thumbnail>
 </item>
 	
 	
-<item>
+<+item>
 <title>[COLOR yellow]CABLE NOTICIAS[/COLOR]     [COLOR lime]HD 720p [/COLOR] </title>
 <link>http://cnmedia.eastus2.cloudapp.azure.com:1935/live/smil:cablenoticiastv.smil/chunklist_w2045022241_b1364000_slEN.m3u8</link>
 <thumbnail>http://i.imgur.com/Eezkv.png</thumbnail>
