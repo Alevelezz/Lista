@@ -443,21 +443,21 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/Caracol-en-
 
 <item>
 <title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]2 [/COLOR][COLOR magenta] tv[/COLOR] </title>
-<link>plugin://plugin.video.colombiatv/?mode=publisher&amp;host=zony&amp;channelid=cdrcdr</link>
+<link>plugin://plugin.video.colombiatv/?mode=widestream&amp;url=http%3A%2F%2Fcdn.chatytvgratis.net&amp;channelid=10339</link>
 <thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]3 [/COLOR] [COLOR magenta] tv[/COLOR]</title>
-<link>plugin://plugin.video.colombiatv/?mode=eb&amp;channelid=1972&amp;url=aHR0cDovL2V4YWJ5dGV0di5pbmZvL2FkZG9uL2V4YWJ5dGV0di1jb2xvbWJpYS54bWw%3D</link>
+<link>plugin://plugin.video.colombiatv/?mode=publisher&amp;host=zenplayer&amp;channelid=carcolhdd</link>
 <thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR yellow]CARACOL[/COLOR]     [COLOR lime]4 [/COLOR][COLOR magenta] tv[/COLOR]</title>
-<link>plugin://plugin.video.colombiatv/?mode=eb&amp;channelid=1974&amp;url=aHR0cDovL2V4YWJ5dGV0di5pbmZvL2FkZG9uL2V4YWJ5dGV0di1jb2xvbWJpYS54bWw%3D</link>
+<link>plugin://plugin.video.colombiatv/?mode=random&amp;host=janjua&amp;url=http%3A%2F%2Fcdn.chatytvgratis.net%2Fcaracol02.php%3Fwidth%3D740%26height%3D415</link>
 <thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Caracol_2014.jpg/200px-Caracol_2014.jpg</thumbnail>
 <fanart></fanart>
 </item>
@@ -581,28 +581,28 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://latino-webtv.com/RCN-en-vivo
 
 <item>
 <title>[COLOR yellow]RCN[/COLOR]     [COLOR lime]1 [/COLOR][COLOR magenta] tv[/COLOR]</title>
-<link>plugin://plugin.video.colombiatv/?mode=lw&amp;channelid=rcn</link>
+<link>plugin://plugin.video.colombiatv/?mode=widestream&amp;url=http%3A%2F%2Fcdn.chatytvgratis.net&amp;channelid=2511</link>
 <thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR yellow]RCN[/COLOR]     [COLOR lime]2 [/COLOR][COLOR magenta] tv[/COLOR]</title>
-<link>plugin://plugin.video.colombiatv/?mode=publisher&amp;host=janjua&amp;channelid=rgsrbnhhgm</link>
+<link>plugin://plugin.video.colombiatv/?mode=publisher&amp;host=zony&amp;channelid=rervdb</link>
 <thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
 <fanart></fanart>
 </item>
 
 <item>
 <title>[COLOR yellow]RCN[/COLOR]     [COLOR lime]3 [/COLOR][COLOR magenta] tv[/COLOR]</title>
-<link>plugin://plugin.video.colombiatv/?mode=publisher&amp;host=janjua&amp;channelid=tvvirtual6</link>
+<link>plugin://plugin.video.colombiatv/?mode=random&amp;host=janjua&amp;url=http%3A%2F%2Fcdn.chatytvgratis.net%2Frcn02.php%3Fwidth%3D740%26height%3D415</link>
 <thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
 <fanart></fanart>
 </item>
 
-<#item>
+<item>
 <title>[COLOR yellow]RCN[/COLOR]     [COLOR lime]4 [/COLOR][COLOR magenta] tv[/COLOR]</title>
-<link>plugin://plugin.video.colombiatv/?mode=p2pcast&amp;channelid=512706</link>
+<link>plugin://plugin.video.colombiatv/?mode=publisher&amp;host=zenplayer&amp;channelid=rererehdtv</link>
 <thumbnail>https://pbs.twimg.com/profile_images/486326742965948416/5JJrpQO1_400x400.png</thumbnail>
 <fanart></fanart>
 </item>
