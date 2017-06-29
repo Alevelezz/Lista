@@ -293,9 +293,10 @@ http://cnmedia.eastus2.cloudapp.azure.com:1935/live/smil:cablenoticiastv.smil/ch
 <thumbnail>http://radioytv.com/i/tv/internacional/rt-noticias-i.gif</thumbnail>
 </item>
 
+
 <item>
-<title>[COLOR yellow]TELEMEDELLIN [/COLOR]  [COLOR lime]HD [/COLOR]</title>
-<link>plugin://plugin.video.livestream/?url=%2Flive_now&amp;mode=104&amp</link>
+<title>[COLOR yellow]TELEMEDELLIN [/COLOR]  [COLOR lime]HD [/COLOR] [COLOR orange]Livestream[/COLOR]  </title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&amp;mode=104&amp;name=%5BCOLOR%3DFF00B7EB%2F%5DTELEMEDELLINHD%5B%2FCOLOR%5D&amp;icon=http%3A%2F%2Fimg.new.livestream.com%2Fevents%2F00000000006c846c%2F5fb19e2e-dd75-49c2-aac8-2d0d0596150e_44460.jpg&amp;event_id=7111788&amp;owner_id=4608897&amp;video_id=LIVE&</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/commons/3/38/Telemedellin.svg</thumbnail>
 </item>
 
@@ -368,6 +369,13 @@ http://new.livestream.com/telemedellinhd/telemedellinhd/embed
  
  <thumbnail></thumbnail>
  </item>
+ 
+ 
+<item>
+<title>[COLOR yellow]TELEANTIOQUIA [/COLOR]  [COLOR lime]HD [/COLOR]  [COLOR orange]Livestream[/COLOR]</title>
+<link>plugin://plugin.video.livestream/?url=%2Flive_now&amp;mode=104&amp;name=%5BCOLOR%3DFF00B7EB%2F%5D2017%5B%2FCOLOR%5D&amp;icon=http%3A%2F%2Fimg.new.livestream.com%2Fevents%2F0000000000355a90%2F6849aa0e-d340-4608-886f-fab72c59076d_57540.jpg&amp;event_id=3496592&amp;owner_id=9427524&amp;video_id=LIVE&</link>
+<thumbnail>https://yt3.ggpht.com/-3y0PLzhwrig/AAAAAAAAAAI/AAAAAAAAAAA/u423NXvcb_4/s900-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+</item>
 
 
  <item>
