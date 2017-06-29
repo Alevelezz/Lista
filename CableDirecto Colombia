@@ -44,7 +44,7 @@
 </item>
 	
 
-<item>
+<=item>
 <title>[COLOR yellow]LATINO WEB TV[/COLOR]     [COLOR lime]1 [/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -98,7 +98,7 @@
 </regex>
 </item>
 
-<item>
+<=item>
 <title>[COLOR yellow]LATINO WEB TV[/COLOR]     [COLOR lime]2 [/COLOR]</title>
 <link>$doregex[makelist]</link>
  <regex>
