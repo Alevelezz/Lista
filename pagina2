@@ -47,7 +47,7 @@ readbuffer 4.0
 	
 	<channel>
 	 <name>[COLOR yellow]*****[/COLOR]   [COLOR oldlace][B][I] LISTA CATOAL [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
-	<externallink>https://raw.githubusercontent.com/Carlesto/Listas/master/carindex</externallink>
+	<externallink></externallink>
     <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
     <fanart>http://globial.com/globialtalksbusiness/wp-content/uploads/2012/01/peru.jpg</fanart>
     <items>
@@ -56,7 +56,7 @@ readbuffer 4.0
 	
 	<channel>
 	 <name>[COLOR yellow]*****[/COLOR]   [COLOR blue][B][I] TOTAL PLAY 2[/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
-	<externallink>http://adrian.kodistream.info/adryan/totalp.xml</externallink>
+	<externallink></externallink>
     <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
     <fanart>http://globial.com/globialtalksbusiness/wp-content/uploads/2012/01/peru.jpg</fanart>
     <items>
@@ -65,13 +65,13 @@ readbuffer 4.0
 	
 	
 	
-	https://dl.dropboxusercontent.com/u/380436718/NanoPalcotv.m3u MAIN LIST
 	
-	https://dl.dropboxusercontent.com/u/380436718/NuevosPluses.m3u  DIGITAL PLUS
+	
+	
 	
 	<channel>
 	 <name>[COLOR yellow]*****[/COLOR]   [COLOR blue][B][I]PELICULAS V.O.D [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
-	<externallink>&#104;&#116;&#116;&#112;&#115;://&#114;&#097;&#119;&#046;&#103;&#105;&#116;&#104;&#117;&#098;&#117;&#115;&#101;&#114;&#099;&#111;&#110;&#116;&#101;&#110;&#116;&#046;&#099;&#111;&#109;/&#067;&#097;&#114;&#108;&#101;&#115;&#116;&#111;/&#076;&#105;&#115;&#116;&#097;&#115;/&#109;&#097;&#115;&#116;&#101;&#114;/&#073;&#080;&#084;&#086;&#046;&#120;&#109;&#108;</externallink>
+	<externallink></externallink>
     <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
     <fanart>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzK_qMjRC8MPVRXSFHFyISp9P12dHotnQupZlZ6HM7iECgx-8</fanart>
     <items>
@@ -80,7 +80,7 @@ readbuffer 4.0
 	
 	<channel>
 	 <name>[COLOR yellow]*****[/COLOR]   [COLOR oldlace][B][I] DOCUMENTALES MANUEL [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
-	<externallink>https://github.com/alevelezz/Lista/wiki</externallink>
+	<externallink></externallink>
     <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
     <fanart>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzK_qMjRC8MPVRXSFHFyISp9P12dHotnQupZlZ6HM7iECgx-8</fanart>
     <items>
@@ -98,7 +98,7 @@ readbuffer 4.0
 	
 		<channel>
 	 <name>[COLOR yellow]*****[/COLOR]   [COLOR oldlace][B][I] DEPORTES MANUEL [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
-	<externallink>http://pastebin.com/raw/9Byrwd7f</externallink>
+	<externallink></externallink>
     <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
     <fanart>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzK_qMjRC8MPVRXSFHFyISp9P12dHotnQupZlZ6HM7iECgx-8</fanart>
     <items>
@@ -108,7 +108,7 @@ readbuffer 4.0
 	
 	<channel>
 	 <name>[COLOR yellow]*****[/COLOR]   [COLOR oldlace][B][I] LISTA STALLION [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
-	<externallink>http://pastebin.com/raw.php?i=bCtX50xV</externallink>
+	<externallink></externallink>
     <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
     <fanart>http://kodi.tv/wp-content/uploads/banner-sbs-11-600x336.png</fanart>
     <items>
@@ -117,14 +117,14 @@ readbuffer 4.0
 	
 	<channel>
 	 <name>[COLOR yellow]*****[/COLOR]   [COLOR grey][B][I] LISTA IPTV EXABYTE [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
-	<externallink>http://exabytetv.info/lista1.m3u</externallink>
+	<externallink></externallink>
     <thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/cabledirecto_320.jpg</thumbnail>
     <fanart>http://kodi.tv/wp-content/uploads/banner-sbs-11-600x336.png</fanart>
     <items>
 	 </items>
     </channel>
 	
-	http://wownet.ro/iptv/
+	
 	
 	<channel>
 	 <name>[COLOR yellow]*****[/COLOR]   [COLOR oldlace][B][I]WEBCAMS WORLDWIDE CABLEDIRECTO  [/I][/B][/COLOR]  [COLOR yellow]*****[/COLOR]</name>
