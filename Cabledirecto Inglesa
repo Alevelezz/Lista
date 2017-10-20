@@ -94,7 +94,7 @@
 <name>geturl</name>
 <expres><![CDATA[#$pyFunction
 import requests, re, xbmcgui, xbmc
-def GetLSProData(page_data,Cookie_Jar,m,url = 'https://www.youtube.com/watch?v=y60wDzZt8yg'):
+def GetLSProData(page_data,Cookie_Jar,m,url = 'https://www.youtube.com/watch?v=XOacA3RYrXk'):
  session = requests.Session()
  session.cookies = Cookie_Jar
  source = session.get(url)
@@ -116,7 +116,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
  import re
  from livestreamer import Livestreamer
  session = Livestreamer()
- streams = session.streams("https://www.youtube.com/watch?v=y60wDzZt8yg")
+ streams = session.streams("https://www.youtube.com/watch?v=XOacA3RYrXk")
  best = re.findall("'best'.*?HLSStream\('(.*?)'", str(streams))[0]
  return best
 ]]></expres>
@@ -137,7 +137,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <regex>
     <name>jsonurl</name>
     <expres>hlsvp":"(.*?)"</expres>
-    <page>https://www.youtube.com/watch?v=y60wDzZt8yg</page>
+    <page>https://www.youtube.com/watch?v=XOacA3RYrXk</page>
 </regex>
 <thumbnail>http://theident.gallery/thumbs/skynewshd_2010_SNHD-2010-STING-1-2.jpg</thumbnail>
 </item>
